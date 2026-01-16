@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+
+<meta name="description" content="Soins palliatifs à domicile Limoges (87). Accompagnement en fin de vie avec dignité et bienveillance. Gestion de la douleur, soutien patient et famille. ☎️ 06.82.41.06.61">
+<meta name="keywords" content="soins palliatifs Limoges, fin de vie domicile, accompagnement palliatif 87, douleur chronique, soins de confort">
+<meta name="author" content="Cabinet Infirmier Libéral Limoges">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.infirmier-limoges.fr/services/palliatifs.html">
+<meta name="theme-color" content="#2a5d7c">
+
+<!-- Open Graph -->
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.infirmier-limoges.fr/services/palliatifs.html">
+<meta property="og:title" content="Soins Palliatifs à Domicile Limoges | Accompagnement en Fin de Vie">
+<meta property="og:description" content="Soins palliatifs et accompagnement en fin de vie à domicile. Dignité, respect et bienveillance.">
+
+<title>Soins Palliatifs à Domicile Limoges | Accompagnement Fin de Vie | ☎️ 06.82.41.06.61</title>
+
+<!-- Favicon -->
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+
+<!-- Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #2a5d7c;
+    --primary-dark: #1e445c;
+    --accent: #4fac7a;
+    --accent-hover: #3f9360;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --gray-dark: #475569;
+    --shadow: rgba(0,0,0,0.12);
+    --transition: all 0.3s ease;
+    --border: #e2e8f0;
+    --warm: #e8a87c;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; font-size:16px; }
+body { 
+    font-family:'Inter', sans-serif; 
+    line-height:1.6; 
+    color:#1e293b; 
+    background:#fff; 
+}
+
+/* Skip Link */
+.skip-link {
+    position:absolute;
+    top:-40px;
+    left:0;
+    background:var(--primary);
+    color:white;
+    padding:0.5rem 1rem;
+    z-index:10000;
+    text-decoration:none;
+}
+.skip-link:focus { top:0; }
+
+*:focus-visible {
+    outline:3px solid var(--accent);
+    outline-offset:2px;
+}
+
+/* Header */
+header {
+    background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+    box-shadow:0 4px 25px rgba(0,0,0,0.2);
+    padding:1rem 2rem;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav {
+    max-width:1280px; 
+    margin:0 auto; 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center;
+}
+
+.logo {
+    font-family:'Playfair Display', serif;
+    font-size:1.6rem;
+    font-weight:700;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.nav-back {
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    padding:0.75rem 1.5rem;
+    background:rgba(255,255,255,0.15);
+    border-radius:30px;
+    transition:var(--transition);
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    min-height:44px;
+}
+
+.nav-back:hover {
+    background:rgba(255,255,255,0.25);
+    transform:translateX(-5px);
+}
+
+/* Hero Section */
+.hero-small {
+    background:linear-gradient(135deg, #2a5d7c 0%, #1e445c 100%);
+    color:white;
+    padding:5rem 2rem 3rem;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-small::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:radial-gradient(circle at 30% 50%, rgba(232,168,124,0.15), transparent);
+}
+
+.hero-small h1 {
+    font-family:'Playfair Display', serif;
+    font-size:clamp(2rem, 5vw, 3.5rem);
+    margin-bottom:1rem;
+    position:relative;
+    z-index:1;
+}
+
+.hero-icon-large {
+    font-size:5rem;
+    display:block;
+    margin-bottom:1.5rem;
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    animation:heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform:scale(1); }
+    10% { transform:scale(1.1); }
+    20% { transform:scale(1); }
+    30% { transform:scale(1.1); }
+    40% { transform:scale(1); }
+}
+
+.hero-small p {
+    font-size:1.2rem;
+    opacity:0.95;
+    max-width:700px;
+    margin:0 auto;
+    position:relative;
+    z-index:1;
+}
+
+/* Content Section */
+.content-section {
+    max-width:1100px;
+    margin:0 auto;
+    padding:4rem 2rem;
+}
+
+.intro-text {
+    background:linear-gradient(135deg, #fff8f3, #fff);
+    padding:3rem;
+    border-radius:20px;
+    margin-bottom:4rem;
+    border-left:5px solid var(--warm);
+    box-shadow:0 10px 30px var(--shadow);
+}
+
+.intro-text p {
+    font-size:1.1rem;
+    line-height:1.9;
+    color:var(--gray-dark);
+    margin-bottom:1.2rem;
+}
+
+.intro-text p:last-child {
+    margin-bottom:0;
+}
+
+.intro-text strong {
+    color:var(--primary);
+}
+
+h2 {
+    font-family:'Playfair Display', serif;
+    font-size:2.2rem;
+    color:var(--primary);
+    margin-bottom:2rem;
+    position:relative;
+    padding-bottom:1rem;
+}
+
+h2::after {
+    content:'';
+    width:80px;
+    height:3px;
+    background:var(--warm);
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.values-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:2rem;
+    margin-bottom:4rem;
+}
+
+.value-card {
+    background:white;
+    padding:2.5rem;
+    border-radius:15px;
+    box-shadow:0 5px 20px var(--shadow);
+    text-align:center;
+    transition:all 0.3s ease;
+    border:1px solid transparent;
+}
+
+.value-card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(232,168,124,0.2);
+    border-color:var(--warm);
+}
+
+.value-icon {
+    font-size:3.5rem;
+    margin-bottom:1.5rem;
+    display:block;
+}
+
+.value-card h3 {
+    color:var(--primary);
+    font-size:1.4rem;
+    margin-bottom:1rem;
+    font-weight:600;
+}
+
+.value-card p {
+    color:var(--gray-dark);
+    line-height:1.7;
+}
+
+/* Services Section */
+.services-section {
+    background:var(--light);
+    padding:4rem 2rem;
+    margin:4rem -2rem;
+}
+
+.services-container {
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.service-card {
+    background:white;
+    padding:2.5rem;
+    border-radius:15px;
+    box-shadow:0 5px 20px var(--shadow);
+    margin-bottom:2rem;
+}
+
+.service-card h3 {
+    color:var(--primary);
+    font-size:1.5rem;
+    margin-bottom:1.5rem;
+    display:flex;
+    align-items:center;
+    gap:0.75rem;
+}
+
+.service-card ul {
+    list-style:none;
+    padding:0;
+}
+
+.service-card li {
+    padding-left:2rem;
+    margin-bottom:1rem;
+    position:relative;
+    color:var(--gray-dark);
+    line-height:1.7;
+}
+
+.service-card li::before {
+    content:'✓';
+    position:absolute;
+    left:0;
+    color:var(--warm);
+    font-weight:bold;
+    font-size:1.3rem;
+}
+
+/* Support Section */
+.support-section {
+    background:white;
+    padding:3rem;
+    border-radius:20px;
+    box-shadow:0 10px 30px var(--shadow);
+    margin:4rem 0;
+}
+
+.support-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.support-item {
+    padding:2rem;
+    background:var(--light);
+    border-radius:15px;
+    border-left:4px solid var(--accent);
+}
+
+.support-item h4 {
+    color:var(--primary);
+    font-size:1.2rem;
+    margin-bottom:1rem;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.support-item p {
+    color:var(--gray-dark);
+    line-height:1.7;
+}
+
+/* Quote Section */
+.quote-section {
+    background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color:white;
+    padding:4rem 3rem;
+    border-radius:20px;
+    text-align:center;
+    margin:4rem 0;
+    position:relative;
+    overflow:hidden;
+}
+
+.quote-section::before {
+    content:'"';
+    position:absolute;
+    top:-20px;
+    left:20px;
+    font-size:15rem;
+    opacity:0.1;
+    font-family:'Playfair Display', serif;
+}
+
+.quote-section blockquote {
+    font-size:1.4rem;
+    font-style:italic;
+    line-height:1.8;
+    position:relative;
+    z-index:1;
+    max-width:800px;
+    margin:0 auto;
+}
+
+.quote-section cite {
+    display:block;
+    margin-top:1.5rem;
+    font-style:normal;
+    opacity:0.9;
+    font-size:1rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin:4rem 0;
+}
+
+.faq-item {
+    background:white;
+    padding:2rem;
+    margin-bottom:1.5rem;
+    border-radius:15px;
+    box-shadow:0 5px 20px var(--shadow);
+    border-left:4px solid var(--warm);
+}
+
+.faq-item h3 {
+    color:var(--primary);
+    font-size:1.3rem;
+    margin-bottom:1rem;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.faq-item p {
+    color:var(--gray-dark);
+    line-height:1.7;
+}
+
+/* CTA Section */
+.cta-section {
+    background:linear-gradient(135deg, var(--warm), #d89464);
+    color:white;
+    padding:4rem 2rem;
+    text-align:center;
+    border-radius:20px;
+    margin:4rem 0;
+}
+
+.cta-section h2 {
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:1.5rem;
+}
+
+.cta-section h2::after {
+    background:white;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.cta-section p {
+    font-size:1.2rem;
+    margin-bottom:2rem;
+    opacity:0.95;
+}
+
+.cta-buttons {
+    display:flex;
+    gap:1.5rem;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn {
+    display:inline-block;
+    padding:1.1rem 2.5rem;
+    border-radius:50px;
+    font-weight:600;
+    font-size:1.1rem;
+    text-decoration:none;
+    transition:all 0.3s ease;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+}
+
+.btn-primary {
+    background:white;
+    color:var(--warm);
+}
+
+.btn-primary:hover {
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(255,255,255,0.3);
+}
+
+.btn-secondary {
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+.btn-secondary:hover {
+    background:white;
+    color:var(--warm);
+    transform:translateY(-5px);
+}
+
+/* Mobile CTA */
+.mobile-cta {
+    display:none;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:1rem;
+    background:white;
+    box-shadow:0 -5px 20px rgba(0,0,0,0.1);
+    z-index:999;
+}
+
+.btn-call {
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--warm);
+    color:white;
+    padding:1rem;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:1.1rem;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+}
+
+/* Footer */
+footer {
+    background:linear-gradient(135deg, var(--primary-dark), #0f2942);
+    color:#cbd5e1;
+    text-align:center;
+    padding:2rem;
+}
+
+footer p {
+    margin-bottom:0.5rem;
+    font-size:0.9rem;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    .cta-buttons {
+        flex-direction:column;
+        align-items:stretch;
+    }
+    .mobile-cta {
+        display:block;
+    }
+    .intro-text {
+        padding:2rem;
+    }
+}
+</style>
+
+</head>
+
+<body>
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<header>
+<nav aria-label="Navigation">
+    <a href="../index.html" class="logo">
+        <span>❤️</span>
+        <span>Soins Palliatifs</span>
+    </a>
+    <a href="../index.html" class="nav-back">
+        <span>←</span>
+        <span>Retour</span>
+    </a>
+</nav>
+</header>
+
+<main id="main-content" role="main">
+<section class="hero-small">
+    <span class="hero-icon-large" role="img" aria-label="Coeur">❤️</span>
+    <h1>Soins Palliatifs à Domicile</h1>
+    <p>Accompagnement avec dignité, respect et bienveillance</p>
+</section>
+
+<div class="content-section">
+    <div class="intro-text">
+        <p><strong>Les soins palliatifs sont une approche qui vise à améliorer la qualité de vie des patients confrontés à une maladie grave ou en fin de vie.</strong></p>
+        <p>En tant qu'infirmier spécialisé dans l'accompagnement palliatif, je vous propose des soins à domicile centrés sur le confort, le soulagement de la douleur et le respect de vos souhaits. Mon objectif est de vous permettre de vivre cette étape avec dignité, entouré de vos proches, dans le cadre rassurant de votre domicile.</p>
+        <p><strong>Je travaille en étroite collaboration avec votre médecin traitant, les équipes d'hospitalisation à domicile (HAD) et les réseaux de soins palliatifs pour vous offrir une prise en charge globale et coordonnée.</strong></p>
+    </div>
+
+```
+<h2>Nos Valeurs Fondamentales</h2>
+<div class="values-grid">
+    <article class="value-card">
+        <span class="value-icon" role="img" aria-label="Dignité">🌟</span>
+        <h3>Dignité</h3>
+        <p>Chaque personne mérite d'être respectée dans son intégrité physique, psychologique et spirituelle jusqu'au bout de sa vie.</p>
+    </article>
+
+    <article class="value-card">
+        <span class="value-icon" role="img" aria-label="Bienveillance">💝</span>
+        <h3>Bienveillance</h3>
+        <p>Une approche empathique et humaine, à l'écoute de vos besoins et de ceux de votre famille dans ces moments difficiles.</p>
+    </article>
+
+    <article class="value-card">
+        <span class="value-icon" role="img" aria-label="Respect">🤲</span>
+        <h3>Respect des Souhaits</h3>
+        <p>Votre autonomie et vos choix sont au cœur de notre accompagnement. Nous respectons vos volontés et vos valeurs.</p>
+    </article>
+
+    <article class="value-card">
+        <span class="value-icon" role="img" aria-label="Confort">☮️</span>
+        <h3>Confort</h3>
+        <p>Soulagement optimal de la douleur et des symptômes inconfortables pour améliorer votre qualité de vie au quotidien.</p>
+    </article>
+</div>
+```
+
+</div>
+
+<section class="services-section">
+    <div class="services-container">
+        <h2>Prestations de Soins Palliatifs</h2>
+
+```
+    <article class="service-card">
+        <h3><span role="img" aria-label="Douleur">💊</span> Gestion de la Douleur</h3>
+        <ul>
+            <li>Évaluation régulière de la douleur avec des échelles adaptées</li>
+            <li>Administration des traitements antalgiques prescrits (morphine, antalgiques...)</li>
+            <li>Surveillance des effets secondaires et ajustement avec le médecin</li>
+            <li>Utilisation de techniques complémentaires (positionnement, massage...)</li>
+            <li>Gestion des douleurs neuropathiques et chroniques</li>
+        </ul>
+    </article>
+
+    <article class="service-card">
+        <h3><span role="img" aria-label="Symptômes">🌡️</span> Gestion des Symptômes</h3>
+        <ul>
+            <li>Prise en charge des nausées et vomissements</li>
+            <li>Soins de bouche et prévention de la sécheresse buccale</li>
+            <li>Gestion de la dyspnée (difficulté respiratoire)</li>
+            <li>Prévention et traitement de la constipation</li>
+            <li>Soins des plaies et prévention des escarres</li>
+            <li>Accompagnement de l'anxiété et de l'angoisse</li>
+        </ul>
+    </article>
+
+    <article class="service-card">
+        <h3><span role="img" aria-label="Hygiène">🛁</span> Soins de Confort & d'Hygiène</h3>
+        <ul>
+            <li>Toilettes complètes ou partielles selon l'état du patient</li>
+            <li>Soins de bouche et d'hydratation</li>
+            <li>Installation confortable et changements de position réguliers</li>
+            <li>Prévention des complications liées à l'alitement</li>
+            <li>Maintien de l'apparence et de l'estime de soi</li>
+        </ul>
+    </article>
+
+    <article class="service-card">
+        <h3><span role="img" aria-label="Soutien">🤗</span> Soutien Psychologique & Spirituel</h3>
+        <ul>
+            <li>Écoute active et présence bienveillante</li>
+            <li>Accompagnement dans l'expression des émotions et des peurs</li>
+            <li>Respect des besoins spirituels et religieux</li>
+            <li>Soutien dans la préparation à la fin de vie</li>
+            <li>Communication adaptée et honnête</li>
+        </ul>
+    </article>
+
+    <article class="service-card">
+        <h3><span role="img" aria-label="Famille">👨‍👩‍👧‍👦</span> Accompagnement de la Famille</h3>
+        <ul>
+            <li>Soutien et information des proches</li>
+            <li>Formation aux gestes de base (positionnement, confort...)</li>
+            <li>Écoute et accompagnement du deuil anticipé</li>
+            <li>Coordination avec les autres professionnels de santé</li>
+            <li>Accompagnement des aidants pour éviter l'épuisement</li>
+        </ul>
+    </article>
+</div>
+```
+
+</section>
+
+<div class="content-section">
+    <section class="support-section">
+        <h2>Travail en Réseau</h2>
+        <p style="color:var(--gray-dark); margin-bottom:2rem; line-height:1.7;">Les soins palliatifs nécessitent une approche pluridisciplinaire. Je collabore étroitement avec :</p>
+
+```
+    <div class="support-grid">
+        <div class="support-item">
+            <h4><span role="img" aria-label="Médecin">👨‍⚕️</span> Médecins</h4>
+            <p>Médecin traitant, médecin coordinateur HAD, médecin algologue pour la gestion de la douleur complexe</p>
+        </div>
+
+        <div class="support-item">
+            <h4><span role="img" aria-label="HAD">🏥</span> HAD</h4>
+            <p>Hospitalisation à domicile pour une prise en charge coordonnée et des soins techniques complexes</p>
+        </div>
+
+        <div class="support-item">
+            <h4><span role="img" aria-label="Psychologue">🧠</span> Psychologues</h4>
+            <p>Soutien psychologique du patient et de la famille, accompagnement du deuil</p>
+        </div>
+
+        <div class="support-item">
+            <h4><span role="img" aria-label="Aide">🤝</span> Aides-soignants</h4>
+            <p>Aide à la toilette, au lever, aux repas pour soulager la famille</p>
+        </div>
+
+        <div class="support-item">
+            <h4><span role="img" aria-label="Social">📋</span> Assistants Sociaux</h4>
+            <p>Aide aux démarches administratives, mise en place d'aides financières</p>
+        </div>
+
+        <div class="support-item">
+            <h4><span role="img" aria-label="Bénévoles">🕊️</span> Bénévoles</h4>
+            <p>Accompagnement, présence, écoute complémentaire via les associations de soins palliatifs</p>
+        </div>
+    </div>
+</section>
+
+<div class="quote-section">
+    <blockquote>
+        "Les soins palliatifs cherchent à améliorer la qualité de vie des patients et de leur famille, face aux conséquences d'une maladie potentiellement mortelle, par la prévention et le soulagement de la souffrance."
+    </blockquote>
+    <cite>— Organisation Mondiale de la Santé (OMS)</cite>
+</div>
+
+<section class="faq-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Questions Fréquentes</h2>
+
+    <article class="faq-item">
+        <h3>❓ À quel moment envisager les soins palliatifs ?</h3>
+        <p>Les soins palliatifs ne sont pas réservés aux derniers jours de vie. Ils peuvent être envisagés dès qu'une maladie grave impacte significativement la qualité de vie, même si des traitements curatifs sont encore en cours. L'objectif est de soulager les symptômes et d'améliorer le confort le plus tôt possible.</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Les soins palliatifs signifient-ils renoncer aux traitements ?</h3>
+        <p>Non. Les soins palliatifs peuvent être associés à des traitements curatifs. Ils visent simplement à prioriser le confort et la qualité de vie. C'est le patient, avec son médecin, qui décide des orientations thérapeutiques qu'il souhaite.</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Peut-on rester à domicile jusqu'à la fin ?</h3>
+        <p>Oui, dans la plupart des cas, avec une organisation adaptée (passages infirmiers réguliers, HAD, aides à domicile). Certaines situations peuvent néanmoins nécessiter une hospitalisation temporaire ou un séjour en unité de soins palliatifs. Tout dépend de vos souhaits, de votre état et du soutien dont vous disposez.</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Comment gérer la douleur en fin de vie ?</h3>
+        <p>La douleur peut être très efficacement soulagée grâce aux traitements antalgiques modernes (morphine, autres opioïdes, co-antalgiques). J'évalue régulièrement votre douleur et je travaille avec votre médecin pour ajuster les doses. L'objectif est de vous maintenir confortable tout en préservant au maximum votre lucidité si vous le souhaitez.</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Les soins palliatifs sont-ils pris en charge ?</h3>
+        <p>Oui, tous les soins infirmiers palliatifs à domicile sont pris en charge à 100% par l'Assurance Maladie sur prescription médicale. L'HAD est également prise en charge. Des aides financières existent pour les autres frais (aides à domicile, matériel médical...).</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Comment soutenir la famille ?</h3>
+        <p>J'accompagne également les proches : écoute, information, formation aux gestes de confort, organisation de relais pour éviter l'épuisement. Des associations de bénévoles peuvent également apporter une présence et un soutien. Un suivi psychologique peut être proposé si besoin.</p>
+    </article>
+</section>
+
+<div class="cta-section">
+    <h2>Besoin d'Accompagnement ?</h2>
+    <p>Je suis à votre écoute pour vous accompagner avec humanité et professionnalisme</p>
+    <div class="cta-buttons">
+        <a href="tel:+33682410661" class="btn btn-primary">
+            <span>📞</span>
+            <span>06.82.41.06.61</span>
+        </a>
+        <a href="mailto:infirmier.87@outlook.com" class="btn btn-secondary">
+            <span>✉️</span>
+            <span>Envoyer un email</span>
+        </a>
+    </div>
+</div>
+```
+
+</div>
+</main>
+
+<!-- Mobile CTA -->
+
+<div class="mobile-cta">
+    <a href="tel:+33682410661" class="btn-call">
+        <span>📞</span>
+        <span>Appeler maintenant</span>
+    </a>
+</div>
+
+<footer role="contentinfo">
+    <p>&copy; 2026 Cabinet Infirmier Libéral Limoges - Tous droits réservés</p>
+    <p>N° ADELI : 876194705 | RPPS : 10104297923 | Conventionné Secteur 1</p>
+</footer>
+
+<script>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+
+// Accessibility
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.style.scrollBehavior = 'auto';
+}
+</script>
+
+</body>
+</html>
