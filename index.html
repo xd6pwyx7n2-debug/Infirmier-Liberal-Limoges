@@ -62,6 +62,25 @@
     .nav-links.show {
         display: flex;              /* montre le menu quand burger cliqué */
     }
+    .hero {
+    padding: 0 1rem;        /* espace latéral pour le texte */
+    min-height: 60vh;       /* réduit la hauteur sur mobile */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem); /* taille adaptative */
+}
+
+.hero p {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin-bottom: 1.8rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;   /* bouton moins large */
+    font-size: 1rem;
+}
 }
 
         :root {
