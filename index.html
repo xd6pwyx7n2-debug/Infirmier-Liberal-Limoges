@@ -13,6 +13,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
     <style>
+    
+    .burger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--primary-dark);
+        width: 100%;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
         :root {
             --primary: #2a5d7c;
             --primary-dark: #1e445c;
@@ -391,6 +427,12 @@
   "priceRange": "Conventionné",
   "medicalSpecialty": "Nursing",
   "areaServed": ["Limoges", "Panazol", "Couzeix", "Isle", "Condat-sur-Vienne"]
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
 }
 </script>
 
@@ -401,6 +443,7 @@
             <a href="#accueil" style="text-decoration: none; color: white;">
     <div class="logo">🏥 Cabinet Infirmier Limoges</div>
 </a>
+<button class="burger" aria-label="Ouvrir le menu">☰</button>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
@@ -408,6 +451,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <section class="hero" id="accueil">
