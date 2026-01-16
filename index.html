@@ -21,6 +21,7 @@
     border: none;
     color: white;
     cursor: pointer;
+    z-index: 1100;
 }
 
 @media (max-width: 768px) {
@@ -46,6 +47,8 @@
         margin-top: 0.5rem;
         border-radius: 0 0 15px 15px; /* coins arrondis en bas */
         overflow: hidden;
+        max-height: 0;             /* hauteur initiale 0 */
+transition: max-height 0.35s ease; /* transition fluide */
     }
 
     .nav-links li {
@@ -410,15 +413,12 @@ section {
         }
 
         footer {
-    padding: 2rem 1rem 1.5rem;  /* réduit padding pour mobile */
-    font-size: 0.9rem;           /* texte plus petit et lisible */
-}{
-            background: var(--primary-dark);
-            color: #cbd5e1;
-            text-align: center;
-            padding: 3.5rem 2rem 2.5rem;
-            font-size: 0.95rem;
-        }
+    background: var(--primary-dark);
+    color: #cbd5e1;
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+    font-size: 0.9rem;
+}
 
         footer p {
             margin: 0.6rem 0;
