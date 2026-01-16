@@ -1,53 +1,719 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pansements & Soins des Plaies à Domicile | Infirmier Limoges</title>
-<meta name="description" content="Soins de plaies chroniques et pansements complexes à domicile à Limoges. Escarres, ulcères, plaies diabétiques. Infirmier libéral disponible 7j/7.">
+
+<!-- SEO Meta Tags -->
+
+<meta name="description" content="Soins de pansements et plaies à domicile Limoges (87). Plaies chroniques, escarres, ulcères, brûlures. Protocoles adaptés. ☎️ 06.82.41.06.61">
+<meta name="keywords" content="pansements Limoges, soins plaies domicile, escarres, ulcères, plaies chroniques, infirmier pansements 87">
+<meta name="author" content="Cabinet Infirmier Libéral Limoges">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.infirmier-limoges.fr/services/pansements.html">
-<link rel="stylesheet" href="../style.css">
+<meta name="theme-color" content="#2a5d7c">
+
+<!-- Open Graph -->
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.infirmier-limoges.fr/services/pansements.html">
+<meta property="og:title" content="Pansements & Soins de Plaies à Domicile Limoges">
+<meta property="og:description" content="Soins professionnels de pansements et plaies chroniques à domicile. Escarres, ulcères, brûlures.">
+
+<title>Pansements & Soins de Plaies à Domicile Limoges | ☎️ 06.82.41.06.61</title>
+
+<!-- Favicon -->
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩹</text></svg>">
+
+<!-- Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #2a5d7c;
+    --primary-dark: #1e445c;
+    --accent: #4fac7a;
+    --accent-hover: #3f9360;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --gray-dark: #475569;
+    --shadow: rgba(0,0,0,0.12);
+    --transition: all 0.3s ease;
+    --border: #e2e8f0;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; font-size:16px; }
+body { 
+    font-family:'Inter', sans-serif; 
+    line-height:1.6; 
+    color:#1e293b; 
+    background:#fff; 
+}
+
+/* Skip Link */
+.skip-link {
+    position:absolute;
+    top:-40px;
+    left:0;
+    background:var(--primary);
+    color:white;
+    padding:0.5rem 1rem;
+    z-index:10000;
+    text-decoration:none;
+}
+.skip-link:focus { top:0; }
+
+*:focus-visible {
+    outline:3px solid var(--accent);
+    outline-offset:2px;
+}
+
+/* Header */
+header {
+    background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+    box-shadow:0 4px 25px rgba(0,0,0,0.2);
+    padding:1rem 2rem;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav {
+    max-width:1280px; 
+    margin:0 auto; 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center;
+}
+
+.logo {
+    font-family:'Playfair Display', serif;
+    font-size:1.6rem;
+    font-weight:700;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.nav-back {
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    padding:0.75rem 1.5rem;
+    background:rgba(255,255,255,0.15);
+    border-radius:30px;
+    transition:var(--transition);
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    min-height:44px;
+}
+
+.nav-back:hover {
+    background:rgba(255,255,255,0.25);
+    transform:translateX(-5px);
+}
+
+/* Hero Section */
+.hero-small {
+    background:linear-gradient(135deg, #2a5d7c 0%, #1e445c 100%);
+    color:white;
+    padding:5rem 2rem 3rem;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-small::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:radial-gradient(circle at 30% 50%, rgba(79,172,122,0.15), transparent);
+}
+
+.hero-small h1 {
+    font-family:'Playfair Display', serif;
+    font-size:clamp(2rem, 5vw, 3.5rem);
+    margin-bottom:1rem;
+    position:relative;
+    z-index:1;
+}
+
+.hero-icon-large {
+    font-size:5rem;
+    display:block;
+    margin-bottom:1.5rem;
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform:translateY(0); }
+    50% { transform:translateY(-15px); }
+}
+
+.hero-small p {
+    font-size:1.2rem;
+    opacity:0.95;
+    max-width:700px;
+    margin:0 auto;
+    position:relative;
+    z-index:1;
+}
+
+/* Content Section */
+.content-section {
+    max-width:1100px;
+    margin:0 auto;
+    padding:4rem 2rem;
+}
+
+.intro-text {
+    background:var(--light);
+    padding:2.5rem;
+    border-radius:20px;
+    margin-bottom:4rem;
+    border-left:5px solid var(--accent);
+    box-shadow:0 10px 30px var(--shadow);
+}
+
+.intro-text p {
+    font-size:1.1rem;
+    line-height:1.8;
+    color:var(--gray-dark);
+    margin-bottom:1rem;
+}
+
+.intro-text p:last-child {
+    margin-bottom:0;
+}
+
+h2 {
+    font-family:'Playfair Display', serif;
+    font-size:2.2rem;
+    color:var(--primary);
+    margin-bottom:2rem;
+    position:relative;
+    padding-bottom:1rem;
+}
+
+h2::after {
+    content:'';
+    width:80px;
+    height:3px;
+    background:var(--accent);
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.services-list {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:2rem;
+    margin-bottom:4rem;
+}
+
+.service-item {
+    background:white;
+    padding:2rem;
+    border-radius:15px;
+    box-shadow:0 5px 20px var(--shadow);
+    transition:all 0.3s ease;
+    border:1px solid transparent;
+}
+
+.service-item:hover {
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(79,172,122,0.2);
+    border-color:var(--accent);
+}
+
+.service-item-icon {
+    font-size:3rem;
+    margin-bottom:1rem;
+    display:block;
+}
+
+.service-item h3 {
+    color:var(--primary);
+    font-size:1.4rem;
+    margin-bottom:1rem;
+    font-weight:600;
+}
+
+.service-item p {
+    color:var(--gray-dark);
+    line-height:1.7;
+}
+
+.service-item ul {
+    margin-top:1rem;
+    padding-left:1.5rem;
+}
+
+.service-item li {
+    color:var(--gray-dark);
+    margin-bottom:0.5rem;
+}
+
+/* Process Section */
+.process-section {
+    background:var(--light);
+    padding:4rem 2rem;
+    margin:4rem 0;
+}
+
+.process-container {
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.process-steps {
+    display:grid;
+    gap:2rem;
+}
+
+.process-step {
+    background:white;
+    padding:2rem;
+    border-radius:15px;
+    box-shadow:0 5px 20px var(--shadow);
+    display:flex;
+    gap:2rem;
+    align-items:flex-start;
+}
+
+.step-number {
+    background:linear-gradient(135deg, var(--accent), #6bc99a);
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8rem;
+    font-weight:700;
+    flex-shrink:0;
+}
+
+.step-content h3 {
+    color:var(--primary);
+    font-size:1.4rem;
+    margin-bottom:0.75rem;
+}
+
+.step-content p {
+    color:var(--gray-dark);
+    line-height:1.7;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin:4rem 0;
+}
+
+.faq-item {
+    background:white;
+    padding:2rem;
+    margin-bottom:1.5rem;
+    border-radius:15px;
+    box-shadow:0 5px 20px var(--shadow);
+    border-left:4px solid var(--accent);
+}
+
+.faq-item h3 {
+    color:var(--primary);
+    font-size:1.3rem;
+    margin-bottom:1rem;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.faq-item p {
+    color:var(--gray-dark);
+    line-height:1.7;
+}
+
+/* CTA Section */
+.cta-section {
+    background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color:white;
+    padding:4rem 2rem;
+    text-align:center;
+    border-radius:20px;
+    margin:4rem 0;
+}
+
+.cta-section h2 {
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:1.5rem;
+}
+
+.cta-section h2::after {
+    background:white;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.cta-section p {
+    font-size:1.2rem;
+    margin-bottom:2rem;
+    opacity:0.95;
+}
+
+.cta-buttons {
+    display:flex;
+    gap:1.5rem;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn {
+    display:inline-block;
+    padding:1.1rem 2.5rem;
+    border-radius:50px;
+    font-weight:600;
+    font-size:1.1rem;
+    text-decoration:none;
+    transition:all 0.3s ease;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+}
+
+.btn-primary {
+    background:white;
+    color:var(--primary);
+}
+
+.btn-primary:hover {
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(255,255,255,0.3);
+}
+
+.btn-secondary {
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+.btn-secondary:hover {
+    background:white;
+    color:var(--primary);
+    transform:translateY(-5px);
+}
+
+/* Mobile CTA */
+.mobile-cta {
+    display:none;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:1rem;
+    background:white;
+    box-shadow:0 -5px 20px rgba(0,0,0,0.1);
+    z-index:999;
+}
+
+.btn-call {
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--accent);
+    color:white;
+    padding:1rem;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:1.1rem;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+}
+
+/* Footer */
+footer {
+    background:linear-gradient(135deg, var(--primary-dark), #0f2942);
+    color:#cbd5e1;
+    text-align:center;
+    padding:2rem;
+}
+
+footer p {
+    margin-bottom:0.5rem;
+    font-size:0.9rem;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    .cta-buttons {
+        flex-direction:column;
+        align-items:stretch;
+    }
+    .process-step {
+        flex-direction:column;
+    }
+    .mobile-cta {
+        display:block;
+    }
+}
+</style>
+
 </head>
+
 <body>
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
 <header>
-<nav>
-    <a href="../index.html" class="logo">🏥 Cabinet Infirmier Limoges</a>
+<nav aria-label="Navigation">
+    <a href="../index.html" class="logo">
+        <span>🩹</span>
+        <span>Pansements & Plaies</span>
+    </a>
+    <a href="../index.html" class="nav-back">
+        <span>←</span>
+        <span>Retour</span>
+    </a>
 </nav>
 </header>
 
-<main style="padding-top:100px; max-width:900px; margin:auto; padding:1.5rem;">
+<main id="main-content" role="main">
+<section class="hero-small">
+    <span class="hero-icon-large" role="img" aria-label="Pansements">🩹</span>
+    <h1>Pansements & Soins de Plaies</h1>
+    <p>Expertise et protocoles adaptés pour tous types de plaies</p>
+</section>
 
-<h1>Pansements & Soins des Plaies à Domicile</h1>
-<p>À Limoges et agglomération, je réalise les soins de plaies chroniques et complexes chez vous, dans le respect des protocoles médicaux et des bonnes pratiques.</p>
+<div class="content-section">
+    <div class="intro-text">
+        <p><strong>Vous souffrez d'une plaie chronique, d'escarres ou d'un ulcère ?</strong></p>
+        <p>En tant qu'infirmier spécialisé dans les soins de plaies, je vous propose un accompagnement personnalisé à domicile à Limoges et dans la Haute-Vienne. Chaque plaie est unique et nécessite une prise en charge adaptée avec des protocoles spécifiques pour optimiser la cicatrisation.</p>
+        <p>Mes interventions sont remboursées par l'Assurance Maladie (Conventionné Secteur 1).</p>
+    </div>
 
-<h2>🔎 Types de plaies prises en charge</h2>
-<ul>
-<li>Escarres et ulcères de jambe</li>
-<li>Pieds diabétiques</li>
-<li>Plaies post‑chirurgicales</li>
-<li>Plaies infectées ou chroniques</li>
-<li>Pansements adaptés à chaque situation</li>
-</ul>
+```
+<h2>Types de Plaies Prises en Charge</h2>
+<div class="services-list">
+    <article class="service-item">
+        <span class="service-item-icon" role="img" aria-label="Escarres">🛏️</span>
+        <h3>Escarres</h3>
+        <p>Prévention et traitement des escarres de tous stades. Protocoles spécifiques selon la profondeur et la localisation.</p>
+        <ul>
+            <li>Évaluation du risque d'escarre</li>
+            <li>Détersion et nettoyage</li>
+            <li>Application de pansements adaptés</li>
+            <li>Conseils de prévention</li>
+        </ul>
+    </article>
 
-<h2>🧪 Mon approche professionnelle</h2>
-<p>Chaque prise en charge débute par une évaluation complète de la plaie et du patient, afin d’adapter le protocole de soins et optimiser la cicatrisation. Je travaille en coordination avec votre médecin traitant.</p>
+    <article class="service-item">
+        <span class="service-item-icon" role="img" aria-label="Ulcères">🦵</span>
+        <h3>Ulcères Variqueux & Artériels</h3>
+        <p>Soins spécialisés des ulcères de jambe avec bandes de compression si nécessaire.</p>
+        <ul>
+            <li>Détersion de l'ulcère</li>
+            <li>Pansements hydrocolloïdes ou alginates</li>
+            <li>Bandes de contention</li>
+            <li>Surveillance de l'évolution</li>
+        </ul>
+    </article>
 
-<h2>📋 Protocoles et matériel</h2>
-<ul>
-<li>Pansements hydrocolloïdes, alginates, mousses</li>
-<li>Nettoyage antiseptique et soins stériles</li>
-<li>Contrôle des signes d’infection</li>
-<li>Documentation des évolutions pour le suivi</li>
-</ul>
+    <article class="service-item">
+        <span class="service-item-icon" role="img" aria-label="Brûlures">🔥</span>
+        <h3>Brûlures</h3>
+        <p>Soins de brûlures du 1er et 2e degré avec pansements spécifiques.</p>
+        <ul>
+            <li>Nettoyage doux et désinfection</li>
+            <li>Pansements gras ou hydrocellulaires</li>
+            <li>Surveillance des signes d'infection</li>
+            <li>Accompagnement de la cicatrisation</li>
+        </ul>
+    </article>
 
-<a href="../index.html#contact" class="btn">☎️ Me contacter</a>
+    <article class="service-item">
+        <span class="service-item-icon" role="img" aria-label="Chirurgical">🏥</span>
+        <h3>Plaies Post-Opératoires</h3>
+        <p>Surveillance et soins de plaies chirurgicales après hospitalisation.</p>
+        <ul>
+            <li>Changement de pansements stériles</li>
+            <li>Retrait de fils ou agrafes</li>
+            <li>Surveillance de la cicatrisation</li>
+            <li>Détection des complications</li>
+        </ul>
+    </article>
 
+    <article class="service-item">
+        <span class="service-item-icon" role="img" aria-label="Chronique">⏳</span>
+        <h3>Plaies Chroniques</h3>
+        <p>Prise en charge des plaies qui tardent à cicatriser (diabète, immunodépression).</p>
+        <ul>
+            <li>Protocoles adaptés selon la plaie</li>
+            <li>Pansements innovants (argent, charbon...)</li>
+            <li>Coordination avec le médecin</li>
+            <li>Suivi photographique de l'évolution</li>
+        </ul>
+    </article>
+
+    <article class="service-item">
+        <span class="service-item-icon" role="img" aria-label="Traumatique">🩸</span>
+        <h3>Plaies Traumatiques</h3>
+        <p>Soins des plaies suite à traumatisme, chute ou accident.</p>
+        <ul>
+            <li>Nettoyage et désinfection</li>
+            <li>Sutures adhésives si nécessaire</li>
+            <li>Pansements protecteurs</li>
+            <li>Prévention du tétanos (vaccination)</li>
+        </ul>
+    </article>
+</div>
+```
+
+</div>
+
+<section class="process-section">
+    <div class="process-container">
+        <h2>Protocole de Soins</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Évaluation Initiale</h3>
+                    <p>Lors de la première visite, j'évalue la plaie : taille, profondeur, exsudat, signes d'infection, état de la peau péri-lésionnelle. Je prends en compte votre état de santé général et vos traitements en cours.</p>
+                </div>
+            </div>
+
+```
+        <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Nettoyage & Détersion</h3>
+                <p>Nettoyage de la plaie avec du sérum physiologique ou des solutions antiseptiques adaptées. Retrait des tissus nécrosés si nécessaire (détersion mécanique ou enzymatique).</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Application du Pansement</h3>
+                <p>Choix du pansement selon le type de plaie : hydrocolloïde, hydrocellulaire, alginate, charbon actif, argent... Le pansement maintient un environnement humide favorable à la cicatrisation.</p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3>Suivi & Adaptation</h3>
+                <p>Surveillance régulière de l'évolution de la plaie. Adaptation du protocole selon les résultats. Coordination avec votre médecin traitant pour ajuster le traitement si nécessaire.</p>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+</section>
+
+<div class="content-section">
+    <section class="faq-section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Questions Fréquentes</h2>
+
+```
+    <article class="faq-item">
+        <h3>❓ À quelle fréquence faut-il changer un pansement ?</h3>
+        <p>La fréquence dépend du type de plaie et du pansement utilisé. Certains pansements peuvent rester 3 à 7 jours, d'autres doivent être changés quotidiennement. Je détermine avec vous le rythme optimal.</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Les soins sont-ils douloureux ?</h3>
+        <p>Je travaille avec douceur et précaution pour minimiser l'inconfort. Pour les plaies douloureuses, je peux coordonner avec votre médecin pour une analgésie préventive avant les soins.</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Combien de temps dure la cicatrisation ?</h3>
+        <p>Le temps de cicatrisation varie selon le type de plaie, votre état de santé, votre âge et d'autres facteurs. Les plaies simples cicatrisent en quelques semaines, les plaies chroniques peuvent nécessiter plusieurs mois de soins.</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Les soins de plaies sont-ils remboursés ?</h3>
+        <p>Oui, tous les soins infirmiers à domicile sont pris en charge par l'Assurance Maladie sur prescription médicale. Le cabinet est conventionné Secteur 1 (tarifs sécurité sociale).</p>
+    </article>
+
+    <article class="faq-item">
+        <h3>❓ Que faire en cas de signes d'infection ?</h3>
+        <p>Si vous constatez rougeur importante, chaleur, douleur accrue, écoulement purulent ou fièvre, contactez-moi immédiatement. Je viendrai évaluer la situation et contacterai votre médecin si nécessaire.</p>
+    </article>
+</section>
+
+<div class="cta-section">
+    <h2>Besoin de Soins de Plaie ?</h2>
+    <p>Contactez-moi pour une prise en charge adaptée à votre situation</p>
+    <div class="cta-buttons">
+        <a href="tel:+33682410661" class="btn btn-primary">
+            <span>📞</span>
+            <span>06.82.41.06.61</span>
+        </a>
+        <a href="mailto:infirmier.87@outlook.com" class="btn btn-secondary">
+            <span>✉️</span>
+            <span>Envoyer un email</span>
+        </a>
+    </div>
+</div>
+```
+
+</div>
 </main>
 
-<footer>
-<p>&copy; 2026 Cabinet Infirmier Libéral Limoges</p>
+<!-- Mobile CTA -->
+
+<div class="mobile-cta">
+    <a href="tel:+33682410661" class="btn-call">
+        <span>📞</span>
+        <span>Appeler maintenant</span>
+    </a>
+</div>
+
+<footer role="contentinfo">
+    <p>&copy; 2026 Cabinet Infirmier Libéral Limoges - Tous droits réservés</p>
+    <p>N° ADELI : 876194705 | RPPS : 10104297923 | Conventionné Secteur 1</p>
 </footer>
+
+<script>
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+
+// Reduce motion for accessibility
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.style.scrollBehavior = 'auto';
+}
+</script>
 
 </body>
 </html>
