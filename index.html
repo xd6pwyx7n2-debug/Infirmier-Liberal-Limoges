@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Infirmier libéral à Limoges (87). Soins à domicile 7j/7. Injections, pansements, prélèvements. Conventionné. Intervention rapide sur Limoges et agglomération.">
 <meta name="keywords" content="infirmier Limoges, IDEL Haute-Vienne 87, soins domicile 87000, injections pansements prélèvements">
-<title>Infirmier Libéral Limoges 87000 - Soins Domicile 7j/7</title>
+<title>Infirmier Libéral Limoges - Soins Domicile 7j/7</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,319 +18,112 @@
     --accent: #4fac7a;
     --light: #f8fafc;
     --gray: #64748b;
+    --shadow: rgba(0,0,0,0.12);
 }
 
+/* Reset */
 * { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter', sans-serif; line-height:1.6; color:#1e293b; background:#fff; scroll-behavior:smooth; }
 
-body {
-    font-family:'Inter',system-ui,sans-serif;
-    line-height:1.6;
-    color:#1e293b;
-    background:#fff;
-    scroll-behavior: smooth;
-}
-
+/* Header */
 header {
-    position: fixed;
-    top:0; left:0; width:100%;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color:white;
-    z-index:1000;
-    padding:1rem 0;
-    box-shadow:0 4px 25px rgba(0,0,0,0.12);
+    position:fixed; top:0; left:0; width:100%; background:linear-gradient(135deg, var(--primary), var(--primary-dark)); color:white; z-index:1000;
+    box-shadow:0 4px 25px var(--shadow); padding:1rem 0;
+    backdrop-filter: blur(5px);
 }
 
 nav {
-    max-width:1280px;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 2rem;
+    max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 2rem;
 }
 
-.logo {
-    font-family:'Playfair Display', serif;
-    font-size:1.8rem;
-    font-weight:700;
-    letter-spacing:-0.5px;
-}
+.logo { font-family:'Playfair Display', serif; font-size:1.9rem; font-weight:700; letter-spacing:-0.5px; }
 
-.nav-links {
-    display:flex;
-    list-style:none;
-    gap:2rem;
-}
-
+.nav-links { display:flex; list-style:none; gap:2rem; }
 .nav-links a {
-    color:white;
-    text-decoration:none;
-    font-weight:500;
-    position:relative;
+    color:white; text-decoration:none; font-weight:500; position:relative;
 }
-
 .nav-links a::after {
-    content:'';
-    position:absolute;
-    width:0;
-    height:2px;
-    bottom:-4px;
-    left:0;
-    background-color:var(--accent);
-    transition:width 0.3s ease;
+    content:''; position:absolute; width:0; height:2px; bottom:-4px; left:0; background-color:var(--accent); transition:width 0.3s ease;
 }
-
 .nav-links a:hover::after,
-.nav-links a.active::after {
-    width:100%;
-}
-
+.nav-links a.active::after { width:100%; }
 .nav-links a:hover { color:var(--accent); }
 
-.burger {
-    display:none;
-    font-size:2rem;
-    background:none;
-    border:none;
-    cursor:pointer;
-    color:white;
-}
+.burger { display:none; font-size:2rem; background:none; border:none; cursor:pointer; color:white; }
 
-/* Hero section */
+/* Hero */
 .hero {
-    background: var(--primary);
-    min-height:50vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:4rem 1.5rem 2rem;
-    color:white;
-    margin-top:72px; /* header height */
-}
-
-.hero h1 {
-    font-family:'Playfair Display', serif;
-    font-size:clamp(2rem,5vw,3rem);
-    margin-bottom:1rem;
-}
-
-.hero p {
-    font-size:clamp(1rem,2.5vw,1.3rem);
-    margin-bottom:2rem;
-}
-
-.btn {
-    display:inline-block;
-    padding:0.9rem 2.5rem;
-    background:var(--accent);
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    border-radius:50px;
-    font-size:1rem;
+    background:linear-gradient(135deg, rgba(42,93,124,0.9), rgba(30,68,92,0.9));
+    min-height:55vh; display:flex; flex-direction:column; justify-content:center; align-items:center;
+    text-align:center; padding:5rem 1.5rem 3rem; margin-top:72px; color:white;
+    border-bottom-left-radius:50px; border-bottom-right-radius:50px;
     transition:all 0.3s ease;
-    box-shadow:0 8px 20px rgba(79,172,122,0.35);
-    border:2px solid transparent;
 }
-
-.btn:hover {
-    transform:translateY(-4px);
-    background:#449a6c;
-    box-shadow:0 16px 35px rgba(79,172,122,0.45);
+.hero h1 { font-family:'Playfair Display', serif; font-size:clamp(2rem,5vw,3.5rem); margin-bottom:1rem; }
+.hero p { font-size:clamp(1rem,2.5vw,1.35rem); margin-bottom:2rem; max-width:700px; line-height:1.5; }
+.btn {
+    display:inline-block; padding:1rem 2.8rem; background:var(--accent); color:white; text-decoration:none; font-weight:600;
+    border-radius:50px; font-size:1.05rem; transition:all 0.35s ease; box-shadow:0 8px 25px rgba(79,172,122,0.35); border:2px solid transparent;
 }
+.btn:hover { transform:translateY(-5px); background:#449a6c; box-shadow:0 16px 40px rgba(79,172,122,0.45); }
 
 /* Sections */
-section {
-    padding:6rem 2rem;
-    max-width:1280px;
-    margin:0 auto;
-}
-
-h2 {
-    font-family:'Playfair Display', serif;
-    text-align:center;
-    font-size:2.5rem;
-    color:var(--primary);
-    margin-bottom:3rem;
-    position:relative;
-}
-
-h2:after {
-    content:'';
-    width:60px;
-    height:3px;
-    background:var(--accent);
-    position:absolute;
-    bottom:-12px;
-    left:50%;
-    transform:translateX(-50%);
-    border-radius:2px;
-}
+section { padding:6rem 2rem; max-width:1280px; margin:0 auto; }
+h2 { font-family:'Playfair Display', serif; text-align:center; font-size:2.6rem; color:var(--primary); margin-bottom:3rem; position:relative; }
+h2:after { content:''; width:60px; height:3px; background:var(--accent); position:absolute; bottom:-12px; left:50%; transform:translateX(-50%); border-radius:2px; }
 
 /* Services */
-.services-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:2rem;
-}
-
+.services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem; }
 .service-card {
-    background:white;
-    padding:2rem;
-    border-radius:16px;
-    text-align:center;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
-    transition:all 0.3s ease;
-    border:1px solid rgba(79,172,122,0.08);
+    background:white; padding:2rem; border-radius:18px; text-align:center; box-shadow:0 10px 30px var(--shadow);
+    transition:all 0.35s ease; border:1px solid rgba(79,172,122,0.08);
 }
-
-.service-card:hover {
-    transform:translateY(-10px);
-    box-shadow:0 18px 40px rgba(0,0,0,0.12);
-    border-color:var(--accent);
-}
-
-.service-icon {
-    font-size:3rem;
-    margin-bottom:1rem;
-}
+.service-card:hover { transform:translateY(-10px); box-shadow:0 20px 50px rgba(0,0,0,0.12); border-color:var(--accent); }
+.service-icon { font-size:3.2rem; margin-bottom:1rem; }
 
 /* About */
 #apropos { background:var(--light); }
-
-.about-content {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:3rem;
-}
-
-.qualifications {
-    background:white;
-    padding:2rem;
-    border-radius:16px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
-    border:1px solid rgba(79,172,122,0.08);
-}
-
-.qualifications li {
-    position:relative;
-    padding-left:1.8rem;
-    margin-bottom:0.8rem;
-}
-
-.qualifications li::before {
-    content:'✓';
-    position:absolute;
-    left:0;
-    color:var(--accent);
-    font-weight:bold;
-}
+.about-content { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
+.about-text h3 { font-family:'Playfair Display', serif; font-size:2rem; color:var(--primary); margin-bottom:1rem; }
+.qualifications { background:white; padding:2rem; border-radius:18px; box-shadow:0 10px 30px var(--shadow); border:1px solid rgba(79,172,122,0.08); }
+.qualifications li { position:relative; padding-left:1.8rem; margin-bottom:0.8rem; }
+.qualifications li::before { content:'✓'; position:absolute; left:0; color:var(--accent); font-weight:bold; }
 
 /* Contact */
-.contact-content {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:3rem;
-}
-
-.contact-info {
-    background:var(--light);
-    padding:2rem;
-    border-radius:16px;
-}
-
-.contact-item {
-    display:flex;
-    align-items:flex-start;
-    margin-bottom:1.5rem;
-    font-size:1rem;
-}
-
-.contact-item-icon {
-    font-size:1.8rem;
-    margin-right:1rem;
-    color:var(--accent);
-    min-width:35px;
-}
-
-.contact-form {
-    background:white;
-    padding:2rem;
-    border-radius:16px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
-}
-
+.contact-content { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
+.contact-info { background:var(--light); padding:2rem; border-radius:18px; }
+.contact-item { display:flex; align-items:flex-start; margin-bottom:1.5rem; font-size:1rem; }
+.contact-item-icon { font-size:1.8rem; margin-right:1rem; color:var(--accent); min-width:35px; }
+.contact-form { background:white; padding:2rem; border-radius:18px; box-shadow:0 10px 30px var(--shadow); }
 .contact-form h3 { margin-bottom:1.5rem; color:var(--primary); }
-
 .form-group { margin-bottom:1.5rem; }
-
 .form-group label { display:block; margin-bottom:0.5rem; font-weight:600; color:var(--primary); }
-
 .form-group input,
-.form-group textarea {
-    width:100%;
-    padding:0.9rem 1rem;
-    border:1px solid #e2e8f0;
-    border-radius:10px;
-    font-size:1rem;
-    transition:all 0.3s;
-}
-
+.form-group textarea { width:100%; padding:0.9rem 1rem; border:1px solid #e2e8f0; border-radius:12px; font-size:1rem; transition:all 0.3s; }
 .form-group input:focus,
-.form-group textarea:focus {
-    outline:none;
-    border-color:var(--accent);
-    box-shadow:0 0 0 3px rgba(79,172,122,0.15);
-}
+.form-group textarea:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(79,172,122,0.15); }
 
 /* Footer */
-footer {
-    background:var(--primary-dark);
-    color:#cbd5e1;
-    text-align:center;
-    padding:2rem 1rem;
-    font-size:0.9rem;
-}
+footer { background:var(--primary-dark); color:#cbd5e1; text-align:center; padding:2rem 1rem; font-size:0.9rem; }
 
 /* Animations */
-.fade-in {
-    opacity:0;
-    transform:translateY(20px);
-    transition:all 0.7s ease-out;
-}
-
+.fade-in { opacity:0; transform:translateY(20px); transition:all 0.7s ease-out; }
 .fade-in.visible { opacity:1; transform:translateY(0); }
 
 /* Responsive */
-@media(max-width:900px) {
-    .about-content,
-    .contact-content { grid-template-columns:1fr; }
-}
-
-@media(max-width:768px) {
-    .burger { display:block; }
-    .nav-links {
-        display:none;
-        flex-direction:column;
-        width:100%;
-        background:var(--primary-dark);
-        padding:1rem 0;
-        border-radius:0 0 15px 15px;
-        overflow:hidden;
-    }
-    .nav-links.show { display:flex; }
-    .nav-links li { width:100%; text-align:center; margin:0.5rem 0; }
-    .nav-links a { font-size:1.1rem; padding:0.5rem 0; display:block; }
-    nav { flex-direction:column; align-items:flex-start; padding:1rem 1.5rem; }
-    .hero { min-height:50vh; padding:3rem 1.5rem; }
+@media(max-width:900px){ .about-content,.contact-content{grid-template-columns:1fr;} }
+@media(max-width:768px){
+    .burger{display:block;}
+    .nav-links{display:none; flex-direction:column; width:100%; background:var(--primary-dark); padding:1rem 0; border-radius:0 0 15px 15px;}
+    .nav-links.show{display:flex;}
+    .nav-links li{width:100%; text-align:center; margin:0.5rem 0;}
+    .nav-links a{font-size:1.1rem; padding:0.5rem 0; display:block;}
+    nav{flex-direction:column; align-items:flex-start; padding:1rem 1.5rem;}
 }
 </style>
-
 </head>
-<body>
 
+<body>
 <header>
 <nav>
     <a href="#accueil" class="logo">🏥 Cabinet Infirmier Limoges</a>
@@ -353,60 +146,20 @@ footer {
 <section id="services">
 <h2>Mes Services</h2>
 <div class="services-grid fade-in">
-    <div class="service-card">
-        <div class="service-icon">💉</div>
-        <h3>Soins Techniques</h3>
-        <p>Injections, prélèvements sanguins, pansements, perfusions et autres actes techniques infirmiers</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">❤️</div>
-        <h3>Soins de Nursing</h3>
-        <p>Toilettes, aide à l'hygiène, prévention d'escarres et accompagnement des personnes dépendantes</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">💊</div>
-        <h3>Suivi Médical</h3>
-        <p>Surveillance de traitements, éducation thérapeutique, préparation et distribution de médicaments</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">🩹</div>
-        <h3>Soins Post-Opératoires</h3>
-        <p>Suivi après hospitalisation, retrait de fils, surveillance de cicatrisation</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">🏠</div>
-        <h3>Soins à Domicile</h3>
-        <p>Interventions 7j/7 à votre domicile sur Limoges et agglomération</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">👵</div>
-        <h3>Soins Gériatriques</h3>
-        <p>Accompagnement spécialisé des personnes âgées et suivi des pathologies chroniques</p>
-    </div>
+    <div class="service-card"><div class="service-icon">💉</div><h3>Soins Techniques</h3><p>Injections, prélèvements sanguins, pansements, perfusions et autres actes techniques infirmiers</p></div>
+    <div class="service-card"><div class="service-icon">❤️</div><h3>Soins de Nursing</h3><p>Toilettes, aide à l'hygiène, prévention d'escarres et accompagnement des personnes dépendantes</p></div>
+    <div class="service-card"><div class="service-icon">💊</div><h3>Suivi Médical</h3><p>Surveillance de traitements, éducation thérapeutique, préparation et distribution de médicaments</p></div>
+    <div class="service-card"><div class="service-icon">🩹</div><h3>Soins Post-Opératoires</h3><p>Suivi après hospitalisation, retrait de fils, surveillance de cicatrisation</p></div>
+    <div class="service-card"><div class="service-icon">🏠</div><h3>Soins à Domicile</h3><p>Interventions 7j/7 à votre domicile sur Limoges et agglomération</p></div>
+    <div class="service-card"><div class="service-icon">👵</div><h3>Soins Gériatriques</h3><p>Accompagnement spécialisé des personnes âgées et suivi des pathologies chroniques</p></div>
 </div>
 </section>
 
 <section id="apropos">
 <h2>À Propos</h2>
 <div class="about-content fade-in">
-    <div class="about-text">
-        <h3>Votre Santé, Ma Priorité</h3>
-        <p>Infirmier diplômé d'État avec plusieurs années d'expérience, je mets à votre service mon expertise pour vous accompagner dans vos soins quotidiens à Limoges et Haute-Vienne.</p>
-        <p>Mon objectif est de vous offrir des soins de qualité dans un climat de confiance et de bienveillance.</p>
-        <p>Conventionné(e) Assurance Maladie.</p>
-    </div>
-    <div class="qualifications">
-        <h3>Qualifications</h3>
-        <ul>
-            <li>Diplôme d'État d'Infirmier</li>
-            <li>Inscrit à l'Ordre National des Infirmiers</li>
-            <li>Formation continue régulière</li>
-            <li>Conventionné(e) Assurance Maladie</li>
-            <li>Assurance professionnelle à jour</li>
-            <li>Respect du secret professionnel</li>
-            <li>Interventions sur Limoges et agglomération</li>
-        </ul>
-    </div>
+<div class="about-text"><h3>Votre Santé, Ma Priorité</h3><p>Infirmier diplômé d'État avec plusieurs années d'expérience, je mets à votre service mon expertise pour vous accompagner dans vos soins quotidiens à Limoges et Haute-Vienne.</p><p>Mon objectif est de vous offrir des soins de qualité dans un climat de confiance et de bienveillance.</p><p>Conventionné(e) Assurance Maladie.</p></div>
+<div class="qualifications"><h3>Qualifications</h3><ul><li>Diplôme d'État d'Infirmier</li><li>Inscrit à l'Ordre National des Infirmiers</li><li>Formation continue régulière</li><li>Conventionné(e) Assurance Maladie</li><li>Assurance professionnelle à jour</li><li>Respect du secret professionnel</li><li>Interventions sur Limoges et agglomération</li></ul></div>
 </div>
 </section>
 
@@ -414,41 +167,20 @@ footer {
 <h2>Me Contacter</h2>
 <div class="contact-content fade-in">
 <div class="contact-info">
-    <div class="contact-item">
-        <span class="contact-item-icon">📞</span>
-        <div><strong>Téléphone</strong><br><a href="tel:+33682410661" style="color:inherit; text-decoration:none; font-weight:600;">06.82.41.06.61</a></div>
-    </div>
-    <div class="contact-item">
-        <span class="contact-item-icon">✉️</span>
-        <div><strong>Email</strong><br><a href="mailto:infirmier.87@outlook.com">infirmier.87@outlook.com</a></div>
-    </div>
-    <div class="contact-item">
-        <span class="contact-item-icon">📍</span>
-        <div><strong>Zone d'intervention</strong><br>Limoges et agglomération<br>Haute-Vienne (87)</div>
-    </div>
-    <div class="contact-item">
-        <span class="contact-item-icon">🕐</span>
-        <div><strong>Disponibilité</strong><br>7j/7 selon les besoins<br>Urgences acceptées</div>
-    </div>
+<div class="contact-item"><span class="contact-item-icon">📞</span><div><strong>Téléphone</strong><br><a href="tel:+33682410661" style="color:inherit; text-decoration:none; font-weight:600;">06.82.41.06.61</a></div></div>
+<div class="contact-item"><span class="contact-item-icon">✉️</span><div><strong>Email</strong><br><a href="mailto:infirmier.87@outlook.com">infirmier.87@outlook.com</a></div></div>
+<div class="contact-item"><span class="contact-item-icon">📍</span><div><strong>Zone d'intervention</strong><br>Limoges et agglomération<br>Haute-Vienne (87)</div></div>
+<div class="contact-item"><span class="contact-item-icon">🕐</span><div><strong>Disponibilité</strong><br>7j/7 selon les besoins<br>Urgences acceptées</div></div>
 </div>
 
 <div class="contact-form">
 <h3>Demande de Rendez-vous</h3>
 <form action="https://formspree.io/f/mnjjnwno" method="POST">
-    <input type="hidden" name="_subject" value="🩹 RDV Infirmier Limoges">
-    <div class="form-group">
-        <label for="nom">Nom et Prénom *</label>
-        <input type="text" id="nom" name="nom" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-    <button type="submit" class="btn">Envoyer</button>
+<input type="hidden" name="_subject" value="🩹 RDV Infirmier Limoges">
+<div class="form-group"><label for="nom">Nom et Prénom *</label><input type="text" id="nom" name="nom" required></div>
+<div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
+<div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" required></textarea></div>
+<button type="submit" class="btn">Envoyer</button>
 </form>
 </div>
 </div>
@@ -460,23 +192,14 @@ footer {
 </footer>
 
 <script>
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
+const burger=document.querySelector('.burger'); const navLinks=document.querySelector('.nav-links');
+burger.addEventListener('click',()=>navLinks.classList.toggle('show'));
+document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('show')));
 
-burger.addEventListener('click', ()=>{navLinks.classList.toggle('show');});
-
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', ()=>{navLinks.classList.remove('show');});
-});
-
-// Fade-in animation
-const fadeElements = document.querySelectorAll('.fade-in');
-const appearOnScroll = new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){entry.target.classList.add('visible');}
-    });
-},{threshold:0.1});
-fadeElements.forEach(el=>appearOnScroll.observe(el));
+// fade-in animation
+const fadeElements=document.querySelectorAll('.fade-in');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}})},{threshold:0.1});
+fadeElements.forEach(el=>observer.observe(el));
 </script>
 
 </body>
