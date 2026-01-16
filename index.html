@@ -427,12 +427,6 @@
   "priceRange": "Conventionné",
   "medicalSpecialty": "Nursing",
   "areaServed": ["Limoges", "Panazol", "Couzeix", "Isle", "Condat-sur-Vienne"]
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
 }
 </script>
 
@@ -619,6 +613,12 @@ burger.addEventListener('click', () => {
             });
         });
 
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
         
     </script>
 </body>
