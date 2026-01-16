@@ -25,27 +25,42 @@
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column;   /* empile logo et menu verticalement */
+        align-items: flex-start;  /* aligne à gauche, plus lisible */
+        padding: 1rem 1.5rem;     /* espace intérieur autour du nav */
     }
 
     .burger {
-        display: block;
-        margin-top: 0.5rem;
+        display: block;            /* montre le burger */
+        align-self: flex-end;      /* met le burger à droite */
+        margin: 0;
+        font-size: 2rem;
     }
 
     .nav-links {
-        display: none;
-        flex-direction: column;
+        display: none;             /* cache le menu par défaut */
+        flex-direction: column;    /* empile les liens verticalement */
         background: var(--primary-dark);
-        width: 100%;
-        padding: 1.5rem 0;
-        margin-top: 1rem;
-        border-radius: 0 0 15px 15px;
+        width: 100%;               /* menu prend toute la largeur */
+        padding: 1rem 0;           /* espace autour des liens */
+        margin-top: 0.5rem;
+        border-radius: 0 0 15px 15px; /* coins arrondis en bas */
+    }
+
+    .nav-links li {
+        width: 100%;               /* chaque lien sur toute la largeur */
+        text-align: center;        /* texte centré */
+        margin: 0.5rem 0;          /* espace entre les liens */
+    }
+
+    .nav-links a {
+        display: block;             /* lien sur toute la largeur */
+        font-size: 1.2rem;          /* texte plus lisible sur petit écran */
+        padding: 0.6rem 0;
     }
 
     .nav-links.show {
-        display: flex;
+        display: flex;              /* montre le menu quand burger cliqué */
     }
 }
 
