@@ -27,45 +27,27 @@ body { font-family:'Inter', sans-serif; line-height:1.6; color:#1e293b; backgrou
 
 /* Header */
 header {
-    position:fixed; top:0; left:0; width:100%; background:linear-gradient(135deg, var(--primary), var(--primary-dark)); color:white; z-index:1000;
-    box-shadow:0 4px 25px var(--shadow); padding:1rem 0;
-    backdrop-filter: blur(5px);
+    position:fixed; top:0; left:0; width:100%; z-index:1000;
+    background:transparent; padding:1rem 2rem; transition:all 0.3s ease;
 }
+header.scrolled { background:linear-gradient(135deg, var(--primary), var(--primary-dark)); box-shadow:0 4px 25px rgba(0,0,0,0.15); }
 
-nav {
-    max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 2rem;
-}
-
-.logo { font-family:'Playfair Display', serif; font-size:1.9rem; font-weight:700; letter-spacing:-0.5px; }
-
-.nav-links { display:flex; list-style:none; gap:2rem; }
-.nav-links a {
-    color:white; text-decoration:none; font-weight:500; position:relative;
-}
-.nav-links a::after {
-    content:''; position:absolute; width:0; height:2px; bottom:-4px; left:0; background-color:var(--accent); transition:width 0.3s ease;
-}
-.nav-links a:hover::after,
-.nav-links a.active::after { width:100%; }
-.nav-links a:hover { color:var(--accent); }
-
-.burger { display:none; font-size:2rem; background:none; border:none; cursor:pointer; color:white; }
+nav { max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+.logo { font-family:'Playfair Display', serif; font-size:1.8rem; font-weight:700; color:white; }
+.nav-links { display:flex; gap:2rem; list-style:none; }
+.nav-links a { color:white; text-decoration:none; font-weight:500; position:relative; }
+.nav-links a::after { content:''; position:absolute; width:0; height:2px; bottom:-4px; left:0; background:var(--accent); transition:width 0.3s; }
+.nav-links a:hover::after { width:100%; }
+.burger { display:none; font-size:2rem; background:none; border:none; color:white; cursor:pointer; }
 
 /* Hero */
-.hero {
-    background:linear-gradient(135deg, rgba(42,93,124,0.9), rgba(30,68,92,0.9));
-    min-height:55vh; display:flex; flex-direction:column; justify-content:center; align-items:center;
-    text-align:center; padding:5rem 1.5rem 3rem; margin-top:72px; color:white;
-    border-bottom-left-radius:50px; border-bottom-right-radius:50px;
-    transition:all 0.3s ease;
-}
-.hero h1 { font-family:'Playfair Display', serif; font-size:clamp(2rem,5vw,3.5rem); margin-bottom:1rem; }
-.hero p { font-size:clamp(1rem,2.5vw,1.35rem); margin-bottom:2rem; max-width:700px; line-height:1.5; }
-.btn {
-    display:inline-block; padding:1rem 2.8rem; background:var(--accent); color:white; text-decoration:none; font-weight:600;
-    border-radius:50px; font-size:1.05rem; transition:all 0.35s ease; box-shadow:0 8px 25px rgba(79,172,122,0.35); border:2px solid transparent;
-}
-.btn:hover { transform:translateY(-5px); background:#449a6c; box-shadow:0 16px 40px rgba(79,172,122,0.45); }
+.hero { position:relative; min-height:70vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:0 1.5rem; overflow:hidden; }
+.hero-overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg, rgba(42,93,124,0.85), rgba(30,68,92,0.85)); border-bottom-left-radius:60px; border-bottom-right-radius:60px; z-index:1; }
+.hero-content { position:relative; z-index:2; max-width:800px; color:white; }
+.hero h1 { font-family:'Playfair Display', serif; font-size:clamp(2rem,5vw,3.8rem); margin-bottom:1rem; line-height:1.2; text-shadow:0 4px 12px rgba(0,0,0,0.3); }
+.hero p { font-size:clamp(1.1rem,2.5vw,1.5rem); margin-bottom:2rem; opacity:0.95; }
+.hero .btn { padding:1rem 2.8rem; border-radius:50px; font-weight:600; font-size:1.1rem; background:var(--accent); color:white; text-decoration:none; box-shadow:0 10px 25px rgba(79,172,122,0.35); transition:all 0.35s ease; }
+.hero .btn:hover { transform:translateY(-5px); background:#3f9360; box-shadow:0 16px 40px rgba(79,172,122,0.45); }
 
 /* Sections */
 section { padding:6rem 2rem; max-width:1280px; margin:0 auto; }
@@ -74,10 +56,7 @@ h2:after { content:''; width:60px; height:3px; background:var(--accent); positio
 
 /* Services */
 .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem; }
-.service-card {
-    background:white; padding:2rem; border-radius:18px; text-align:center; box-shadow:0 10px 30px var(--shadow);
-    transition:all 0.35s ease; border:1px solid rgba(79,172,122,0.08);
-}
+.service-card { background:white; padding:2rem; border-radius:18px; text-align:center; box-shadow:0 10px 30px var(--shadow); transition:all 0.35s ease; border:1px solid rgba(79,172,122,0.08); }
 .service-card:hover { transform:translateY(-10px); box-shadow:0 20px 50px rgba(0,0,0,0.12); border-color:var(--accent); }
 .service-icon { font-size:3.2rem; margin-bottom:1rem; }
 
@@ -114,11 +93,10 @@ footer { background:var(--primary-dark); color:#cbd5e1; text-align:center; paddi
 @media(max-width:900px){ .about-content,.contact-content{grid-template-columns:1fr;} }
 @media(max-width:768px){
     .burger{display:block;}
-    .nav-links{display:none; flex-direction:column; width:100%; background:var(--primary-dark); padding:1rem 0; border-radius:0 0 15px 15px;}
+    .nav-links{display:none; flex-direction:column; width:100%; background:rgba(30,68,92,0.95); padding:1rem 0; border-radius:0 0 15px 15px;}
     .nav-links.show{display:flex;}
     .nav-links li{width:100%; text-align:center; margin:0.5rem 0;}
-    .nav-links a{font-size:1.1rem; padding:0.5rem 0; display:block;}
-    nav{flex-direction:column; align-items:flex-start; padding:1rem 1.5rem;}
+    .nav-links a{font-size:1.1rem; padding:0.5rem 0;}
 }
 </style>
 </head>
@@ -138,9 +116,12 @@ footer { background:var(--primary-dark); color:#cbd5e1; text-align:center; paddi
 </header>
 
 <section class="hero" id="accueil">
-    <h1>Soins Infirmiers à Domicile - Limoges</h1>
-    <p>Des soins professionnels et personnalisés dans le confort de votre foyer à Limoges et agglomération</p>
-    <a href="#contact" class="btn">Prendre Rendez-vous</a>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>🏥 Soins Infirmiers à Domicile</h1>
+        <p>Professionnels, rapides et bienveillants à Limoges et agglomération</p>
+        <a href="#contact" class="btn">Prendre Rendez-vous</a>
+    </div>
 </section>
 
 <section id="services">
@@ -192,9 +173,18 @@ footer { background:var(--primary-dark); color:#cbd5e1; text-align:center; paddi
 </footer>
 
 <script>
-const burger=document.querySelector('.burger'); const navLinks=document.querySelector('.nav-links');
-burger.addEventListener('click',()=>navLinks.classList.toggle('show'));
-document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('show')));
+// Burger menu
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+burger.addEventListener('click', ()=> navLinks.classList.toggle('show'));
+document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', ()=> navLinks.classList.remove('show')));
+
+// Header background on scroll
+const header = document.querySelector('header');
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY>50) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+});
 
 // fade-in animation
 const fadeElements=document.querySelectorAll('.fade-in');
