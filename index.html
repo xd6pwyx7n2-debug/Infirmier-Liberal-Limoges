@@ -378,10 +378,6 @@
                 grid-template-columns: 1fr;
             }
         }
-
-
-    }
-}
             
             section {
                 padding: 5rem 1.5rem 4rem;
@@ -424,9 +420,7 @@
 <body>
     <header>
         <nav>
-            <a href="#accueil" style="text-decoration: none; color: white;">
-    <div class="logo">🏥 Cabinet Infirmier Limoges</div>
-</a>
+            <a href="#accueil" class="logo">🏥 Cabinet Infirmier Limoges</a>
 <button class="burger" aria-label="Ouvrir le menu">☰</button>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
@@ -603,11 +597,20 @@
             });
         });
 
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
 
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+
+    // Fermer le menu quand on clique sur un lien
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    });
 });
         
         document.querySelectorAll('.nav-links a').forEach(link => {
