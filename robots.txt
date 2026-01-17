@@ -1,0 +1,33 @@
+# robots.txt pour Cabinet Infirmier Libéral Limoges
+
+# Optimisé pour le référencement Google
+
+User-agent: *
+Allow: /
+
+# Sitemap
+
+Sitemap: https://www.infirmier-limoges.fr/sitemap.xml
+
+# Bloquer les fichiers système (si présents)
+
+Disallow: /cgi-bin/
+Disallow: /.git/
+Disallow: /admin/
+Disallow: /tmp/
+
+# Crawl-delay (optionnel, éviter la surcharge)
+
+Crawl-delay: 1
+
+# Règles spécifiques pour Googlebot
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Règles pour Bingbot
+
+User-agent: Bingbot  
+Allow: /
+Crawl-delay: 1
