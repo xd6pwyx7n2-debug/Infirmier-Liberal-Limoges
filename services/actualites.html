@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+
+<meta name="description" content="Blog et actualités du cabinet infirmier de Limoges. Conseils santé, prévention et informations sur les soins à domicile.">
+<meta name="keywords" content="blog infirmier, conseils santé Limoges, prévention, soins à domicile, actualités santé">
+<meta name="author" content="Cabinet Infirmier Libéral Limoges">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.infirmier-limoges.fr/blog/actualites.html">
+
+<title>Blog & Actualités | Cabinet Infirmier Limoges</title>
+
+<!-- Favicon -->
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230d5d7f' width='100' height='100' rx='20'/><text y='70' x='50' font-size='60' text-anchor='middle' fill='white'>+</text></svg>">
+
+<!-- Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #0d5d7f;
+    --primary-dark: #084561;
+    --primary-light: #1a7ca3;
+    --accent: #00a896;
+    --accent-hover: #008577;
+    --white: #ffffff;
+    --light: #f4f7f9;
+    --light-gray: #e8eef3;
+    --gray: #6b7c8f;
+    --gray-dark: #455061;
+    --text: #1a2332;
+    --shadow-sm: 0 2px 8px rgba(13,93,127,0.08);
+    --shadow-md: 0 8px 24px rgba(13,93,127,0.12);
+    --shadow-lg: 0 16px 48px rgba(13,93,127,0.16);
+    --border-radius: 12px;
+    --border-radius-lg: 20px;
+    --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Crimson Pro', Georgia, serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--white);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 1.5rem 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--accent);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,168,150,0.3);
+}
+
+.back-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+}
+
+.back-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(-5px);
+}
+
+/* Hero */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-hero h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.page-hero p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Blog Grid */
+.blog-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.article-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--light-gray);
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.article-image {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(135deg, var(--primary-light), var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.article-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1), transparent);
+}
+
+.article-content {
+    padding: 2rem;
+}
+
+.article-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: var(--gray);
+}
+
+.article-date,
+.article-category {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.article-category {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.article-card h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.article-excerpt {
+    color: var(--gray-dark);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.read-more:hover {
+    gap: 1rem;
+    color: var(--primary);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--primary-dark), #052d42);
+    color: #b0c4d4;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    nav {
+        padding: 0 1rem;
+    }
+    
+    .page-hero {
+        padding: 4rem 1.5rem 3rem;
+    }
+    
+    .blog-container {
+        padding: 3rem 1.5rem;
+    }
+}
+</style>
+
+</head>
+
+<body>
+<header>
+    <nav>
+        <a href="../index.html" class="logo">
+            <div class="logo-icon">+</div>
+            <span>Cabinet Infirmier</span>
+        </a>
+        <a href="../index.html" class="back-link">← Retour à l'accueil</a>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h1>Blog & Actualités Santé</h1>
+    <p>Conseils, prévention et informations pour prendre soin de votre santé au quotidien</p>
+</div>
+
+<div class="blog-container">
+    <div class="blog-grid">
+
+```
+    <!-- Article 1 -->
+    <article class="article-card">
+        <div class="article-image">💉</div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-date">📅 Janvier 2026</span>
+                <span class="article-category">Vaccination</span>
+            </div>
+            <h2>Campagne de vaccination antigrippale 2025-2026</h2>
+            <p class="article-excerpt">
+                La campagne de vaccination contre la grippe saisonnière bat son plein. Nous vous rappelons l'importance de vous faire vacciner, particulièrement si vous faites partie des populations à risque.
+            </p>
+            <a href="#" class="read-more">
+                Lire la suite
+                <span>→</span>
+            </a>
+        </div>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="article-card">
+        <div class="article-image">💊</div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-date">📅 Décembre 2025</span>
+                <span class="article-category">Diabète</span>
+            </div>
+            <h2>Bien gérer son diabète pendant les fêtes</h2>
+            <p class="article-excerpt">
+                Les repas de fêtes peuvent être un défi pour les personnes diabétiques. Découvrez nos conseils pour profiter des festivités tout en maintenant votre équilibre glycémique.
+            </p>
+            <a href="#" class="read-more">
+                Lire la suite
+                <span>→</span>
+            </a>
+        </div>
+    </article>
+
+    <!-- Article 3 -->
+    <article class="article-card">
+        <div class="article-image">🩹</div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-date">📅 Novembre 2025</span>
+                <span class="article-category">Prévention</span>
+            </div>
+            <h2>Prévention des escarres : les bons gestes</h2>
+            <p class="article-excerpt">
+                Les escarres touchent particulièrement les personnes à mobilité réduite. Apprenez les gestes essentiels de prévention pour éviter ces lésions cutanées douloureuses.
+            </p>
+            <a href="#" class="read-more">
+                Lire la suite
+                <span>→</span>
+            </a>
+        </div>
+    </article>
+
+    <!-- Article 4 -->
+    <article class="article-card">
+        <div class="article-image">❄️</div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-date">📅 Novembre 2025</span>
+                <span class="article-category">Conseils</span>
+            </div>
+            <h2>Protéger sa santé en hiver</h2>
+            <p class="article-excerpt">
+                L'hiver apporte son lot de défis pour notre santé. Découvrez nos recommandations pour renforcer votre système immunitaire et prévenir les infections saisonnières.
+            </p>
+            <a href="#" class="read-more">
+                Lire la suite
+                <span>→</span>
+            </a>
+        </div>
+    </article>
+
+    <!-- Article 5 -->
+    <article class="article-card">
+        <div class="article-image">🏠</div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-date">📅 Octobre 2025</span>
+                <span class="article-category">Soins</span>
+            </div>
+            <h2>Les avantages des soins infirmiers à domicile</h2>
+            <p class="article-excerpt">
+                Recevoir des soins chez soi présente de nombreux avantages : confort, réduction du stress, continuité des soins... Découvrez pourquoi de plus en plus de patients choisissent cette option.
+            </p>
+            <a href="#" class="read-more">
+                Lire la suite
+                <span>→</span>
+            </a>
+        </div>
+    </article>
+
+    <!-- Article 6 -->
+    <article class="article-card">
+        <div class="article-image">👴</div>
+        <div class="article-content">
+            <div class="article-meta">
+                <span class="article-date">📅 Octobre 2025</span>
+                <span class="article-category">Seniors</span>
+            </div>
+            <h2>Maintien à domicile des personnes âgées</h2>
+            <p class="article-excerpt">
+                Le maintien à domicile est souvent privilégié par les seniors. Nous vous expliquons comment les soins infirmiers peuvent faciliter cette démarche et garantir une qualité de vie optimale.
+            </p>
+            <a href="#" class="read-more">
+                Lire la suite
+                <span>→</span>
+            </a>
+        </div>
+    </article>
+
+</div>
+```
+
+</div>
+
+<footer>
+    <p><strong>Cabinet Infirmier Libéral Limoges</strong> - Soins à domicile professionnels</p>
+    <p>N° ADELI: 876194705 | N° RPPS: 10104297923 | Conventionné Secteur 1</p>
+    <p>&copy; 2026 Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
