@@ -478,17 +478,21 @@ header.scrolled .burger {
 }
 
 .hero-icon {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto 2rem;
-    background: var(--white);
+    background: linear-gradient(135deg, var(--white), #f0f9ff);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.5rem;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25), 0 0 0 8px rgba(255,255,255,0.2);
     animation: floatIcon 3s ease-in-out infinite;
+    border: 4px solid var(--accent);
+}
+
+.hero-icon svg {
+    filter: drop-shadow(0 2px 4px rgba(0,168,150,0.3));
 }
 
 @keyframes floatIcon {
@@ -1082,9 +1086,14 @@ footer strong {
     }
     
     .hero-icon {
-        width: 80px;
-        height: 80px;
-        font-size: 2.75rem;
+        width: 100px;
+        height: 100px;
+        font-size: 3.25rem;
+    }
+    
+    .hero-icon svg {
+        width: 65px;
+        height: 65px;
     }
     
     /* Services */
@@ -1266,7 +1275,12 @@ footer strong {
 
 <section class="hero" id="accueil">
     <div class="hero-content">
-        <div class="hero-icon" role="img" aria-label="Soins médicaux">⚕️</div>
+        <div class="hero-icon" role="img" aria-label="Soins médicaux">
+            <svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="35" y="10" width="30" height="80" rx="5" fill="#00a896"/>
+                <rect x="10" y="35" width="80" height="30" rx="5" fill="#00a896"/>
+            </svg>
+        </div>
         <h1>Soins Infirmiers Professionnels à Domicile</h1>
         <p>Votre santé au cœur de notre engagement. Interventions rapides et bienveillantes sur Limoges et toute la Haute-Vienne (87).</p>
         <a href="#contact" class="btn" aria-label="Prendre rendez-vous maintenant">
@@ -1409,7 +1423,7 @@ footer strong {
             <div class="contact-item-icon" role="img" aria-label="Email">✉️</div>
             <div class="contact-item-content">
                 <strong>Email</strong>
-                <a href="mailto:infirmier.87@outlook.com" aria-label="Envoyer un email à infirmier.87@outlook.com">infirmier.87@outlook.com</a>
+                <a href="/cdn-cgi/l/email-protection#8ae3e4ece3f8e7e3eff8a4b2bdcae5fffee6e5e5e1a4e9e5e7" aria-label="Envoyer un email à infirmier.87@outlook.com"><span class="__cf_email__" data-cfemail="523b3c343b203f3b37207c6a65123d27263e3d3d397c313d3f">[email&#160;protected]</span></a>
                 <span style="display:block; font-size:0.875rem; color:var(--gray); margin-top:0.25rem;">Réponse sous 24h</span>
             </div>
         </div>
@@ -1517,197 +1531,213 @@ footer strong {
 <footer role="contentinfo">
     <p><strong>Cabinet Infirmier Libéral Limoges</strong> - Soins à domicile professionnels</p>
     <p>N° ADELI: 876194705 | N° RPPS: 10104297923 | Conventionné Secteur 1</p>
-    <p>&copy; 2026 Tous droits réservés - <a href="mailto:infirmier.87@outlook.com" style="color:#00a896; text-decoration:none;">infirmier.87@outlook.com</a></p>
+    <p>&copy; 2026 Tous droits réservés - <a href="/cdn-cgi/l/email-protection#b0d9ded6d9c2ddd9d5c29e8887f0dfc5c4dcdfdfdb9ed3dfdd" style="color:#00a896; text-decoration:none;"><span class="__cf_email__" data-cfemail="dfb6b1b9b6adb2b6baadf1e7e89fb0aaabb3b0b0b4f1bcb0b2">[email&#160;protected]</span></a></p>
 </footer>
 
 <!-- Scripts -->
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
 // ==========================================
 // CONFIGURATION & CONSTANTES
 // ==========================================
 const CONFIG = {
-    scrollDebounce: 10,
-    headerScrollThreshold: 50,
-    mobileBreakpoint: 768
+scrollDebounce: 10,
+headerScrollThreshold: 50,
+mobileBreakpoint: 768
 };
 
 // ==========================================
 // INDICATEUR DE PROGRESSION
 // ==========================================
-const scrollIndicator = document.getElementById('scroll-indicator');
+const scrollIndicator = document.getElementById(‘scroll-indicator’);
 let scrollTimeout;
 
 function updateScrollIndicator() {
-    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (window.scrollY / windowHeight) * 100;
-    scrollIndicator.style.width = `${scrolled}%`;
-    scrollIndicator.setAttribute('aria-valuenow', Math.round(scrolled));
+const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+const scrolled = (window.scrollY / windowHeight) * 100;
+scrollIndicator.style.width = `${scrolled}%`;
+scrollIndicator.setAttribute(‘aria-valuenow’, Math.round(scrolled));
 }
 
-window.addEventListener('scroll', () => {
-    if (scrollTimeout) clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => {
-        updateScrollIndicator();
-        
-        // Header scroll effect
-        const header = document.getElementById('header');
-        if (window.scrollY > CONFIG.headerScrollThreshold) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    }, CONFIG.scrollDebounce);
+window.addEventListener(‘scroll’, () => {
+if (scrollTimeout) clearTimeout(scrollTimeout);
+scrollTimeout = setTimeout(() => {
+updateScrollIndicator();
+
+```
+    // Header scroll effect
+    const header = document.getElementById('header');
+    if (window.scrollY > CONFIG.headerScrollThreshold) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+}, CONFIG.scrollDebounce);
+```
+
 }, { passive: true });
 
 // ==========================================
 // NAVIGATION MOBILE
 // ==========================================
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('nav-links');
+const burger = document.getElementById(‘burger’);
+const navLinks = document.getElementById(‘nav-links’);
 
-burger.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('show');
-    burger.setAttribute('aria-expanded', isOpen);
-    burger.textContent = isOpen ? '✕' : '☰';
+burger.addEventListener(‘click’, () => {
+const isOpen = navLinks.classList.toggle(‘show’);
+burger.setAttribute(‘aria-expanded’, isOpen);
+burger.textContent = isOpen ? ‘✕’ : ‘☰’;
 });
 
 // Fermer le menu au clic sur un lien
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (window.innerWidth <= CONFIG.mobileBreakpoint) {
-            navLinks.classList.remove('show');
-            burger.setAttribute('aria-expanded', 'false');
-            burger.textContent = '☰';
-        }
-    });
+navLinks.querySelectorAll(‘a’).forEach(link => {
+link.addEventListener(‘click’, () => {
+if (window.innerWidth <= CONFIG.mobileBreakpoint) {
+navLinks.classList.remove(‘show’);
+burger.setAttribute(‘aria-expanded’, ‘false’);
+burger.textContent = ‘☰’;
+}
+});
 });
 
-// Fermer le menu au clic à l'extérieur
-document.addEventListener('click', (e) => {
-    if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
-        navLinks.classList.remove('show');
-        burger.setAttribute('aria-expanded', 'false');
-        burger.textContent = '☰';
-    }
+// Fermer le menu au clic à l’extérieur
+document.addEventListener(‘click’, (e) => {
+if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
+navLinks.classList.remove(‘show’);
+burger.setAttribute(‘aria-expanded’, ‘false’);
+burger.textContent = ‘☰’;
+}
 });
 
 // ==========================================
 // SMOOTH SCROLL
 // ==========================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
+document.querySelectorAll(‘a[href^=”#”]’).forEach(anchor => {
+anchor.addEventListener(‘click’, function(e) {
+const href = this.getAttribute(‘href’);
+
+```
+    // Ignorer les liens vides ou '#'
+    if (!href || href === '#') return;
+    
+    e.preventDefault();
+    const target = document.querySelector(href);
+    
+    if (target) {
+        const header = document.getElementById('header');
+        const headerHeight = header.offsetHeight;
+        const targetPosition = target.offsetTop - headerHeight - 20;
         
-        // Ignorer les liens vides ou '#'
-        if (!href || href === '#') return;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
         
-        e.preventDefault();
-        const target = document.querySelector(href);
-        
-        if (target) {
-            const header = document.getElementById('header');
-            const headerHeight = header.offsetHeight;
-            const targetPosition = target.offsetTop - headerHeight - 20;
-            
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-            
-            // Focus sur la cible pour l'accessibilité
-            target.setAttribute('tabindex', '-1');
-            target.focus();
-        }
-    });
+        // Focus sur la cible pour l'accessibilité
+        target.setAttribute('tabindex', '-1');
+        target.focus();
+    }
+});
+```
+
 });
 
 // ==========================================
 // GESTION DU DROPDOWN ACCESSIBLE
 // ==========================================
-const dropdowns = document.querySelectorAll('.dropdown');
+const dropdowns = document.querySelectorAll(’.dropdown’);
 
 dropdowns.forEach(dropdown => {
-    const trigger = dropdown.querySelector('a');
-    const content = dropdown.querySelector('.dropdown-content');
-    
-    // Clavier: Enter/Space pour ouvrir
-    trigger.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
-            trigger.setAttribute('aria-expanded', !isExpanded);
-        }
-    });
-    
-    // Fermer avec Escape
-    dropdown.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            trigger.setAttribute('aria-expanded', 'false');
-            trigger.focus();
-        }
-    });
+const trigger = dropdown.querySelector(‘a’);
+const content = dropdown.querySelector(’.dropdown-content’);
+
+```
+// Clavier: Enter/Space pour ouvrir
+trigger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        trigger.setAttribute('aria-expanded', !isExpanded);
+    }
+});
+
+// Fermer avec Escape
+dropdown.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.focus();
+    }
+});
+```
+
 });
 
 // ==========================================
 // VALIDATION FORMULAIRE AMÉLIORÉE
 // ==========================================
-const contactForm = document.querySelector('form');
+const contactForm = document.querySelector(‘form’);
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        const telephone = document.getElementById('telephone');
-        const telValue = telephone.value.replace(/\s/g, '');
-        
-        // Validation téléphone français
-        if (!/^0[1-9]\d{8}$/.test(telValue)) {
-            e.preventDefault();
-            telephone.focus();
-            alert('Veuillez entrer un numéro de téléphone français valide (10 chiffres commençant par 0).');
-            return false;
-        }
-    });
-    
-    // Auto-formatting téléphone
-    const telInput = document.getElementById('telephone');
-    telInput.addEventListener('input', (e) => {
-        let value = e.target.value.replace(/\s/g, '');
-        if (value.length > 0) {
-            value = value.match(/.{1,2}/g).join(' ');
-        }
-        e.target.value = value;
-    });
+contactForm.addEventListener(‘submit’, (e) => {
+const telephone = document.getElementById(‘telephone’);
+const telValue = telephone.value.replace(/\s/g, ‘’);
+
+```
+    // Validation téléphone français
+    if (!/^0[1-9]\d{8}$/.test(telValue)) {
+        e.preventDefault();
+        telephone.focus();
+        alert('Veuillez entrer un numéro de téléphone français valide (10 chiffres commençant par 0).');
+        return false;
+    }
+});
+
+// Auto-formatting téléphone
+const telInput = document.getElementById('telephone');
+telInput.addEventListener('input', (e) => {
+    let value = e.target.value.replace(/\s/g, '');
+    if (value.length > 0) {
+        value = value.match(/.{1,2}/g).join(' ');
+    }
+    e.target.value = value;
+});
+```
+
 }
 
 // ==========================================
 // PERFORMANCE: LAZY LOADING IMAGES
 // ==========================================
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                if (img.dataset.src) {
-                    img.src = img.dataset.src;
-                    img.removeAttribute('data-src');
-                    observer.unobserve(img);
-                }
-            }
-        });
-    });
-    
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
+if (‘IntersectionObserver’ in window) {
+const imageObserver = new IntersectionObserver((entries, observer) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const img = entry.target;
+if (img.dataset.src) {
+img.src = img.dataset.src;
+img.removeAttribute(‘data-src’);
+observer.unobserve(img);
+}
+}
+});
+});
+
+```
+document.querySelectorAll('img[data-src]').forEach(img => {
+    imageObserver.observe(img);
+});
+```
+
 }
 
 // ==========================================
 // ACCESSIBILITÉ: DÉTECTION PRÉFÉRENCE MOUVEMENT
 // ==========================================
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const prefersReducedMotion = window.matchMedia(’(prefers-reduced-motion: reduce)’);
 
 if (prefersReducedMotion.matches) {
-    document.documentElement.style.scrollBehavior = 'auto';
+document.documentElement.style.scrollBehavior = ‘auto’;
 }
 
 // ==========================================
@@ -1717,16 +1747,16 @@ if (prefersReducedMotion.matches) {
 /*
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
+gtag(‘js’, new Date());
+gtag(‘config’, ‘G-XXXXXXXXXX’);
 */
 
 // ==========================================
 // CONSOLE INFO
 // ==========================================
-console.log('%c🏥 Cabinet Infirmier Libéral Limoges', 'font-size: 20px; color: #0d5d7f; font-weight: bold;');
-console.log('%cSite développé avec les meilleures pratiques web', 'font-size: 12px; color: #00a896;');
-console.log('%c✓ SEO optimisé\n✓ Accessibilité WCAG AAA\n✓ Performance optimale\n✓ Mobile-first', 'color: #6b7c8f;');
+console.log(’%c🏥 Cabinet Infirmier Libéral Limoges’, ‘font-size: 20px; color: #0d5d7f; font-weight: bold;’);
+console.log(’%cSite développé avec les meilleures pratiques web’, ‘font-size: 12px; color: #00a896;’);
+console.log(’%c✓ SEO optimisé\n✓ Accessibilité WCAG AAA\n✓ Performance optimale\n✓ Mobile-first’, ‘color: #6b7c8f;’);
 </script>
 
 <!-- Schema.org supplémentaire pour FAQ (optionnel) -->
@@ -1747,18 +1777,4 @@ console.log('%c✓ SEO optimisé\n✓ Accessibilité WCAG AAA\n✓ Performance o
     "name": "Intervenez-vous le week-end et les jours fériés ?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Oui, nous intervenons 7 jours sur 7, y compris les week-ends et jours fériés. Notre service est disponible pour répondre à vos besoins en soins infirmiers à domicile, quelle que soit l'urgence."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Quelle est votre zone d'intervention ?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Nous intervenons sur Limoges et toute son agglomération, ainsi que dans un rayon de 25 km autour de Limoges en Haute-Vienne (87)."
-    }
-  }]
-}
-</script>
-
-</body>
-</html>
+      "text": "Oui, nous intervenons 7 jours sur 7, y compris les week-ends et jours fériés. Notre service est disponible pour répondre à vo
