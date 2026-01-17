@@ -796,6 +796,144 @@ h2::after {
 }
 
 /* ==========================================
+   FAQ SECTION
+   ========================================== */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    margin-bottom: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    border: 2px solid transparent;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.faq-item:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition);
+    font-family: var(--font-sans);
+}
+
+.faq-question:hover {
+    color: var(--accent);
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+    min-width: 24px;
+    text-align: center;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 2rem;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    padding: 0 2rem 1.5rem;
+}
+
+.faq-answer p {
+    color: var(--gray-dark);
+    line-height: 1.75;
+    font-size: 0.975rem;
+    margin: 0;
+}
+
+.faq-answer strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* ==========================================
+   MAP SECTION
+   ========================================== */
+.map-container {
+    margin-top: 2.5rem;
+}
+
+.map-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.map-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.map-info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.map-info-icon {
+    font-size: 2.5rem;
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent), var(--primary-light));
+    border-radius: 12px;
+    color: var(--white);
+}
+
+.map-info-item strong {
+    display: block;
+    color: var(--primary);
+    font-size: 1.0625rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.map-info-item p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ==========================================
    CONTACT
    ========================================== */
 .contact-content {
@@ -1117,6 +1255,26 @@ footer strong {
         padding: 2rem 1.5rem;
     }
     
+    /* FAQ */
+    .faq-question {
+        padding: 1.25rem 1.5rem;
+        font-size: 0.975rem;
+    }
+    
+    .faq-answer.active {
+        padding: 0 1.5rem 1.25rem;
+    }
+    
+    /* Map */
+    .map-container iframe {
+        height: 350px;
+    }
+    
+    .map-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
     /* Mobile CTA */
     .mobile-cta {
         display: block;
@@ -1259,6 +1417,7 @@ footer strong {
         </div>
     </li>
     <li><a href="#apropos">À propos</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="blog/actualites.html">Blog</a></li>
     <li><a href="#contact">Contact</a></li>
 </ul>
@@ -1365,18 +1524,18 @@ footer strong {
 <!-- À Propos Section -->
 
 <section id="apropos" aria-labelledby="about-heading">
-    <h2 id="about-heading">Votre Infirmier à Limoges</h2>
+    <h2 id="about-heading">Notre Cabinet Infirmier</h2>
     <p class="section-subtitle">Un professionnel de santé expérimenté et à votre écoute pour tous vos besoins en soins infirmiers.</p>
 
 ```
 <div class="about-content">
     <div class="about-text">
         <h3>Votre Santé, Notre Priorité Absolue</h3>
-        <p>Infirmier Diplômé d'État avec plusieurs années d'expérience hospitalière et libérale, je mets à votre service mon expertise professionnelle pour vous accompagner dans tous vos besoins de soins à domicile sur <strong>Limoges et sa région (Haute-Vienne 87)</strong>.</p>
+        <p>Infirmier Diplômé d'État avec plusieurs années d'expérience hospitalière et libérale, nous mettons à votre service notre expertise professionnelle pour vous accompagner dans tous vos besoins de soins à domicile sur <strong>Limoges et sa région (Haute-Vienne 87)</strong>.</p>
         
-        <p>Mon objectif est de vous offrir des <strong>soins de qualité optimale</strong> dans un climat de confiance, de respect et de bienveillance. Chaque patient bénéficie d'un accompagnement personnalisé adapté à sa situation spécifique.</p>
+        <p>Notre objectif est de vous offrir des <strong>soins de qualité optimale</strong> dans un climat de confiance, de respect et de bienveillance. Chaque patient bénéficie d'un accompagnement personnalisé adapté à sa situation spécifique.</p>
         
-        <p>Je réalise l'ensemble des actes infirmiers prescrits par votre médecin traitant ou spécialiste, dans le strict respect des protocoles de soins et des règles d'hygiène en vigueur.</p>
+        <p>Nous réalisons l'ensemble des actes infirmiers prescrits par votre médecin traitant ou spécialiste, dans le strict respect des protocoles de soins et des règles d'hygiène en vigueur.</p>
         
         <p><strong>Cabinet conventionné Assurance Maladie Secteur 1</strong> - Tarifs réglementés sans dépassement d'honoraires. Tiers-payant accepté.</p>
     </div>
@@ -1396,6 +1555,78 @@ footer strong {
             <li>Interventions Limoges et agglomération</li>
         </ul>
     </aside>
+</div>
+```
+
+</section>
+
+<!-- FAQ Section -->
+
+<section id="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Questions Fréquentes</h2>
+    <p class="section-subtitle">Retrouvez les réponses aux questions les plus posées par mes patients.</p>
+
+```
+<div class="faq-container">
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>💰 Quels sont vos tarifs de soins infirmiers ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Notre cabinet est <strong>conventionné Assurance Maladie Secteur 1</strong>. Nous appliquons les tarifs réglementés officiels sans aucun dépassement d'honoraires. Les actes sont remboursés par l'Assurance Maladie selon les taux en vigueur (généralement 60% par la Sécurité Sociale et 40% par votre mutuelle). Le tiers-payant est accepté.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>📅 Intervenez-vous le week-end et les jours fériés ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, nous intervenons <strong>7 jours sur 7</strong>, y compris les week-ends et jours fériés. Notre service est disponible pour répondre à vos besoins en soins infirmiers à domicile, quelle que soit l'urgence. N'hésitez pas à nous contacter au 06.82.41.06.61.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>📍 Quelle est votre zone d'intervention ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Nous intervenons sur <strong>Limoges et toute son agglomération</strong>, ainsi que dans les communes environnantes de Haute-Vienne (87). Si vous habitez en dehors de cette zone, contactez-nous pour étudier votre situation.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>📋 Ai-je besoin d'une ordonnance ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, une <strong>ordonnance médicale</strong> de votre médecin traitant ou spécialiste est obligatoire pour bénéficier de soins infirmiers à domicile et obtenir le remboursement par l'Assurance Maladie. Certains actes comme la vaccination peuvent être réalisés sur prescription ou dans le cadre du protocole de pharmacie.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>⏱️ Quel est le délai pour obtenir un rendez-vous ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Pour les soins courants, nous pouvons généralement intervenir <strong>sous 24-48h</strong>. En cas d'urgence, nous faisons notre maximum pour intervenir <strong>le jour même</strong>. Contactez-nous directement par téléphone au 06.82.41.06.61 pour exposer votre situation.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>🏥 Quels types de soins réalisez-vous ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Nous réalisons tous les actes infirmiers prescrits : injections (insuline, anticoagulants, vaccins), pansements simples et complexes, prélèvements sanguins, perfusions, soins de nursing, surveillance post-opératoire, soins palliatifs, éducation thérapeutique pour diabète, et bien plus encore.</p>
+        </div>
+    </div>
 </div>
 ```
 
@@ -1509,6 +1740,48 @@ footer strong {
                 <span aria-hidden="true">✓</span>
             </button>
         </form>
+    </div>
+</div>
+```
+
+</section>
+
+<!-- Map Section -->
+
+<section id="zone" aria-labelledby="zone-heading" style="background: var(--light); padding: 5rem 2rem;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+        <h2 id="zone-heading">Notre Zone d'Intervention</h2>
+        <p class="section-subtitle">Nous intervenons sur Limoges et ses alentours pour tous vos besoins en soins infirmiers.</p>
+
+```
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92166.89276512308!2d1.2078167!3d45.833619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f93e8e29a19c8b%3A0x408ab2ae4bb21f0!2sLimoges!5e0!3m2!1sfr!2sfr!4v1234567890"
+            width="100%" 
+            height="450" 
+            style="border:0; border-radius: 20px; box-shadow: 0 15px 40px rgba(13,93,127,0.12);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Carte de la zone d'intervention à Limoges">
+        </iframe>
+        
+        <div class="map-info">
+            <div class="map-info-item">
+                <div class="map-info-icon">🏙️</div>
+                <div>
+                    <strong>Limoges Centre</strong>
+                    <p>Tous les quartiers</p>
+                </div>
+            </div>
+            <div class="map-info-item">
+                <div class="map-info-icon">🏘️</div>
+                <div>
+                    <strong>Agglomération</strong>
+                    <p>Communes limitrophes</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 ```
@@ -1750,6 +2023,78 @@ function gtag(){dataLayer.push(arguments);}
 gtag(‘js’, new Date());
 gtag(‘config’, ‘G-XXXXXXXXXX’);
 */
+
+// ==========================================
+// ANIMATIONS AU SCROLL
+// ==========================================
+const animateOnScroll = () => {
+const elements = document.querySelectorAll(’.service-card, .contact-item, .faq-item, .about-text, .qualifications, .map-info-item’);
+
+```
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, index * 100);
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+});
+
+elements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    observer.observe(el);
+});
+```
+
+};
+
+// Désactiver les animations si préférence réduite de mouvement
+if (!window.matchMedia(’(prefers-reduced-motion: reduce)’).matches) {
+animateOnScroll();
+}
+
+// ==========================================
+// FAQ ACCORDION
+// ==========================================
+const faqItems = document.querySelectorAll(’.faq-question’);
+
+faqItems.forEach(question => {
+question.addEventListener(‘click’, () => {
+const isExpanded = question.getAttribute(‘aria-expanded’) === ‘true’;
+const answer = question.nextElementSibling;
+
+```
+    // Fermer tous les autres items
+    faqItems.forEach(item => {
+        if (item !== question) {
+            item.setAttribute('aria-expanded', 'false');
+            item.nextElementSibling.classList.remove('active');
+        }
+    });
+    
+    // Toggle l'item cliqué
+    question.setAttribute('aria-expanded', !isExpanded);
+    answer.classList.toggle('active');
+});
+
+// Support clavier
+question.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        question.click();
+    }
+});
+```
+
+});
 
 // ==========================================
 // CONSOLE INFO
