@@ -2233,5 +2233,42 @@ footer a:focus {
 }
 </script>
 
+  <script>
+// Tracking scroll profondeur
+var scrollTracked = false;
+window.addEventListener('scroll', function() {
+  var scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  
+  if (scrollPercent > 75 && !scrollTracked) {
+    gtag('event', 'scroll_depth', {
+      'event_category': 'engagement',
+      'event_label': '75% de la page'
+    });
+    scrollTracked = true;
+  }
+});
+
+// Tracking clics sur emails
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    gtag('event', 'click_email', {
+      'event_category': 'engagement',
+      'event_label': 'Email : infirmier.87@outlook.com'
+    });
+  });
+});
+
+// Tracking clics sur services
+document.querySelectorAll('.service-card .btn-small').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    var serviceTitle = this.closest('.service-card').querySelector('h3').textContent;
+    gtag('event', 'click_service', {
+      'event_category': 'navigation',
+      'event_label': serviceTitle
+    });
+  });
+});
+</script>
+
 </body>
 </html>
