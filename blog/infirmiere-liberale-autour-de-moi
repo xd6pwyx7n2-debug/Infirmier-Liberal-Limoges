@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+<!-- Google Analytics 4 -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J4KS3E8BMY"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J4KS3E8BMY', {
+    'send_page_view': true,
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+
+<meta name="description" content="Trouvez une infirmière libérale autour de vous à Limoges (87). Découvrez l'implantation locale des IDEL, leurs missions essentielles et l'importance des soins à domicile en Haute-Vienne.">
+<meta name="keywords" content="infirmière libérale autour de moi, IDEL Limoges, infirmier proche, soins à domicile Limoges, infirmière secteur Limoges, trouver infirmier 87, infirmière libérale Haute-Vienne">
+<meta name="author" content="Cabinet Infirmier Libéral Limoges">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://xd6pwyx7n2-debug.github.io/Infirmier-Liberal-Limoges/infirmiere-liberale-autour-de-moi.html">
+<meta name="geo.region" content="FR-87">
+<meta name="geo.placename" content="Limoges">
+
+<!-- Open Graph -->
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://xd6pwyx7n2-debug.github.io/Infirmier-Liberal-Limoges/infirmiere-liberale-autour-de-moi.html">
+<meta property="og:title" content="Infirmière Libérale Autour de Moi à Limoges | Proximité et Professionnalisme">
+<meta property="og:description" content="Découvrez l'implantation des infirmiers libéraux à Limoges, leurs missions et pourquoi choisir un IDEL de proximité pour vos soins à domicile.">
+<meta property="og:locale" content="fr_FR">
+
+<title>Infirmière Libérale Autour de Moi à Limoges (87) | Soins de Proximité</title>
+
+<!-- Favicon -->
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230d5d7f' width='100' height='100' rx='20'/%3E%3Ctext y='70' x='50' font-size='60' text-anchor='middle' fill='white'%3E+%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Schema.org Article -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Infirmière Libérale Autour de Moi à Limoges : Implantation Locale et Missions",
+  "description": "Guide complet sur l'implantation des infirmiers libéraux à Limoges, leurs missions essentielles et l'importance des soins de proximité en Haute-Vienne.",
+  "author": {
+    "@type": "Person",
+    "name": "Cabinet Infirmier Libéral Limoges"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cabinet Infirmier Libéral Limoges",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xd6pwyx7n2-debug.github.io/Infirmier-Liberal-Limoges/images/logo.jpg"
+    }
+  },
+  "datePublished": "2026-01-25",
+  "dateModified": "2026-01-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xd6pwyx7n2-debug.github.io/Infirmier-Liberal-Limoges/infirmiere-liberale-autour-de-moi.html"
+  }
+}
+</script>
+
+<style>
+/* ========================================== VARIABLES CSS ========================================== */
+:root {
+    --primary: #0d5d7f;
+    --primary-dark: #084561;
+    --primary-light: #1a7ca3;
+    --accent: #00a896;
+    --accent-hover: #008577;
+    --success: #2ecc71;
+    --white: #ffffff;
+    --light: #f4f7f9;
+    --light-gray: #e8eef3;
+    --gray: #6b7c8f;
+    --gray-dark: #455061;
+    --text: #1a2332;
+    --shadow-sm: 0 2px 8px rgba(13,93,127,0.08);
+    --shadow-md: 0 8px 24px rgba(13,93,127,0.12);
+    --shadow-lg: 0 16px 48px rgba(13,93,127,0.16);
+    --border-radius: 12px;
+    --border-radius-lg: 20px;
+    --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-serif: 'Crimson Pro', Georgia, serif;
+}
+
+/* ========================================== RESET & BASE ========================================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========================================== HEADER ========================================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-md);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(13,93,127,0.1);
+}
+
+nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: var(--transition);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--accent);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,168,150,0.3);
+    transition: var(--transition);
+}
+
+.logo:hover .logo-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--gray-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ========================================== HERO ARTICLE ========================================== */
+.article-hero {
+    margin-top: 80px;
+    padding: 4rem 2rem 3rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.article-hero h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-top: 1.5rem;
+}
+
+.article-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ========================================== ARTICLE CONTENT ========================================== */
+.article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.breadcrumb a {
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+    color: var(--accent);
+}
+
+article {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+article h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--primary);
+    margin: 3rem 0 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+article h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+article h2:first-of-type {
+    margin-top: 0;
+}
+
+article h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 2.5rem 0 1rem;
+    font-weight: 600;
+}
+
+article p {
+    margin-bottom: 1.5rem;
+    color: var(--gray-dark);
+    line-height: 1.8;
+    font-size: 1.0625rem;
+}
+
+article strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+article ul, article ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+    color: var(--gray-dark);
+    line-height: 1.8;
+}
+
+article li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+article ul li::marker {
+    color: var(--accent);
+}
+
+/* ========================================== HIGHLIGHT BOX ========================================== */
+.highlight-box {
+    background: linear-gradient(135deg, #f0f9ff, #e6f7f5);
+    border-left: 4px solid var(--accent);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.highlight-box h3 {
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+.highlight-box ul {
+    margin-left: 1.5rem;
+}
+
+/* ========================================== INFO CARDS ========================================== */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.info-card {
+    background: var(--white);
+    border: 2px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 1.75rem;
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+}
+
+.info-card h4 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-card p {
+    margin-bottom: 0;
+    font-size: 0.975rem;
+}
+
+/* ========================================== CTA SECTION ========================================== */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    padding: 3rem;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta-section h3 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.125rem 2.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    background: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 0 12px 32px rgba(0,168,150,0.35);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 48px rgba(0,168,150,0.4);
+    background: var(--accent-hover);
+}
+
+/* ========================================== FOOTER ========================================== */
+footer {
+    background: linear-gradient(135deg, var(--primary-dark), #052d42);
+    color: #b0c4d4;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+footer strong {
+    color: var(--white);
+}
+
+footer a {
+    color: #00a896;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: #00c9b7;
+}
+
+/* ========================================== RESPONSIVE ========================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .article-hero {
+        padding: 3rem 1.5rem 2rem;
+    }
+    
+    article {
+        padding: 2rem 1.5rem;
+    }
+    
+    .article-container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-section {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    article h2 {
+        font-size: 1.65rem;
+    }
+    
+    article h3 {
+        font-size: 1.3rem;
+    }
+    
+    .highlight-box {
+        padding: 1.5rem;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<nav aria-label="Navigation principale">
+    <a href="index.html" class="logo">
+        <div class="logo-icon">+</div>
+        <span>Cabinet Infirmier</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="article-hero">
+    <h1>Infirmière Libérale Autour de Moi à Limoges : Proximité et Professionnalisme</h1>
+    <div class="article-meta">
+        <span>📅 25 janvier 2026</span>
+        <span>📍 Limoges, Haute-Vienne (87)</span>
+        <span>⏱️ 5 min de lecture</span>
+    </div>
+</div>
+
+<div class="article-container">
+    <nav class="breadcrumb" aria-label="Fil d'ariane">
+        <a href="index.html">Accueil</a> > <span>Infirmière libérale autour de moi</span>
+    </nav>
+
+```
+<article>
+    <p><strong>Trouver une infirmière libérale autour de vous à Limoges</strong> est essentiel pour bénéficier de soins de qualité à domicile. En Haute-Vienne, les infirmiers et infirmières libéraux (IDEL) jouent un rôle fondamental dans le parcours de soins des patients, offrant une proximité géographique et une disponibilité adaptée aux besoins de chacun.</p>
+
+    <h2>L'implantation des infirmiers libéraux à Limoges</h2>
+
+    <p>Limoges et son agglomération comptent aujourd'hui une implantation significative d'<strong>infirmières libérales</strong> qui assurent une couverture territoriale complète. Cette présence permet aux habitants de la Haute-Vienne de bénéficier de soins à domicile sans avoir à parcourir de longues distances.</p>
+
+    <h3>Une répartition géographique optimale</h3>
+
+    <p>Les cabinets d'infirmiers libéraux sont stratégiquement répartis sur l'ensemble du territoire limougeaud pour garantir un accès rapide aux soins. Que vous résidiez dans le centre-ville historique, dans les quartiers résidentiels ou dans les communes périphériques, vous trouverez une <strong>infirmière libérale autour de vous</strong> capable d'intervenir rapidement.</p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <h4>🏙️ Centre-ville de Limoges</h4>
+            <p>Forte densité d'IDEL pour répondre aux besoins des résidents et des personnes âgées en appartement</p>
+        </div>
+        <div class="info-card">
+            <h4>🏘️ Quartiers périphériques</h4>
+            <p>Présence dans tous les quartiers pour assurer une proximité avec les familles</p>
+        </div>
+        <div class="info-card">
+            <h4>🌳 Communes limitrophes</h4>
+            <p>Couverture de l'agglomération dans un rayon de 25 km autour de Limoges</p>
+        </div>
+    </div>
+
+    <h3>Des professionnels diplômés et qualifiés</h3>
+
+    <p>Tous les infirmiers libéraux exerçant à Limoges sont <strong>diplômés d'État</strong> et inscrits à l'Ordre National des Infirmiers. Ils disposent d'une assurance responsabilité civile professionnelle à jour et respectent scrupuleusement les protocoles de soins et les règles déontologiques de la profession.</p>
+
+    <div class="highlight-box">
+        <h3>💡 Comment vérifier les qualifications d'un IDEL ?</h3>
+        <ul>
+            <li>Numéro ADELI (répertoire partagé des professionnels de santé)</li>
+            <li>Numéro RPPS (Répertoire Partagé des Professionnels de Santé)</li>
+            <li>Inscription à l'Ordre National des Infirmiers</li>
+            <li>Conventionnement avec l'Assurance Maladie</li>
+        </ul>
+    </div>
+
+    <h2>Les missions essentielles de l'infirmière libérale</h2>
+
+    <p>L'<strong>infirmière libérale autour de vous</strong> intervient sur prescription médicale pour réaliser une grande variété de soins techniques et relationnels à votre domicile. Ces professionnels de santé sont des acteurs clés du maintien à domicile et de la continuité des soins.</p>
+
+    <h3>Soins techniques quotidiens</h3>
+
+    <p>Les infirmiers libéraux de Limoges réalisent l'ensemble des actes infirmiers prescrits par votre médecin traitant ou spécialiste. Parmi les interventions les plus fréquentes, on retrouve notamment la gestion du diabète avec les injections d'insuline et la surveillance glycémique, les pansements complexes pour plaies chroniques, escarres et ulcères veineux, ainsi que les prélèvements sanguins et autres analyses biologiques.</p>
+
+    <p>Ils assurent également l'administration de traitements par voie injectable (sous-cutanée, intramusculaire, intraveineuse), la pose et surveillance de perfusions, la gestion des cathéters et sondes, et les soins post-opératoires après hospitalisation.</p>
+
+    <h3>Accompagnement et prévention</h3>
+
+    <p>Au-delà des soins techniques, l'infirmière libérale joue un rôle essentiel dans l'<strong>éducation thérapeutique du patient</strong>. Elle vous accompagne dans la compréhension de votre pathologie, l'apprentissage de l'autonomie dans la gestion de votre traitement, et la prévention des complications.</p>
+
+    <div class="highlight-box">
+        <h3>🏥 Principales missions des IDEL à Limoges</h3>
+        <ul>
+            <li><strong>Vaccination à domicile</strong> : grippe, COVID-19, zona, tétanos, hépatites</li>
+            <li><strong>Suivi des pathologies chroniques</strong> : diabète, insuffisance cardiaque, BPCO</li>
+            <li><strong>Soins de nursing</strong> : toilette, hygiène, prévention des escarres</li>
+            <li><strong>Soins palliatifs</strong> : accompagnement en fin de vie, gestion de la douleur</li>
+            <li><strong>Surveillance post-hospitalisation</strong> : suivi après chirurgie ou séjour hospitalier</li>
+            <li><strong>Prévention et dépistage</strong> : surveillance de plaies, mesure de constantes vitales</li>
+        </ul>
+    </div>
+
+    <h2>L'intérêt de choisir une infirmière libérale de proximité</h2>
+
+    <p>Faire appel à une <strong>infirmière libérale autour de vous</strong> présente de nombreux avantages tant sur le plan pratique que médical. La proximité géographique est un facteur déterminant dans la qualité et la continuité de vos soins.</p>
+
+    <h3>Rapidité d'intervention et disponibilité</h3>
+
+    <p>Un infirmier libéral local peut intervenir rapidement à votre domicile, souvent dans un délai de 24 à 48 heures pour les soins programmés, et le jour même en cas d'urgence. Cette réactivité est particulièrement importante pour les patients nécessitant des soins quotidiens ou ayant des besoins imprévus.</p>
+
+    <p>Les IDEL de Limoges assurent une <strong>disponibilité 7 jours sur 7</strong>, y compris les week-ends et jours fériés, garantissant ainsi une continuité de soins optimale pour tous les patients.</p>
+
+    <h3>Connaissance du territoire et coordination</h3>
+
+    <p>Les infirmières libérales établies à Limoges connaissent parfaitement le territoire, les autres professionnels de santé locaux (médecins, pharmaciens, kinésithérapeutes) et les structures médico-sociales. Cette connaissance facilite la <strong>coordination des soins</strong> et permet une prise en charge globale et cohérente.</p>
+
+    <h3>Relation de confiance et suivi personnalisé</h3>
+
+    <p>La proximité favorise l'établissement d'une relation de confiance durable entre le patient et son infirmière. Ce lien humain est essentiel pour la qualité des soins et le bien-être du patient, particulièrement pour les personnes âgées ou isolées.</p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <h4>⚡ Réactivité</h4>
+            <p>Intervention rapide grâce à la proximité géographique, idéal pour les urgences et soins quotidiens</p>
+        </div>
+        <div class="info-card">
+            <h4>🤝 Continuité</h4>
+            <p>Suivi régulier par le même professionnel pour une meilleure connaissance du patient</p>
+        </div>
+        <div class="info-card">
+            <h4>💰 Économique</h4>
+            <p>Tarifs conventionnés secteur 1 sans dépassement d'honoraires, tiers-payant possible</p>
+        </div>
+    </div>
+
+    <h2>Comment trouver votre infirmière libérale à Limoges ?</h2>
+
+    <p>Plusieurs solutions s'offrent à vous pour trouver une <strong>infirmière libérale autour de vous</strong> à Limoges et dans ses environs.</p>
+
+    <h3>Sur recommandation médicale</h3>
+
+    <p>Votre médecin traitant connaît généralement les infirmiers libéraux du secteur et peut vous orienter vers un professionnel de confiance. N'hésitez pas à lui demander conseil lors de votre consultation.</p>
+
+    <h3>Annuaires professionnels</h3>
+
+    <p>Le site de l'Ordre National des Infirmiers propose un annuaire permettant de rechercher les IDEL par commune. Vous pouvez également consulter l'annuaire de l'Assurance Maladie (Ameli.fr) pour identifier les professionnels conventionnés près de chez vous.</p>
+
+    <h3>Bouche-à-oreille et avis patients</h3>
+
+    <p>Les recommandations de votre entourage, voisins ou proches ayant déjà bénéficié de soins à domicile sont souvent précieuses pour trouver un professionnel compétent et disponible.</p>
+
+    <div class="cta-section">
+        <h3>Besoin d'une infirmière libérale à Limoges ?</h3>
+        <p>Notre cabinet intervient sur Limoges et toute son agglomération pour tous vos besoins en soins infirmiers à domicile. Disponible 7j/7, conventionné secteur 1.</p>
+        <a href="index.html#contact" class="btn">
+            <span>Prendre Rendez-vous</span>
+            <span>→</span>
+        </a>
+        <p style="margin-top: 1.5rem; font-size: 1.1rem;">
+            📞 <a href="tel:+33682410661" style="color: white; font-weight: 600;">06.82.41.06.61</a> - 
+            ✉️ <a href="mailto:infirmier.87@outlook.com" style="color: white;">infirmier.87@outlook.com</a>
+        </p>
+    </div>
+
+    <h2>Les tarifs des infirmiers libéraux à Limoges</h2>
+
+    <p>Les infirmiers libéraux conventionnés avec l'Assurance Maladie en <strong>secteur 1</strong> appliquent les tarifs réglementés fixés par la Sécurité sociale. Aucun dépassement d'honoraires n'est pratiqué, garantissant ainsi un accès aux soins pour tous.</p>
+
+    <p>Les actes infirmiers sont remboursés à 60% par l'Assurance Maladie dans le cadre du parcours de soins coordonné. Votre mutuelle complémentaire prend généralement en charge le reste à charge. Le <strong>tiers-payant</strong> peut être appliqué pour vous éviter toute avance de frais.</p>
+
+    <h3>Exemples de tarifs conventionnés (2026)</h3>
+
+    <ul>
+        <li><strong>Injection</strong> : 4,20 € (remboursé 60%)</li>
+        <li><strong>Pansement simple</strong> : 3,80 € (remboursé 60%)</li>
+        <li><strong>Pansement complexe</strong> : selon cotation (remboursé 60%)</li>
+        <li><strong>Prélèvement sanguin</strong> : 4,20 € (remboursé 60%)</li>
+        <li><strong>Perfusion</strong> : selon durée et complexité</li>
+    </ul>
+
+    <p>Des majorations s'appliquent pour les dimanches, jours fériés, nuits et déplacements, toujours dans le cadre de la nomenclature officielle.</p>
+
+    <h2>Conclusion : La proximité au service de votre santé</h2>
+
+    <p>Trouver une <strong>infirmière libérale autour de vous à Limoges</strong> est la garantie de bénéficier de soins de qualité, personnalisés et accessibles. Les IDEL du territoire limougeaud assurent une présence essentielle dans le parcours de soins, offrant réactivité, professionnalisme et accompagnement humain.</p>
+
+    <p>Que vous ayez besoin de soins ponctuels ou d'un suivi régulier pour une pathologie chronique, les infirmiers libéraux de Haute-Vienne sont à vos côtés pour préserver votre santé et votre autonomie à domicile.</p>
+
+    <p><strong>N'hésitez pas à contacter un professionnel proche de chez vous</strong> pour discuter de vos besoins et mettre en place un plan de soins adapté. La proximité est un atout précieux pour votre bien-être et votre tranquillité d'esprit.</p>
+</article>
+
+<div style="margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: var(--border-radius); text-align: center;">
+    <h3 style="color: var(--primary); margin-bottom: 1rem;">Articles connexes</h3>
+    <p style="color: var(--gray-dark);">
+        <a href="index.html" style="color: var(--primary); font-weight: 500;">Retour à l'accueil</a> | 
+        <a href="index.html#services" style="color: var(--primary); font-weight: 500;">Nos services</a> | 
+        <a href="index.html#faq" style="color: var(--primary); font-weight: 500;">Questions fréquentes</a>
+    </p>
+</div>
+```
+
+</div>
+
+<footer>
+    <p><strong>Cabinet Infirmier Libéral Limoges</strong> - Soins à domicile professionnels</p>
+    <p>N° ADELI: 876194705 | N° RPPS: 10104297923 | Conventionné Secteur 1</p>
+    <p>&copy; 2026 Tous droits réservés - <a href="mailto:infirmier.87@outlook.com">infirmier.87@outlook.com</a></p>
+</footer>
+
+<script>
+(function() {
+    'use strict';
+    
+    // Smooth scroll pour les ancres
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    for (let i = 0; i < anchorLinks.length; i++) {
+        anchorLinks[i].addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#') return;
+            
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+
+    // Tracking Google Analytics
+    if (typeof gtag !== 'undefined') {
+        // Tracking lecture article
+        let scrollTracked = false;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            if (scrollPercent > 75 && !scrollTracked) {
+                gtag('event', 'article_read', {
+                    'event_category': 'engagement',
+                    'event_label': 'Article: Infirmière libérale autour de moi'
+                });
+                scrollTracked = true;
+            }
+        });
+
+        // Tracking clics CTA
+        const ctaButtons = document.querySelectorAll('.btn, .cta-section a[href^="tel"]');
+        ctaButtons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                gtag('event', 'click_cta_article', {
+                    'event_category': 'conversion',
+                    'event_label': this.textContent.trim()
+                });
+            });
+        });
+    }
+})();
+</script>
+
+</body>
+</html>
