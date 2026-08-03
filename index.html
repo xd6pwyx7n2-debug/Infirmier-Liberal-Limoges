@@ -715,6 +715,20 @@ header.scrolled .burger {
     transform: translateY(-2px);
 }
 
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--white);
+    box-shadow: none;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+
 /* ==========================================
    SECTIONS
    ========================================== */
@@ -1542,10 +1556,17 @@ footer a:focus {
         </div>
         <h1>Infirmier Libéral à Limoges (87) – Soins à Domicile 7j/7</h1>
         <p>Votre santé au cœur de notre engagement. Interventions rapides et bienveillantes sur Limoges et toute la Haute-Vienne (87).</p>
-        <a href="#contact" class="btn" aria-label="Prendre rendez-vous maintenant">
-            <span>Prendre Rendez-vous</span>
-            <span aria-hidden="true">→</span>
-        </a>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="tel:+33682410661" class="btn" aria-label="Appeler pour prendre rendez-vous">
+        <span>Appeler Maintenant</span>
+        <span aria-hidden="true">📞</span>
+    </a>
+    <a href="#contact" class="btn btn-outline" aria-label="Aller au formulaire de rendez-vous">
+        <span>Prendre Rendez-vous</span>
+        <span aria-hidden="true">→</span>
+    </a>
+</div>
+
     </div>
 </section>
 
