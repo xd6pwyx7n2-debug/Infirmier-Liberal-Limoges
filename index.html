@@ -1504,6 +1504,31 @@ footer a:focus {
         line-height: 1.5;
     }
 }
+/* Hero et bandes grises en pleine largeur (le max-width de "section" les coupait,
+   d'où logo blanc sur fond blanc sur grand écran) */
+.hero { max-width: none; }
+#apropos, #zone {
+  box-shadow: 0 0 0 100vmax var(--light);
+  clip-path: inset(0 -100vmax);
+}
+
+/* Contrastes insuffisants (WCAG AA) */
+:root {
+  --accent: #00796b;        /* texte blanc sur #00a896 = ~3:1, trop faible */
+  --accent-hover: #00574d;
+  --gray: #566678;          /* ancien gris trop clair sur fond clair */
+}
+.hero p { opacity: 1; }
+footer a { color: #5eead4; }
+footer a:hover, footer a:focus { color: #99f6e4; }
+::placeholder { color: #5f6f82; opacity: 1; }
+
+/* Barre d'appel mobile qui masque le pied de page */
+@media (max-width: 768px) {
+  body { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
+  .mobile-cta { padding-bottom: calc(1rem + env(safe-area-inset-bottom)); }
+}
+
 </style>
 
 </head>
