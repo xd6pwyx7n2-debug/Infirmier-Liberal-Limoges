@@ -1527,6 +1527,21 @@ footer a:hover, footer a:focus { color: #99f6e4; }
 @media (max-width: 768px) {
   body { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
   .mobile-cta { padding-bottom: calc(1rem + env(safe-area-inset-bottom)); }
+
+}
+.nav-links .dropdown > a::after {
+  content: '▾';
+  position: static;
+  width: auto;
+  height: auto;
+  background: none;
+  transform: none;
+  margin-left: .35rem;
+  font-size: .75rem;
+}
+.nav-links .dropdown:hover > a::after,
+.nav-links .dropdown:focus-within > a::after {
+  transform: rotate(180deg);
 }
 
 </style>
