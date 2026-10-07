@@ -8,6 +8,7 @@
   <title>Infirmier Libéral à Limoges (87) | Soins à domicile 7j/7</title>
 
   <meta name="description" content="Cabinet infirmier libéral à Limoges et dans l'agglomération. Soins infirmiers à domicile sur prescription : diabète, pansements, injections, vaccination, soins palliatifs et soins courants.">
+
   <meta name="robots" content="index, follow">
   <meta name="author" content="Cabinet Infirmier Libéral Limoges">
   <meta name="theme-color" content="#0d5d7f">
@@ -23,18 +24,29 @@
   <meta property="og:image" content="https://www.infirmier-limoges.fr/images/og-image.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d5d7f'/%3E%3Cpath d='M43 20h14v23h23v14H57v23H43V57H20V43h23z' fill='white'/%3E%3C/svg%3E">
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d5d7f'/%3E%3Cpath d='M43 20h14v23h23v14H57v23H43V57H20V43h23z' fill='white'/%3E%3C/svg%3E"
+  >
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4KS3E8BMY"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
     gtag('config', 'G-J4KS3E8BMY');
   </script>
@@ -90,7 +102,9 @@
   }
   </script>
 
+
   <style>
+
     :root {
       --primary: #0d5d7f;
       --primary-dark: #084561;
@@ -102,12 +116,17 @@
 
       --cream: #f7faf9;
       --white: #ffffff;
+
       --text: #19313b;
       --muted: #647780;
 
       --border: #e5edef;
-      --shadow-sm: 0 8px 25px rgba(13, 93, 127, 0.07);
-      --shadow-md: 0 16px 45px rgba(13, 93, 127, 0.11);
+
+      --shadow-sm:
+        0 8px 25px rgba(13, 93, 127, 0.07);
+
+      --shadow-md:
+        0 16px 45px rgba(13, 93, 127, 0.11);
 
       --radius: 20px;
       --radius-lg: 30px;
@@ -115,15 +134,18 @@
       --max-width: 1180px;
     }
 
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
+
 
     body {
       font-family: "DM Sans", sans-serif;
@@ -133,15 +155,18 @@
       overflow-x: hidden;
     }
 
+
     img {
       max-width: 100%;
       display: block;
     }
 
+
     a {
       color: inherit;
       text-decoration: none;
     }
+
 
     button,
     input,
@@ -149,10 +174,12 @@
       font: inherit;
     }
 
+
     .container {
       width: min(var(--max-width), calc(100% - 40px));
       margin: auto;
     }
+
 
     .skip-link {
       position: fixed;
@@ -165,9 +192,11 @@
       z-index: 9999;
     }
 
+
     .skip-link:focus {
       top: 20px;
     }
+
 
     /* =========================
        HEADER
@@ -179,243 +208,331 @@
       left: 0;
       right: 0;
       z-index: 1000;
+
       background: rgba(255,255,255,0.94);
       backdrop-filter: blur(14px);
+
       border-bottom: 1px solid transparent;
+
       transition: .25s ease;
     }
+
 
     header.scrolled {
       border-color: var(--border);
       box-shadow: 0 5px 25px rgba(0,0,0,.05);
     }
 
+
     .nav {
       height: 78px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 25px;
     }
+
 
     .logo {
       display: flex;
       align-items: center;
+
       gap: 12px;
+
       font-weight: 700;
       color: var(--primary);
+
       font-size: 1.05rem;
+
       white-space: nowrap;
     }
+
 
     .logo-mark {
       width: 43px;
       height: 43px;
+
       border-radius: 13px;
-      background: linear-gradient(145deg, var(--primary), var(--accent));
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--primary),
+          var(--accent)
+        );
+
       color: white;
+
       display: grid;
       place-items: center;
+
       font-size: 1.45rem;
       font-weight: 700;
-      box-shadow: 0 8px 20px rgba(0,168,150,.18);
+
+      box-shadow:
+        0 8px 20px rgba(0,168,150,.18);
     }
+
 
     .nav-links {
       display: flex;
       align-items: center;
+
       gap: 26px;
+
       list-style: none;
     }
 
+
     .nav-links a {
       color: #40545d;
+
       font-size: .94rem;
       font-weight: 600;
+
       transition: .2s ease;
     }
+
 
     .nav-links a:hover {
       color: var(--primary);
     }
 
+
     .nav-phone {
       background: var(--primary);
+
       color: white !important;
+
       padding: 11px 18px;
+
       border-radius: 12px;
-      box-shadow: 0 7px 18px rgba(13,93,127,.17);
+
+      box-shadow:
+        0 7px 18px rgba(13,93,127,.17);
     }
+
 
     .nav-phone:hover {
       background: var(--primary-dark);
       color: white !important;
     }
 
+
     .burger {
       display: none;
+
       border: 0;
       background: transparent;
+
       font-size: 1.7rem;
+
       cursor: pointer;
+
       color: var(--primary);
     }
+
 
     /* =========================
        HERO
     ========================= */
 
     .hero {
-      padding: 150px 0 80px;
+      padding: 145px 0 80px;
+
       background:
-        radial-gradient(circle at 85% 15%, rgba(0,168,150,.12), transparent 30%),
-        radial-gradient(circle at 10% 80%, rgba(13,93,127,.08), transparent 28%),
-        linear-gradient(180deg, #f5fbfa 0%, #ffffff 100%);
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(0,168,150,.12),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 10% 80%,
+          rgba(13,93,127,.08),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #f5fbfa 0%,
+          #ffffff 100%
+        );
     }
+
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.02fr .98fr;
+
+      grid-template-columns:
+        1.02fr
+        .98fr;
+
       align-items: center;
+
       gap: 65px;
     }
+
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
+
       gap: 8px;
+
       padding: 8px 13px;
+
       border-radius: 100px;
+
       background: var(--accent-light);
+
       color: var(--accent-dark);
+
       font-size: .82rem;
       font-weight: 700;
+
       margin-bottom: 20px;
     }
 
+
     .hero h1 {
-      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-size:
+        clamp(
+          2.5rem,
+          5vw,
+          4.5rem
+        );
+
       line-height: 1.08;
+
       letter-spacing: -2.5px;
+
       color: var(--primary-dark);
+
       margin-bottom: 22px;
+
       font-weight: 700;
     }
+
 
     .hero h1 span {
       color: var(--accent);
     }
 
+
     .hero-text {
       font-size: 1.1rem;
+
       color: var(--muted);
+
       max-width: 650px;
+
       margin-bottom: 30px;
     }
+
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
+
       gap: 13px;
+
       margin-bottom: 28px;
     }
+
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
+
       gap: 9px;
+
       border-radius: 13px;
+
       padding: 14px 21px;
+
       font-weight: 700;
+
       border: 1px solid transparent;
+
       cursor: pointer;
+
       transition: .2s ease;
     }
 
+
     .btn-primary {
       background: var(--primary);
+
       color: white;
-      box-shadow: 0 10px 24px rgba(13,93,127,.18);
+
+      box-shadow:
+        0 10px 24px rgba(13,93,127,.18);
     }
+
 
     .btn-primary:hover {
       background: var(--primary-dark);
+
       transform: translateY(-2px);
     }
+
 
     .btn-secondary {
       background: white;
+
       color: var(--primary);
+
       border-color: #dbe7ea;
     }
 
+
     .btn-secondary:hover {
       border-color: var(--primary);
+
       transform: translateY(-2px);
     }
+
 
     .hero-phone {
       display: flex;
       align-items: center;
+
       gap: 11px;
+
       color: var(--primary);
+
       font-weight: 700;
     }
 
+
     .hero-phone small {
       display: block;
+
       color: var(--muted);
+
       font-weight: 500;
     }
+
 
     .hero-image {
       position: relative;
     }
 
+
     .hero-image img {
       width: 100%;
-      height: 540px;
+
+      height: 535px;
+
       object-fit: cover;
+
       border-radius: 34px;
+
       box-shadow: var(--shadow-md);
     }
 
-    .floating-card {
-      position: absolute;
-      left: -28px;
-      bottom: 30px;
-      background: white;
-      padding: 18px 20px;
-      border-radius: 18px;
-      box-shadow: var(--shadow-md);
-      display: flex;
-      align-items: center;
-      gap: 13px;
-      max-width: 250px;
-    }
-
-    .floating-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 13px;
-      background: var(--accent-light);
-      color: var(--accent-dark);
-      display: grid;
-      place-items: center;
-      font-size: 1.2rem;
-    }
-
-    .floating-card strong {
-      display: block;
-      color: var(--primary);
-      font-size: .95rem;
-    }
-
-    .floating-card span {
-      font-size: .78rem;
-      color: var(--muted);
-    }
 
     /* =========================
        TRUST
@@ -423,32 +540,48 @@
 
     .trust {
       padding: 25px 0;
+
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
+
       background: white;
     }
 
+
     .trust-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 20px;
     }
 
+
     .trust-item {
       display: flex;
+
       align-items: center;
       justify-content: center;
+
       gap: 10px;
+
       font-size: .9rem;
+
       font-weight: 700;
+
       color: #435860;
+
       text-align: center;
     }
 
+
     .trust-item span:first-child {
       color: var(--accent);
+
       font-size: 1.2rem;
     }
+
 
     /* =========================
        SECTIONS
@@ -458,42 +591,66 @@
       padding: 95px 0;
     }
 
+
     .section-soft {
       background: var(--cream);
     }
 
+
     .section-heading {
       max-width: 700px;
+
       margin-bottom: 45px;
     }
+
 
     .section-heading.center {
       margin-left: auto;
       margin-right: auto;
+
       text-align: center;
     }
 
+
     .section-kicker {
       color: var(--accent-dark);
+
       font-size: .82rem;
+
       font-weight: 800;
+
       letter-spacing: .08em;
+
       text-transform: uppercase;
+
       margin-bottom: 9px;
     }
 
+
     .section-heading h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
+      font-size:
+        clamp(
+          2rem,
+          4vw,
+          3rem
+        );
+
       line-height: 1.15;
+
       letter-spacing: -1.3px;
+
       color: var(--primary-dark);
+
       margin-bottom: 14px;
     }
 
+
     .section-heading p {
       color: var(--muted);
+
       font-size: 1.02rem;
     }
+
 
     /* =========================
        SERVICES
@@ -501,70 +658,109 @@
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 20px;
     }
 
+
     .service-card {
       background: white;
+
       border: 1px solid var(--border);
+
       border-radius: var(--radius);
+
       padding: 28px;
+
       transition: .25s ease;
+
       position: relative;
+
       overflow: hidden;
     }
 
+
     .service-card::after {
       content: "";
+
       position: absolute;
+
       width: 100px;
       height: 100px;
+
       border-radius: 50%;
-      background: rgba(0,168,150,.06);
+
+      background:
+        rgba(0,168,150,.06);
+
       right: -40px;
       top: -40px;
     }
 
+
     .service-card:hover {
       transform: translateY(-5px);
+
       box-shadow: var(--shadow-md);
-      border-color: rgba(0,168,150,.25);
+
+      border-color:
+        rgba(0,168,150,.25);
     }
+
 
     .service-icon {
       width: 55px;
       height: 55px;
+
       display: grid;
       place-items: center;
+
       border-radius: 16px;
+
       background: var(--accent-light);
+
       color: var(--accent-dark);
+
       font-size: 1.45rem;
+
       margin-bottom: 21px;
     }
 
+
     .service-card h3 {
       color: var(--primary-dark);
+
       font-size: 1.16rem;
+
       margin-bottom: 9px;
     }
 
+
     .service-card p {
       color: var(--muted);
+
       font-size: .91rem;
+
       margin-bottom: 18px;
     }
 
+
     .service-link {
       color: var(--primary);
+
       font-weight: 700;
+
       font-size: .9rem;
     }
+
 
     .service-link:hover {
       color: var(--accent-dark);
     }
+
 
     /* =========================
        POURQUOI ME CHOISIR
@@ -572,34 +768,51 @@
 
     .why-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
       gap: 18px;
     }
 
+
     .why-card {
       padding: 27px;
+
       border-radius: var(--radius);
+
       background: white;
+
       border: 1px solid var(--border);
     }
 
+
     .why-number {
       font-size: .78rem;
+
       color: var(--accent-dark);
+
       font-weight: 800;
+
       margin-bottom: 17px;
     }
 
+
     .why-card h3 {
       color: var(--primary-dark);
+
       margin-bottom: 9px;
+
       font-size: 1.05rem;
     }
 
+
     .why-card p {
       color: var(--muted);
+
       font-size: .9rem;
     }
+
 
     /* =========================
        ABOUT
@@ -607,79 +820,130 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: .9fr 1.1fr;
+
+      grid-template-columns:
+        .9fr
+        1.1fr;
+
       align-items: center;
+
       gap: 65px;
     }
+
 
     .about-image {
       position: relative;
     }
 
+
     .about-image img {
       width: 100%;
+
       height: 510px;
+
       object-fit: cover;
+
       border-radius: 30px;
+
       box-shadow: var(--shadow-md);
     }
+
 
     .about-badge {
       position: absolute;
+
       right: -20px;
       bottom: 30px;
+
       background: white;
+
       border-radius: 18px;
+
       padding: 18px;
+
       box-shadow: var(--shadow-md);
+
       max-width: 220px;
     }
 
+
     .about-badge strong {
       color: var(--primary);
+
       display: block;
+
       font-size: 1.5rem;
     }
 
+
     .about-badge span {
       color: var(--muted);
+
       font-size: .8rem;
     }
 
+
     .about-content h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
+      font-size:
+        clamp(
+          2rem,
+          4vw,
+          3rem
+        );
+
       line-height: 1.15;
+
       color: var(--primary-dark);
+
       margin-bottom: 20px;
+
       letter-spacing: -1.2px;
     }
 
+
     .about-content > p {
       color: var(--muted);
+
       margin-bottom: 25px;
     }
 
+
     .qualifications {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
       gap: 12px;
     }
 
+
     .qualification {
       padding: 14px;
+
       border-radius: 13px;
+
       background: var(--cream);
+
       font-size: .88rem;
+
       font-weight: 600;
+
       color: #435860;
     }
 
+
     .qualification::before {
       content: "✓";
+
       color: var(--accent);
+
       font-weight: 800;
+
       margin-right: 8px;
     }
+
 
     /* =========================
        VOTRE SITUATION
@@ -687,40 +951,60 @@
 
     .situations-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+
+      grid-template-columns:
+        repeat(5, 1fr);
+
       gap: 15px;
     }
 
+
     .situation {
       padding: 23px 18px;
+
       background: white;
+
       border-radius: 18px;
+
       border: 1px solid var(--border);
+
       transition: .2s ease;
     }
 
+
     .situation:hover {
       transform: translateY(-3px);
+
       box-shadow: var(--shadow-sm);
     }
 
+
     .situation-icon {
       font-size: 1.5rem;
+
       margin-bottom: 13px;
     }
 
+
     .situation strong {
       display: block;
+
       color: var(--primary-dark);
+
       font-size: .95rem;
+
       line-height: 1.35;
+
       margin-bottom: 6px;
     }
 
+
     .situation span {
       color: var(--muted);
+
       font-size: .78rem;
     }
+
 
     /* =========================
        PROCESS
@@ -728,37 +1012,57 @@
 
     .process-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 25px;
+
       counter-reset: process;
     }
 
+
     .process-card {
       padding: 30px;
+
       background: white;
+
       border-radius: var(--radius);
+
       border: 1px solid var(--border);
+
       position: relative;
     }
 
+
     .process-card::before {
       counter-increment: process;
+
       content: "0" counter(process);
+
       color: var(--accent);
+
       font-size: .8rem;
+
       font-weight: 800;
+
       letter-spacing: .08em;
     }
 
+
     .process-card h3 {
       color: var(--primary-dark);
+
       margin: 13px 0 8px;
     }
 
+
     .process-card p {
       color: var(--muted);
+
       font-size: .9rem;
     }
+
 
     /* =========================
        ZONE
@@ -766,43 +1070,66 @@
 
     .zone {
       background:
-        linear-gradient(135deg, var(--primary-dark), var(--primary));
+        linear-gradient(
+          135deg,
+          var(--primary-dark),
+          var(--primary)
+        );
+
       color: white;
     }
+
 
     .zone .section-kicker {
       color: #76e4d8;
     }
 
+
     .zone h2 {
       color: white;
     }
+
 
     .zone p {
       color: rgba(255,255,255,.75);
     }
 
+
     .zone-grid {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 12px;
+
       margin-top: 30px;
     }
 
+
     .zone-pill {
       border: 1px solid rgba(255,255,255,.17);
+
       background: rgba(255,255,255,.08);
+
       padding: 12px 17px;
+
       border-radius: 100px;
+
       font-size: .9rem;
+
       font-weight: 600;
     }
 
+
     .zone-note {
       margin-top: 25px;
+
       font-size: .88rem;
-      color: rgba(255,255,255,.65) !important;
+
+      color:
+        rgba(255,255,255,.65) !important;
     }
+
 
     /* =========================
        FAQ
@@ -810,49 +1137,77 @@
 
     .faq {
       max-width: 850px;
+
       margin: auto;
     }
+
 
     .faq-item {
       border-bottom: 1px solid var(--border);
     }
 
+
     .faq-question {
       width: 100%;
+
       border: 0;
+
       background: transparent;
+
       padding: 21px 0;
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       text-align: left;
+
       cursor: pointer;
+
       color: var(--primary-dark);
+
       font-weight: 700;
+
       font-size: .98rem;
     }
 
+
     .faq-question span:last-child {
       font-size: 1.3rem;
+
       color: var(--accent);
+
       transition: .2s ease;
     }
 
+
     .faq-answer {
       max-height: 0;
+
       overflow: hidden;
-      transition: max-height .3s ease;
+
+      transition:
+        max-height .3s ease;
     }
+
 
     .faq-answer p {
       color: var(--muted);
+
       padding: 0 0 20px;
+
       font-size: .91rem;
     }
 
-    .faq-item.active .faq-question span:last-child {
+
+    .faq-item.active
+    .faq-question
+    span:last-child {
       transform: rotate(45deg);
     }
+
 
     /* =========================
        CONTACT
@@ -862,120 +1217,185 @@
       background: var(--cream);
     }
 
+
     .contact-grid {
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+
+      grid-template-columns:
+        .85fr
+        1.15fr;
+
       gap: 40px;
+
       align-items: start;
     }
 
+
     .contact-info h2 {
       color: var(--primary-dark);
+
       font-size: 2.6rem;
+
       line-height: 1.15;
+
       margin-bottom: 16px;
+
       letter-spacing: -1px;
     }
 
+
     .contact-info > p {
       color: var(--muted);
+
       margin-bottom: 30px;
     }
 
+
     .contact-card {
       display: flex;
+
       gap: 15px;
+
       padding: 17px 0;
+
       border-bottom: 1px solid var(--border);
     }
+
 
     .contact-card-icon {
       width: 45px;
       height: 45px;
+
       border-radius: 13px;
+
       background: white;
+
       color: var(--primary);
+
       display: grid;
       place-items: center;
+
       flex-shrink: 0;
     }
 
+
     .contact-card strong {
       display: block;
+
       color: var(--primary-dark);
+
       margin-bottom: 2px;
     }
 
+
     .contact-card span {
       color: var(--muted);
+
       font-size: .87rem;
     }
 
+
     .contact-card a {
       color: var(--primary);
+
       font-weight: 700;
     }
 
+
     .form-box {
       background: white;
+
       padding: 32px;
+
       border-radius: 25px;
+
       box-shadow: var(--shadow-sm);
     }
 
+
     .form-box h3 {
       color: var(--primary-dark);
+
       margin-bottom: 20px;
+
       font-size: 1.4rem;
     }
+
 
     .form-group {
       margin-bottom: 16px;
     }
 
+
     .form-group label {
       display: block;
+
       color: #435860;
+
       font-size: .85rem;
+
       font-weight: 700;
+
       margin-bottom: 6px;
     }
+
 
     .form-group input,
     .form-group textarea {
       width: 100%;
+
       border: 1px solid #dce6e9;
+
       border-radius: 11px;
+
       padding: 12px 14px;
+
       outline: none;
+
       color: var(--text);
+
       background: #fbfdfd;
+
       transition: .2s ease;
     }
+
 
     .form-group input:focus,
     .form-group textarea:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(0,168,150,.09);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(0,168,150,.09);
     }
+
 
     .form-group textarea {
       min-height: 135px;
+
       resize: vertical;
     }
 
+
     .form-submit {
       width: 100%;
+
       border: 0;
+
       margin-top: 5px;
     }
 
+
     .form-note {
       color: #7a8b91;
+
       font-size: .74rem;
+
       margin-top: 11px;
+
       text-align: center;
     }
+
 
     /* =========================
        MAP
@@ -985,17 +1405,24 @@
       padding: 0;
     }
 
+
     .map-wrapper {
       width: 100%;
+
       height: 390px;
     }
 
+
     .map-wrapper iframe {
       width: 100%;
+
       height: 100%;
+
       border: 0;
+
       display: block;
     }
+
 
     /* =========================
        FOOTER
@@ -1003,69 +1430,104 @@
 
     footer {
       background: #063b50;
+
       color: rgba(255,255,255,.72);
+
       padding: 45px 0 25px;
     }
 
+
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.3fr .7fr .7fr;
+
+      grid-template-columns:
+        1.3fr
+        .7fr
+        .7fr;
+
       gap: 50px;
+
       padding-bottom: 35px;
-      border-bottom: 1px solid rgba(255,255,255,.1);
+
+      border-bottom:
+        1px solid rgba(255,255,255,.1);
     }
+
 
     .footer-brand {
       max-width: 400px;
     }
 
+
     .footer-logo {
       color: white;
+
       display: flex;
       align-items: center;
+
       gap: 10px;
+
       font-weight: 700;
+
       margin-bottom: 15px;
     }
+
 
     .footer-logo .logo-mark {
       width: 38px;
       height: 38px;
+
       font-size: 1.2rem;
     }
 
+
     .footer-brand p {
       font-size: .85rem;
+
       line-height: 1.7;
     }
 
+
     footer h4 {
       color: white;
+
       margin-bottom: 14px;
+
       font-size: .95rem;
     }
+
 
     footer ul {
       list-style: none;
     }
 
+
     footer li {
       margin-bottom: 8px;
+
       font-size: .84rem;
     }
+
 
     footer a:hover {
       color: white;
     }
 
+
     .footer-bottom {
       padding-top: 22px;
+
       display: flex;
+
       justify-content: space-between;
+
       gap: 20px;
+
       font-size: .75rem;
+
       flex-wrap: wrap;
     }
+
 
     /* =========================
        MOBILE CTA
@@ -1073,25 +1535,39 @@
 
     .mobile-cta {
       display: none;
+
       position: fixed;
+
       left: 15px;
       right: 15px;
       bottom: 15px;
+
       z-index: 999;
     }
 
+
     .mobile-cta a {
       display: flex;
+
       align-items: center;
       justify-content: center;
+
       gap: 9px;
+
       background: var(--primary);
+
       color: white;
+
       border-radius: 15px;
+
       padding: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.18);
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.18);
+
       font-weight: 700;
     }
+
 
     /* =========================
        ANIMATIONS
@@ -1099,17 +1575,26 @@
 
     .reveal {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity .6s ease, transform .6s ease;
+
+      transform:
+        translateY(20px);
+
+      transition:
+        opacity .6s ease,
+        transform .6s ease;
     }
+
 
     .reveal.visible {
       opacity: 1;
-      transform: translateY(0);
+
+      transform:
+        translateY(0);
     }
 
+
     /* =========================
-       RESPONSIVE
+       TABLET
     ========================= */
 
     @media (max-width: 1050px) {
@@ -1118,19 +1603,30 @@
         gap: 17px;
       }
 
+
       .hero-grid,
       .about-grid {
         gap: 40px;
       }
 
+
       .situations-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:
+          repeat(3, 1fr);
       }
 
+
       .why-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
+
     }
+
+
+    /* =========================
+       MOBILE NAV / TABLET
+    ========================= */
 
     @media (max-width: 850px) {
 
@@ -1138,41 +1634,59 @@
         height: 70px;
       }
 
+
       .burger {
         display: block;
       }
 
+
       .nav-links {
         display: none;
+
         position: absolute;
+
         top: 70px;
+
         left: 15px;
         right: 15px;
+
         background: white;
+
         padding: 20px;
+
         border-radius: 18px;
+
         box-shadow: var(--shadow-md);
+
         flex-direction: column;
+
         align-items: stretch;
+
         gap: 4px;
       }
+
 
       .nav-links.active {
         display: flex;
       }
 
+
       .nav-links a {
         display: block;
+
         padding: 11px;
       }
+
 
       .nav-phone {
         text-align: center;
       }
 
+
       .hero {
-        padding-top: 115px;
+        padding-top: 110px;
       }
+
 
       .hero-grid,
       .about-grid,
@@ -1180,93 +1694,122 @@
         grid-template-columns: 1fr;
       }
 
+
       .hero-image {
         order: -1;
       }
 
+
       .hero-image img {
-        height: 420px;
+        height: 430px;
       }
 
-      .floating-card {
-        left: 20px;
-      }
 
       .about-image img {
         height: 430px;
       }
 
+
       .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
+
       .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, 1fr);
       }
+
 
       .process-grid {
         grid-template-columns: 1fr;
       }
 
+
       .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:
+          1fr
+          1fr;
       }
+
     }
+
+
+    /* =========================
+       SMARTPHONE
+    ========================= */
 
     @media (max-width: 600px) {
 
       .container {
-        width: min(100% - 28px, var(--max-width));
+        width:
+          min(
+            100% - 28px,
+            var(--max-width)
+          );
       }
+
 
       section {
         padding: 70px 0;
       }
 
+
       .hero {
-        padding: 100px 0 55px;
+        padding:
+          100px 0
+          55px;
       }
+
 
       .hero h1 {
         font-size: 2.55rem;
+
         letter-spacing: -1.6px;
       }
+
 
       .hero-text {
         font-size: 1rem;
       }
 
+
       .hero-actions {
         flex-direction: column;
       }
+
 
       .hero-actions .btn {
         width: 100%;
       }
 
+
       .hero-image img {
         height: 330px;
+
         border-radius: 23px;
       }
 
-      .floating-card {
-        left: 12px;
-        bottom: 15px;
-      }
 
       .trust {
         padding: 20px 0;
       }
 
+
       .trust-grid {
         gap: 12px;
       }
 
+
       .trust-item {
         font-size: .76rem;
+
         flex-direction: column;
+
         gap: 3px;
       }
+
 
       .services-grid,
       .why-grid,
@@ -1274,45 +1817,65 @@
         grid-template-columns: 1fr;
       }
 
+
       .about-image img {
         height: 350px;
       }
+
 
       .about-badge {
         right: 10px;
       }
 
+
       .qualifications {
         grid-template-columns: 1fr;
       }
+
 
       .form-box {
         padding: 22px;
       }
 
+
       .footer-grid {
         grid-template-columns: 1fr;
+
         gap: 28px;
       }
+
 
       .footer-bottom {
         flex-direction: column;
       }
 
+
       .mobile-cta {
         display: block;
       }
 
+
       body {
         padding-bottom: 65px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-<a class="skip-link" href="#main">Aller au contenu</a>
+
+<a
+  class="skip-link"
+  href="#main"
+>
+  Aller au contenu
+</a>
+
 
 <!-- =========================
      HEADER
@@ -1322,45 +1885,79 @@
 
   <div class="container nav">
 
-    <a href="/" class="logo" aria-label="Accueil Cabinet Infirmier Limoges">
+    <a
+      href="/"
+      class="logo"
+      aria-label="Accueil Cabinet Infirmier Limoges"
+    >
+
       <span class="logo-mark">+</span>
-      <span>Cabinet Infirmier</span>
+
+      <span>
+        Cabinet Infirmier
+      </span>
+
     </a>
 
-    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+
+    <button
+      class="burger"
+      id="burger"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+    >
       ☰
     </button>
 
+
     <nav>
-      <ul class="nav-links" id="navLinks">
+
+      <ul
+        class="nav-links"
+        id="navLinks"
+      >
 
         <li>
-          <a href="#services">Soins</a>
+          <a href="#services">
+            Soins
+          </a>
         </li>
 
         <li>
-          <a href="#cabinet">Le cabinet</a>
+          <a href="#cabinet">
+            Le cabinet
+          </a>
         </li>
 
         <li>
-          <a href="#zone">Zone d'intervention</a>
+          <a href="#zone">
+            Zone d'intervention
+          </a>
         </li>
 
         <li>
-          <a href="#faq">FAQ</a>
+          <a href="#faq">
+            FAQ
+          </a>
         </li>
 
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">
+            Contact
+          </a>
         </li>
 
         <li>
-          <a href="tel:0682410661" class="nav-phone">
+          <a
+            href="tel:0682410661"
+            class="nav-phone"
+          >
             ☎ 06 82 41 06 61
           </a>
         </li>
 
       </ul>
+
     </nav>
 
   </div>
@@ -1370,6 +1967,7 @@
 
 <main id="main">
 
+
 <!-- =========================
      HERO
 ========================= -->
@@ -1378,42 +1976,70 @@
 
   <div class="container hero-grid">
 
+
     <div class="hero-content reveal">
 
       <div class="eyebrow">
         ✦ Cabinet infirmier libéral à Limoges
       </div>
 
+
       <h1>
+
         Vos soins,<br>
-        <span>chez vous.</span>
+
+        <span>
+          chez vous.
+        </span>
+
       </h1>
 
+
       <p class="hero-text">
+
         Infirmier libéral à Limoges et dans l'agglomération,
         je vous accompagne à domicile avec une prise en charge
         professionnelle, attentive et personnalisée.
+
       </p>
+
 
       <div class="hero-actions">
 
-        <a href="tel:0682410661" class="btn btn-primary">
+        <a
+          href="tel:0682410661"
+          class="btn btn-primary"
+        >
           ☎ Appeler le cabinet
         </a>
 
-        <a href="#contact" class="btn btn-secondary">
+
+        <a
+          href="#contact"
+          class="btn btn-secondary"
+        >
           Prendre contact
         </a>
 
       </div>
 
+
       <div class="hero-phone">
 
-        <span>✓</span>
+        <span>
+          ✓
+        </span>
 
         <div>
-          <strong>Soins infirmiers à domicile</strong>
-          <small>Sur prescription médicale • Limoges et alentours</small>
+
+          <strong>
+            Soins infirmiers à domicile
+          </strong>
+
+          <small>
+            Sur prescription médicale • Limoges et alentours
+          </small>
+
         </div>
 
       </div>
@@ -1429,20 +2055,8 @@
         loading="eager"
       >
 
-      <div class="floating-card">
-
-        <div class="floating-icon">
-          ♥
-        </div>
-
-        <div>
-          <strong>Une prise en charge humaine</strong>
-          <span>Écoute, rigueur et continuité des soins</span>
-        </div>
-
-      </div>
-
     </div>
+
 
   </div>
 
@@ -1457,25 +2071,50 @@
 
   <div class="container trust-grid">
 
-    <div class="trust-item">
-      <span>✓</span>
-      <span>Diplômé d'État</span>
-    </div>
 
     <div class="trust-item">
+
       <span>✓</span>
-      <span>Conventionné secteur 1</span>
+
+      <span>
+        Diplômé d'État
+      </span>
+
     </div>
 
-    <div class="trust-item">
-      <span>✓</span>
-      <span>Soins à domicile</span>
-    </div>
 
     <div class="trust-item">
+
       <span>✓</span>
-      <span>Limoges & agglomération</span>
+
+      <span>
+        Conventionné secteur 1
+      </span>
+
     </div>
+
+
+    <div class="trust-item">
+
+      <span>✓</span>
+
+      <span>
+        Soins à domicile
+      </span>
+
+    </div>
+
+
+    <div class="trust-item">
+
+      <span>✓</span>
+
+      <span>
+        Limoges & agglomération
+      </span>
+
+    </div>
+
 
   </div>
 
@@ -1490,19 +2129,23 @@
 
   <div class="container">
 
+
     <div class="section-heading reveal">
 
       <div class="section-kicker">
         Les soins
       </div>
 
+
       <h2>
         Des soins infirmiers adaptés à votre situation
       </h2>
 
+
       <p>
-        Chaque prise en charge est réalisée à domicile, dans le respect
-        de votre prescription médicale et de vos besoins.
+        Chaque prise en charge est réalisée à domicile,
+        dans le respect de votre prescription médicale
+        et de vos besoins.
       </p>
 
     </div>
@@ -1510,18 +2153,26 @@
 
     <div class="services-grid">
 
+
       <article class="service-card reveal">
 
-        <div class="service-icon">💉</div>
+        <div class="service-icon">
+          💉
+        </div>
 
-        <h3>Vaccination</h3>
+        <h3>
+          Vaccination
+        </h3>
 
         <p>
-          Vaccinations prescrites et accompagnement autour de la prévention
-          et de la protection vaccinale.
+          Vaccinations prescrites et accompagnement autour
+          de la prévention et de la protection vaccinale.
         </p>
 
-        <a href="services/vaccination.html" class="service-link">
+        <a
+          href="services/vaccination.html"
+          class="service-link"
+        >
           Découvrir →
         </a>
 
@@ -1530,16 +2181,24 @@
 
       <article class="service-card reveal">
 
-        <div class="service-icon">🩸</div>
+        <div class="service-icon">
+          🩸
+        </div>
 
-        <h3>Diabète</h3>
+        <h3>
+          Diabète
+        </h3>
 
         <p>
-          Accompagnement des personnes diabétiques : surveillance,
-          injections, traitement et suivi infirmier à domicile.
+          Accompagnement des personnes diabétiques :
+          surveillance, injections, traitement et suivi
+          infirmier à domicile.
         </p>
 
-        <a href="services/diabete.html" class="service-link">
+        <a
+          href="services/diabete.html"
+          class="service-link"
+        >
           Découvrir →
         </a>
 
@@ -1548,16 +2207,23 @@
 
       <article class="service-card reveal">
 
-        <div class="service-icon">🩹</div>
+        <div class="service-icon">
+          🩹
+        </div>
 
-        <h3>Pansements & plaies</h3>
+        <h3>
+          Pansements & plaies
+        </h3>
 
         <p>
-          Soins de plaies, pansements simples ou complexes et surveillance
-          de l'évolution de la cicatrisation.
+          Soins de plaies, pansements simples ou complexes
+          et surveillance de l'évolution de la cicatrisation.
         </p>
 
-        <a href="services/pansements.html" class="service-link">
+        <a
+          href="services/pansements.html"
+          class="service-link"
+        >
           Découvrir →
         </a>
 
@@ -1566,16 +2232,23 @@
 
       <article class="service-card reveal">
 
-        <div class="service-icon">💊</div>
+        <div class="service-icon">
+          💊
+        </div>
 
-        <h3>Soins infirmiers</h3>
+        <h3>
+          Soins infirmiers
+        </h3>
 
         <p>
-          Injections, surveillance, traitements et soins infirmiers
-          prescrits réalisés directement à votre domicile.
+          Injections, surveillance, traitements et soins
+          infirmiers prescrits réalisés directement à votre domicile.
         </p>
 
-        <a href="infirmiere-domicile-limoges.html" class="service-link">
+        <a
+          href="infirmiere-domicile-limoges.html"
+          class="service-link"
+        >
           Découvrir →
         </a>
 
@@ -1584,16 +2257,23 @@
 
       <article class="service-card reveal">
 
-        <div class="service-icon">🏠</div>
+        <div class="service-icon">
+          🏠
+        </div>
 
-        <h3>Retour à domicile</h3>
+        <h3>
+          Retour à domicile
+        </h3>
 
         <p>
           Accompagnement après une hospitalisation, une intervention
           chirurgicale ou lors d'une période de convalescence.
         </p>
 
-        <a href="infirmier-limoges.html" class="service-link">
+        <a
+          href="infirmier-limoges.html"
+          class="service-link"
+        >
           Découvrir →
         </a>
 
@@ -1602,20 +2282,28 @@
 
       <article class="service-card reveal">
 
-        <div class="service-icon">🤍</div>
+        <div class="service-icon">
+          🤍
+        </div>
 
-        <h3>Soins palliatifs</h3>
+        <h3>
+          Soins palliatifs
+        </h3>
 
         <p>
           Accompagnement infirmier à domicile des patients et de leurs
           proches dans une démarche de confort et de respect.
         </p>
 
-        <a href="services/palliatifs.html" class="service-link">
+        <a
+          href="services/palliatifs.html"
+          class="service-link"
+        >
           Découvrir →
         </a>
 
       </article>
+
 
     </div>
 
@@ -1632,15 +2320,18 @@
 
   <div class="container">
 
+
     <div class="section-heading center reveal">
 
       <div class="section-kicker">
         Le cabinet
       </div>
 
+
       <h2>
         Pourquoi me choisir ?
       </h2>
+
 
       <p>
         Au-delà du soin technique, l'objectif est de vous apporter
@@ -1652,15 +2343,21 @@
 
     <div class="why-grid">
 
+
       <article class="why-card reveal">
 
-        <div class="why-number">01</div>
+        <div class="why-number">
+          01
+        </div>
 
-        <h3>Expérience</h3>
+        <h3>
+          Expérience
+        </h3>
 
         <p>
-          Une expérience professionnelle en milieu hospitalier et en exercice
-          infirmier libéral pour assurer une prise en charge rigoureuse.
+          Une expérience professionnelle en milieu hospitalier
+          et en exercice infirmier libéral pour assurer une
+          prise en charge rigoureuse.
         </p>
 
       </article>
@@ -1668,13 +2365,18 @@
 
       <article class="why-card reveal">
 
-        <div class="why-number">02</div>
+        <div class="why-number">
+          02
+        </div>
 
-        <h3>Relation humaine</h3>
+        <h3>
+          Relation humaine
+        </h3>
 
         <p>
-          Une attention particulière portée à l'écoute, au respect de vos
-          habitudes et à votre confort au quotidien.
+          Une attention particulière portée à l'écoute,
+          au respect de vos habitudes et à votre confort
+          au quotidien.
         </p>
 
       </article>
@@ -1682,13 +2384,17 @@
 
       <article class="why-card reveal">
 
-        <div class="why-number">03</div>
+        <div class="why-number">
+          03
+        </div>
 
-        <h3>Soins chez vous</h3>
+        <h3>
+          Soins chez vous
+        </h3>
 
         <p>
-          Vous restez dans votre environnement habituel, avec des soins
-          adaptés à votre situation et à votre rythme.
+          Vous restez dans votre environnement habituel,
+          avec des soins adaptés à votre situation et à votre rythme.
         </p>
 
       </article>
@@ -1696,16 +2402,21 @@
 
       <article class="why-card reveal">
 
-        <div class="why-number">04</div>
+        <div class="why-number">
+          04
+        </div>
 
-        <h3>Prise en charge rigoureuse</h3>
+        <h3>
+          Prise en charge rigoureuse
+        </h3>
 
         <p>
-          Respect des prescriptions, des protocoles de soins, de l'hygiène
-          et du secret professionnel.
+          Respect des prescriptions, des protocoles de soins,
+          de l'hygiène et du secret professionnel.
         </p>
 
       </article>
+
 
     </div>
 
@@ -1715,12 +2426,13 @@
 
 
 <!-- =========================
-     CABINET / ABOUT
+     CABINET
 ========================= -->
 
 <section id="cabinet">
 
   <div class="container about-grid">
+
 
     <div class="about-image reveal">
 
@@ -1730,9 +2442,12 @@
         loading="lazy"
       >
 
+
       <div class="about-badge">
 
-        <strong>+10 ans</strong>
+        <strong>
+          +10 ans
+        </strong>
 
         <span>
           d'expérience professionnelle dans les soins infirmiers
@@ -1749,56 +2464,69 @@
         À propos
       </div>
 
+
       <h2>
         Des soins professionnels,
         avec une vraie relation humaine.
       </h2>
 
-      <p>
-        Infirmier diplômé d'État, j'exerce en cabinet libéral et réalise
-        des soins infirmiers à domicile à Limoges et dans les communes
-        environnantes.
-      </p>
 
       <p>
-        Mon objectif est simple : vous permettre de recevoir vos soins
-        dans de bonnes conditions, directement chez vous, tout en restant
-        disponible et attentif à votre situation.
+        Infirmier diplômé d'État, j'exerce en cabinet libéral
+        et réalise des soins infirmiers à domicile à Limoges
+        et dans les communes environnantes.
       </p>
+
+
+      <p>
+        Mon objectif est simple : vous permettre de recevoir
+        vos soins dans de bonnes conditions, directement chez vous,
+        tout en restant disponible et attentif à votre situation.
+      </p>
+
 
       <div class="qualifications">
+
 
         <div class="qualification">
           Diplôme d'État infirmier
         </div>
 
+
         <div class="qualification">
           Ordre National des Infirmiers
         </div>
+
 
         <div class="qualification">
           ADELI 876194705
         </div>
 
+
         <div class="qualification">
           RPPS 10104297923
         </div>
+
 
         <div class="qualification">
           Formation continue
         </div>
 
+
         <div class="qualification">
           Conventionné secteur 1
         </div>
+
 
         <div class="qualification">
           Responsabilité civile professionnelle
         </div>
 
+
         <div class="qualification">
           Secret professionnel
         </div>
+
 
       </div>
 
@@ -1817,19 +2545,22 @@
 
   <div class="container">
 
+
     <div class="section-heading center reveal">
 
       <div class="section-kicker">
         Vous êtes...
       </div>
 
+
       <h2>
         Votre situation
       </h2>
 
+
       <p>
-        Les soins infirmiers peuvent intervenir dans de nombreuses situations
-        de la vie quotidienne ou après un événement de santé.
+        Les soins infirmiers peuvent intervenir dans de nombreuses
+        situations de la vie quotidienne ou après un événement de santé.
       </p>
 
     </div>
@@ -1837,35 +2568,91 @@
 
     <div class="situations-grid">
 
-      <div class="situation reveal">
-        <div class="situation-icon">🏥</div>
-        <strong>Vous sortez de l'hôpital</strong>
-        <span>Organisation des soins à domicile selon la prescription.</span>
-      </div>
 
       <div class="situation reveal">
-        <div class="situation-icon">🩹</div>
-        <strong>Vous avez une plaie</strong>
-        <span>Pansements et surveillance de l'évolution.</span>
+
+        <div class="situation-icon">
+          🏥
+        </div>
+
+        <strong>
+          Vous sortez de l'hôpital
+        </strong>
+
+        <span>
+          Organisation des soins à domicile selon la prescription.
+        </span>
+
       </div>
 
-      <div class="situation reveal">
-        <div class="situation-icon">💉</div>
-        <strong>Vous avez un traitement injectable</strong>
-        <span>Injections et surveillance selon prescription.</span>
-      </div>
 
       <div class="situation reveal">
-        <div class="situation-icon">🩸</div>
-        <strong>Vous êtes diabétique</strong>
-        <span>Accompagnement et soins liés au diabète.</span>
+
+        <div class="situation-icon">
+          🩹
+        </div>
+
+        <strong>
+          Vous avez une plaie
+        </strong>
+
+        <span>
+          Pansements et surveillance de l'évolution.
+        </span>
+
       </div>
 
+
       <div class="situation reveal">
-        <div class="situation-icon">🤍</div>
-        <strong>Vous avez besoin de soins réguliers</strong>
-        <span>Organisation d'une prise en charge à domicile.</span>
+
+        <div class="situation-icon">
+          💉
+        </div>
+
+        <strong>
+          Vous avez un traitement injectable
+        </strong>
+
+        <span>
+          Injections et surveillance selon prescription.
+        </span>
+
       </div>
+
+
+      <div class="situation reveal">
+
+        <div class="situation-icon">
+          🩸
+        </div>
+
+        <strong>
+          Vous êtes diabétique
+        </strong>
+
+        <span>
+          Accompagnement et soins liés au diabète.
+        </span>
+
+      </div>
+
+
+      <div class="situation reveal">
+
+        <div class="situation-icon">
+          🤍
+        </div>
+
+        <strong>
+          Vous avez besoin de soins réguliers
+        </strong>
+
+        <span>
+          Organisation d'une prise en charge à domicile.
+        </span>
+
+      </div>
+
 
     </div>
 
@@ -1882,15 +2669,18 @@
 
   <div class="container">
 
+
     <div class="section-heading center reveal">
 
       <div class="section-kicker">
         Simplement
       </div>
 
+
       <h2>
         Comment ça marche ?
       </h2>
+
 
       <p>
         La prise de contact est simple afin de faciliter rapidement
@@ -1902,9 +2692,12 @@
 
     <div class="process-grid">
 
+
       <article class="process-card reveal">
 
-        <h3>Vous prenez contact</h3>
+        <h3>
+          Vous prenez contact
+        </h3>
 
         <p>
           Appelez directement le cabinet ou utilisez le formulaire
@@ -1916,7 +2709,9 @@
 
       <article class="process-card reveal">
 
-        <h3>Nous échangeons</h3>
+        <h3>
+          Nous échangeons
+        </h3>
 
         <p>
           Nous faisons le point sur votre situation, votre prescription,
@@ -1928,7 +2723,9 @@
 
       <article class="process-card reveal">
 
-        <h3>Les soins commencent</h3>
+        <h3>
+          Les soins commencent
+        </h3>
 
         <p>
           Les soins sont réalisés à votre domicile dans le respect
@@ -1936,6 +2733,7 @@
         </p>
 
       </article>
+
 
     </div>
 
@@ -1945,12 +2743,16 @@
 
 
 <!-- =========================
-     ZONE D'INTERVENTION
+     ZONE
 ========================= -->
 
-<section id="zone" class="zone">
+<section
+  id="zone"
+  class="zone"
+>
 
   <div class="container">
+
 
     <div class="section-heading reveal">
 
@@ -1958,14 +2760,16 @@
         Zone d'intervention
       </div>
 
+
       <h2>
         Infirmier à domicile à Limoges et autour
       </h2>
 
+
       <p>
-        Le cabinet intervient principalement à Limoges et dans plusieurs
-        communes de l'agglomération, selon les possibilités d'organisation
-        des tournées.
+        Le cabinet intervient principalement à Limoges et dans
+        plusieurs communes de l'agglomération, selon les possibilités
+        d'organisation des tournées.
       </p>
 
     </div>
@@ -1973,19 +2777,41 @@
 
     <div class="zone-grid reveal">
 
-      <span class="zone-pill">Limoges</span>
-      <span class="zone-pill">Panazol</span>
-      <span class="zone-pill">Couzeix</span>
-      <span class="zone-pill">Isle</span>
-      <span class="zone-pill">Condat-sur-Vienne</span>
-      <span class="zone-pill">Feytiat</span>
-      <span class="zone-pill">Boisseuil</span>
+      <span class="zone-pill">
+        Limoges
+      </span>
+
+      <span class="zone-pill">
+        Panazol
+      </span>
+
+      <span class="zone-pill">
+        Couzeix
+      </span>
+
+      <span class="zone-pill">
+        Isle
+      </span>
+
+      <span class="zone-pill">
+        Condat-sur-Vienne
+      </span>
+
+      <span class="zone-pill">
+        Feytiat
+      </span>
+
+      <span class="zone-pill">
+        Boisseuil
+      </span>
 
     </div>
 
+
     <p class="zone-note">
-      Vous habitez dans une commune voisine ? N'hésitez pas à contacter
-      le cabinet afin de vérifier la possibilité d'intervention.
+      Vous habitez dans une commune voisine ?
+      N'hésitez pas à contacter le cabinet afin de vérifier
+      la possibilité d'intervention.
     </p>
 
   </div>
@@ -2001,19 +2827,22 @@
 
   <div class="container">
 
+
     <div class="section-heading center reveal">
 
       <div class="section-kicker">
         Questions fréquentes
       </div>
 
+
       <h2>
         Vous avez une question ?
       </h2>
 
+
       <p>
-        Quelques réponses aux questions les plus fréquentes avant
-        la mise en place des soins.
+        Quelques réponses aux questions les plus fréquentes
+        avant la mise en place des soins.
       </p>
 
     </div>
@@ -2021,18 +2850,33 @@
 
     <div class="faq">
 
+
       <div class="faq-item reveal">
 
-        <button class="faq-question" type="button">
-          <span>Intervenez-vous les week-ends et jours fériés ?</span>
-          <span>+</span>
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            Intervenez-vous les week-ends et jours fériés ?
+          </span>
+
+          <span>
+            +
+          </span>
+
         </button>
 
+
         <div class="faq-answer">
+
           <p>
-            Le cabinet assure des soins à domicile 7 jours sur 7 selon
-            l'organisation des tournées et les besoins des patients.
+            Le cabinet assure des soins à domicile 7 jours sur 7
+            selon l'organisation des tournées et les besoins
+            des patients.
           </p>
+
         </div>
 
       </div>
@@ -2040,17 +2884,30 @@
 
       <div class="faq-item reveal">
 
-        <button class="faq-question" type="button">
-          <span>Dans quelles communes intervenez-vous ?</span>
-          <span>+</span>
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            Dans quelles communes intervenez-vous ?
+          </span>
+
+          <span>
+            +
+          </span>
+
         </button>
 
+
         <div class="faq-answer">
+
           <p>
             Les interventions sont principalement réalisées à Limoges,
             Panazol, Couzeix, Isle, Condat-sur-Vienne, Feytiat et Boisseuil.
             Contactez le cabinet pour vérifier votre adresse.
           </p>
+
         </div>
 
       </div>
@@ -2058,17 +2915,30 @@
 
       <div class="faq-item reveal">
 
-        <button class="faq-question" type="button">
-          <span>Faut-il une ordonnance pour recevoir des soins ?</span>
-          <span>+</span>
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            Faut-il une ordonnance pour recevoir des soins ?
+          </span>
+
+          <span>
+            +
+          </span>
+
         </button>
 
+
         <div class="faq-answer">
+
           <p>
-            La plupart des soins infirmiers pris en charge par l'Assurance
-            Maladie nécessitent une prescription médicale. Les modalités
-            dépendent de la nature du soin.
+            La plupart des soins infirmiers pris en charge par
+            l'Assurance Maladie nécessitent une prescription médicale.
+            Les modalités dépendent de la nature du soin.
           </p>
+
         </div>
 
       </div>
@@ -2076,17 +2946,30 @@
 
       <div class="faq-item reveal">
 
-        <button class="faq-question" type="button">
-          <span>Comment organiser rapidement des soins après une hospitalisation ?</span>
-          <span>+</span>
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            Comment organiser rapidement des soins après une hospitalisation ?
+          </span>
+
+          <span>
+            +
+          </span>
+
         </button>
 
+
         <div class="faq-answer">
+
           <p>
-            Le plus simple est de contacter directement le cabinet avec
-            votre ordonnance et les informations communiquées par
-            l'établissement de santé afin d'organiser la prise en charge.
+            Le plus simple est de contacter directement le cabinet
+            avec votre ordonnance et les informations communiquées
+            par l'établissement de santé afin d'organiser la prise en charge.
           </p>
+
         </div>
 
       </div>
@@ -2094,21 +2977,35 @@
 
       <div class="faq-item reveal">
 
-        <button class="faq-question" type="button">
-          <span>Quels types de soins réalisez-vous ?</span>
-          <span>+</span>
+        <button
+          class="faq-question"
+          type="button"
+        >
+
+          <span>
+            Quels types de soins réalisez-vous ?
+          </span>
+
+          <span>
+            +
+          </span>
+
         </button>
 
+
         <div class="faq-answer">
+
           <p>
             Le cabinet réalise notamment des injections, pansements,
             soins liés au diabète, vaccinations prescrites, soins
-            post-opératoires, soins courants et accompagnement
-            des patients nécessitant des soins palliatifs à domicile.
+            post-opératoires, soins courants et accompagnement des
+            patients nécessitant des soins palliatifs à domicile.
           </p>
+
         </div>
 
       </div>
+
 
     </div>
 
@@ -2121,9 +3018,13 @@
      CONTACT
 ========================= -->
 
-<section id="contact" class="contact">
+<section
+  id="contact"
+  class="contact"
+>
 
   <div class="container contact-grid">
+
 
     <div class="contact-info reveal">
 
@@ -2131,9 +3032,11 @@
         Contact
       </div>
 
+
       <h2>
         Parlons de vos soins.
       </h2>
+
 
       <p>
         Pour une demande de soins, une question ou pour vérifier
@@ -2144,14 +3047,25 @@
 
       <div class="contact-card">
 
-        <div class="contact-card-icon">☎</div>
+        <div class="contact-card-icon">
+          ☎
+        </div>
+
 
         <div>
-          <strong>Téléphone</strong>
+
+          <strong>
+            Téléphone
+          </strong>
+
           <a href="tel:0682410661">
             06 82 41 06 61
           </a>
-          <span> · Soins à domicile 7j/7</span>
+
+          <span>
+            · Soins à domicile 7j/7
+          </span>
+
         </div>
 
       </div>
@@ -2159,14 +3073,25 @@
 
       <div class="contact-card">
 
-        <div class="contact-card-icon">✉</div>
+        <div class="contact-card-icon">
+          ✉
+        </div>
+
 
         <div>
-          <strong>Email</strong>
+
+          <strong>
+            Email
+          </strong>
+
           <a href="mailto:infirmier.87@outlook.com">
             infirmier.87@outlook.com
           </a>
-          <span> · Réponse selon disponibilité</span>
+
+          <span>
+            · Réponse selon disponibilité
+          </span>
+
         </div>
 
       </div>
@@ -2174,13 +3099,21 @@
 
       <div class="contact-card">
 
-        <div class="contact-card-icon">⌖</div>
+        <div class="contact-card-icon">
+          ⌖
+        </div>
+
 
         <div>
-          <strong>Secteur</strong>
+
+          <strong>
+            Secteur
+          </strong>
+
           <span>
             Limoges et agglomération · Haute-Vienne
           </span>
+
         </div>
 
       </div>
@@ -2194,11 +3127,13 @@
         Envoyer une demande
       </h3>
 
+
       <form
         action="https://formspree.io/f/mnjjnwno"
         method="POST"
         id="contactForm"
       >
+
 
         <input
           type="hidden"
@@ -2206,13 +3141,14 @@
           value="🏥 Nouvelle demande RDV Infirmier Limoges"
         >
 
+
         <input
           type="hidden"
           name="_next"
           value="https://www.infirmier-limoges.fr/merci.html"
         >
 
-        <!-- Honeypot anti-spam -->
+
         <input
           type="text"
           name="_gotcha"
@@ -2296,10 +3232,12 @@
           Envoyer ma demande →
         </button>
 
+
         <p class="form-note">
           Vos informations sont utilisées uniquement pour répondre
           à votre demande de contact.
         </p>
+
 
       </form>
 
@@ -2322,12 +3260,13 @@
       src="https://www.google.com/maps?q=Limoges%2C%20France&output=embed"
       loading="lazy"
       title="Localisation de Limoges"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
 
   </div>
 
 </section>
+
 
 </main>
 
@@ -2340,17 +3279,24 @@
 
   <div class="container">
 
+
     <div class="footer-grid">
+
 
       <div class="footer-brand">
 
         <div class="footer-logo">
 
-          <span class="logo-mark">+</span>
+          <span class="logo-mark">
+            +
+          </span>
 
-          <span>Cabinet Infirmier Libéral</span>
+          <span>
+            Cabinet Infirmier Libéral
+          </span>
 
         </div>
+
 
         <p>
           Soins infirmiers à domicile à Limoges et dans l'agglomération.
@@ -2362,24 +3308,35 @@
 
       <div>
 
-        <h4>Soins</h4>
+        <h4>
+          Soins
+        </h4>
+
 
         <ul>
 
           <li>
-            <a href="services/diabete.html">Diabète</a>
+            <a href="services/diabete.html">
+              Diabète
+            </a>
           </li>
 
           <li>
-            <a href="services/palliatifs.html">Soins palliatifs</a>
+            <a href="services/palliatifs.html">
+              Soins palliatifs
+            </a>
           </li>
 
           <li>
-            <a href="services/pansements.html">Pansements</a>
+            <a href="services/pansements.html">
+              Pansements
+            </a>
           </li>
 
           <li>
-            <a href="services/vaccination.html">Vaccination</a>
+            <a href="services/vaccination.html">
+              Vaccination
+            </a>
           </li>
 
         </ul>
@@ -2389,29 +3346,41 @@
 
       <div>
 
-        <h4>Navigation</h4>
+        <h4>
+          Navigation
+        </h4>
+
 
         <ul>
 
           <li>
-            <a href="#cabinet">Le cabinet</a>
+            <a href="#cabinet">
+              Le cabinet
+            </a>
           </li>
 
           <li>
-            <a href="#zone">Zone d'intervention</a>
+            <a href="#zone">
+              Zone d'intervention
+            </a>
           </li>
 
           <li>
-            <a href="#faq">FAQ</a>
+            <a href="#faq">
+              FAQ
+            </a>
           </li>
 
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">
+              Contact
+            </a>
           </li>
 
         </ul>
 
       </div>
+
 
     </div>
 
@@ -2422,15 +3391,18 @@
         © 2026 Cabinet Infirmier Libéral Limoges
       </span>
 
+
       <span>
         ADELI 876194705 · RPPS 10104297923 · Conventionné secteur 1
       </span>
+
 
       <a href="mailto:infirmier.87@outlook.com">
         infirmier.87@outlook.com
       </a>
 
     </div>
+
 
   </div>
 
@@ -2452,255 +3424,415 @@
 
 <script>
 
+
   /* =========================
      HEADER
   ========================= */
 
-  const header = document.getElementById("header");
+  const header =
+    document.getElementById("header");
 
-  window.addEventListener("scroll", () => {
 
-    if (window.scrollY > 30) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
+  window.addEventListener(
+    "scroll",
+    () => {
+
+      if (window.scrollY > 30) {
+
+        header.classList.add("scrolled");
+
+      } else {
+
+        header.classList.remove("scrolled");
+
+      }
+
     }
-
-  });
+  );
 
 
   /* =========================
      MENU MOBILE
   ========================= */
 
-  const burger = document.getElementById("burger");
-  const navLinks = document.getElementById("navLinks");
+  const burger =
+    document.getElementById("burger");
 
-  burger.addEventListener("click", () => {
-
-    const active = navLinks.classList.toggle("active");
-
-    burger.setAttribute("aria-expanded", active);
-
-  });
+  const navLinks =
+    document.getElementById("navLinks");
 
 
-  navLinks.querySelectorAll("a").forEach(link => {
+  burger.addEventListener(
+    "click",
+    () => {
 
-    link.addEventListener("click", () => {
+      const active =
+        navLinks.classList.toggle("active");
 
-      navLinks.classList.remove("active");
+      burger.setAttribute(
+        "aria-expanded",
+        active
+      );
 
-      burger.setAttribute("aria-expanded", "false");
+    }
+  );
+
+
+  navLinks
+    .querySelectorAll("a")
+    .forEach(link => {
+
+      link.addEventListener(
+        "click",
+        () => {
+
+          navLinks.classList.remove("active");
+
+          burger.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+        }
+      );
 
     });
 
-  });
 
+  document.addEventListener(
+    "click",
+    event => {
 
-  document.addEventListener("click", event => {
+      if (
+        !navLinks.contains(event.target) &&
+        !burger.contains(event.target)
+      ) {
 
-    if (
-      !navLinks.contains(event.target) &&
-      !burger.contains(event.target)
-    ) {
+        navLinks.classList.remove("active");
 
-      navLinks.classList.remove("active");
+        burger.setAttribute(
+          "aria-expanded",
+          "false"
+        );
 
-      burger.setAttribute("aria-expanded", "false");
+      }
 
     }
-
-  });
+  );
 
 
   /* =========================
      FAQ
   ========================= */
 
-  document.querySelectorAll(".faq-question").forEach(button => {
+  document
+    .querySelectorAll(".faq-question")
+    .forEach(button => {
 
-    button.addEventListener("click", () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-      const item = button.parentElement;
-      const answer = item.querySelector(".faq-answer");
+          const item =
+            button.parentElement;
 
-      document.querySelectorAll(".faq-item").forEach(other => {
+          const answer =
+            item.querySelector(".faq-answer");
 
-        if (other !== item) {
 
-          other.classList.remove("active");
+          document
+            .querySelectorAll(".faq-item")
+            .forEach(other => {
 
-          const otherAnswer = other.querySelector(".faq-answer");
+              if (other !== item) {
 
-          otherAnswer.style.maxHeight = null;
+                other.classList.remove("active");
+
+                const otherAnswer =
+                  other.querySelector(
+                    ".faq-answer"
+                  );
+
+                otherAnswer.style.maxHeight =
+                  null;
+
+              }
+
+            });
+
+
+          item.classList.toggle("active");
+
+
+          if (
+            item.classList.contains("active")
+          ) {
+
+            answer.style.maxHeight =
+              answer.scrollHeight + "px";
+
+          } else {
+
+            answer.style.maxHeight =
+              null;
+
+          }
 
         }
-
-      });
-
-
-      item.classList.toggle("active");
-
-      if (item.classList.contains("active")) {
-
-        answer.style.maxHeight = answer.scrollHeight + "px";
-
-      } else {
-
-        answer.style.maxHeight = null;
-
-      }
+      );
 
     });
-
-  });
 
 
   /* =========================
      ANIMATIONS
   ========================= */
 
-  const revealElements = document.querySelectorAll(".reveal");
+  const revealElements =
+    document.querySelectorAll(".reveal");
 
-  const revealObserver = new IntersectionObserver(
-    entries => {
 
-      entries.forEach(entry => {
+  const revealObserver =
+    new IntersectionObserver(
+      entries => {
 
-        if (entry.isIntersecting) {
+        entries.forEach(entry => {
 
-          entry.target.classList.add("visible");
+          if (entry.isIntersecting) {
 
-          revealObserver.unobserve(entry.target);
+            entry.target.classList.add(
+              "visible"
+            );
 
-        }
+            revealObserver.unobserve(
+              entry.target
+            );
 
-      });
+          }
 
-    },
-    {
-      threshold: 0.12
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+
+  revealElements.forEach(
+    element => {
+
+      revealObserver.observe(element);
+
     }
   );
-
-
-  revealElements.forEach(element => {
-
-    revealObserver.observe(element);
-
-  });
 
 
   /* =========================
      TÉLÉPHONE
   ========================= */
 
-  const phoneInput = document.getElementById("telephone");
+  const phoneInput =
+    document.getElementById("telephone");
 
-  phoneInput.addEventListener("input", event => {
 
-    let value = event.target.value.replace(/\D/g, "");
+  phoneInput.addEventListener(
+    "input",
+    event => {
 
-    if (value.length > 10) {
-      value = value.substring(0, 10);
+      let value =
+        event.target.value.replace(
+          /\D/g,
+          ""
+        );
+
+
+      if (value.length > 10) {
+
+        value =
+          value.substring(0, 10);
+
+      }
+
+
+      value =
+        value.replace(
+          /(\d{2})(?=\d)/g,
+          "$1 "
+        );
+
+
+      event.target.value =
+        value.trim();
+
     }
-
-    value = value.replace(/(\d{2})(?=\d)/g, "$1 ");
-
-    event.target.value = value.trim();
-
-  });
+  );
 
 
   /* =========================
-     TRACKING GA4
+     GA4 : TÉLÉPHONE
   ========================= */
 
-  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+  document
+    .querySelectorAll(
+      'a[href^="tel:"]'
+    )
+    .forEach(link => {
 
-    link.addEventListener("click", () => {
+      link.addEventListener(
+        "click",
+        () => {
 
-      if (typeof gtag === "function") {
+          if (
+            typeof gtag === "function"
+          ) {
 
-        gtag("event", "phone_click", {
-          event_category: "contact",
-          event_label: "telephone"
-        });
+            gtag(
+              "event",
+              "phone_click",
+              {
+                event_category:
+                  "contact",
 
-      }
+                event_label:
+                  "telephone"
+              }
+            );
 
-    });
+          }
 
-  });
-
-
-  document.getElementById("contactForm").addEventListener("submit", () => {
-
-    if (typeof gtag === "function") {
-
-      gtag("event", "form_submit", {
-        event_category: "contact",
-        event_label: "formulaire_contact"
-      });
-
-    }
-
-  });
-
-
-  document.querySelectorAll(".service-link").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-      if (typeof gtag === "function") {
-
-        gtag("event", "service_click", {
-          event_category: "services",
-          event_label: link.textContent.trim()
-        });
-
-      }
+        }
+      );
 
     });
 
-  });
+
+  /* =========================
+     GA4 : FORMULAIRE
+  ========================= */
+
+  document
+    .getElementById("contactForm")
+    .addEventListener(
+      "submit",
+      () => {
+
+        if (
+          typeof gtag === "function"
+        ) {
+
+          gtag(
+            "event",
+            "form_submit",
+            {
+              event_category:
+                "contact",
+
+              event_label:
+                "formulaire_contact"
+            }
+          );
+
+        }
+
+      }
+    );
+
+
+  /* =========================
+     GA4 : SERVICES
+  ========================= */
+
+  document
+    .querySelectorAll(".service-link")
+    .forEach(link => {
+
+      link.addEventListener(
+        "click",
+        () => {
+
+          if (
+            typeof gtag === "function"
+          ) {
+
+            gtag(
+              "event",
+              "service_click",
+              {
+                event_category:
+                  "services",
+
+                event_label:
+                  link.textContent.trim()
+              }
+            );
+
+          }
+
+        }
+      );
+
+    });
 
 
   /* =========================
      SCROLL DEPTH
   ========================= */
 
-  let scrollTracked = false;
+  let scrollTracked =
+    false;
 
-  window.addEventListener("scroll", () => {
 
-    const scrollPosition =
-      window.scrollY + window.innerHeight;
+  window.addEventListener(
+    "scroll",
+    () => {
 
-    const documentHeight =
-      document.documentElement.scrollHeight;
+      const scrollPosition =
+        window.scrollY +
+        window.innerHeight;
 
-    const percentage =
-      scrollPosition / documentHeight;
 
-    if (percentage >= 0.75 && !scrollTracked) {
+      const documentHeight =
+        document.documentElement
+          .scrollHeight;
 
-      scrollTracked = true;
 
-      if (typeof gtag === "function") {
+      const percentage =
+        scrollPosition /
+        documentHeight;
 
-        gtag("event", "scroll_75", {
-          event_category: "engagement"
-        });
+
+      if (
+        percentage >= 0.75 &&
+        !scrollTracked
+      ) {
+
+        scrollTracked = true;
+
+
+        if (
+          typeof gtag === "function"
+        ) {
+
+          gtag(
+            "event",
+            "scroll_75",
+            {
+              event_category:
+                "engagement"
+            }
+          );
+
+        }
 
       }
 
     }
+  );
 
-  });
 
 </script>
+
 
 </body>
 </html>
