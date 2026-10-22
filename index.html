@@ -7,9 +7,9 @@
 
   <title>Infirmier Libéral à Limoges (87) | Soins à domicile 7j/7</title>
 
-  <meta name="description" content="Cabinet infirmier libéral à Limoges et dans l'agglomération. Soins infirmiers à domicile sur prescription : diabète, pansements, injections, vaccination, soins palliatifs et soins courants.">
+  <meta name="description" content="Infirmier libéral à Limoges (87) : soins à domicile 7j/7 sur prescription. Diabète, pansements, injections, vaccination, palliatifs. Tél. 06 82 41 06 61">
 
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="author" content="Cabinet Infirmier Libéral Limoges">
   <meta name="theme-color" content="#0d5d7f">
 
@@ -17,13 +17,24 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cabinet Infirmier Libéral Limoges">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Infirmier Libéral à Limoges | Soins à domicile">
+  <meta property="og:title" content="Infirmier libéral à Limoges (87) | Soins à domicile 7j/7">
   <meta property="og:description" content="Soins infirmiers à domicile à Limoges et dans l'agglomération. Une prise en charge professionnelle, attentive et personnalisée.">
   <meta property="og:url" content="https://www.infirmier-limoges.fr/">
-  <meta property="og:image" content="https://www.infirmier-limoges.fr/images/og-image.jpg">
+  <meta property="og:image" content="https://www.infirmier-limoges.fr/og-image.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cabinet infirmier libéral de Limoges, soins à domicile">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Infirmier libéral à Limoges (87) | Soins à domicile 7j/7">
+  <meta name="twitter:description" content="Soins infirmiers à domicile à Limoges et dans l'agglomération, sur prescription médicale.">
+  <meta name="twitter:image" content="https://www.infirmier-limoges.fr/og-image.jpeg">
 
   <!-- Favicon -->
+  <link rel="apple-touch-icon" href="/logo.jpeg">
   <link
     rel="icon"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d5d7f'/%3E%3Cpath d='M43 20h14v23h23v14H57v23H43V57H20V43h23z' fill='white'/%3E%3C/svg%3E"
@@ -32,71 +43,192 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4KS3E8BMY"></script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'G-J4KS3E8BMY');
-  </script>
+  <!-- Mesure d'audience : chargée uniquement après consentement -->
+  <script src="/assets/consent.js" defer></script>
 
   <!-- Données structurées -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Cabinet Infirmier Libéral Limoges",
-    "alternateName": [
-      "Infirmier à domicile Limoges",
-      "IDEL Limoges 87"
-    ],
-    "url": "https://www.infirmier-limoges.fr/",
-    "description": "Cabinet infirmier libéral proposant des soins infirmiers à domicile à Limoges et dans l'agglomération.",
-    "telephone": "+33682410661",
-    "email": "infirmier.87@outlook.com",
-    "priceRange": "€€",
-    "currenciesAccepted": "EUR",
-    "paymentAccepted": "Carte Vitale, Carte bancaire, Espèces, Chèque, Tiers payant",
-    "medicalSpecialty": "Nursing",
-    "areaServed": [
+    "@graph": [
       {
-        "@type": "City",
-        "name": "Limoges"
+        "@type": "MedicalBusiness",
+        "@id": "https://www.infirmier-limoges.fr/#cabinet",
+        "name": "Cabinet Infirmier Libéral Limoges",
+        "alternateName": [
+          "Infirmier à domicile Limoges",
+          "IDEL Limoges 87"
+        ],
+        "url": "https://www.infirmier-limoges.fr/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.infirmier-limoges.fr/logo.jpeg",
+          "width": 512,
+          "height": 512
+        },
+        "image": [
+          "https://www.infirmier-limoges.fr/og-image.jpeg",
+          "https://www.infirmier-limoges.fr/logo.jpeg"
+        ],
+        "description": "Cabinet infirmier libéral proposant des soins infirmiers à domicile à Limoges et dans l'agglomération, sur prescription médicale, 7 jours sur 7.",
+        "telephone": "+33682410661",
+        "email": "infirmier.87@outlook.com",
+        "medicalSpecialty": "Nursing",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Carte Vitale, Carte bancaire, Espèces, Chèque, Tiers payant",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Limoges",
+          "postalCode": "87000",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.833619,
+          "longitude": 1.261105
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Limoges"
+          },
+          {
+            "@type": "City",
+            "name": "Panazol"
+          },
+          {
+            "@type": "City",
+            "name": "Couzeix"
+          },
+          {
+            "@type": "City",
+            "name": "Isle"
+          },
+          {
+            "@type": "City",
+            "name": "Condat-sur-Vienne"
+          },
+          {
+            "@type": "City",
+            "name": "Feytiat"
+          },
+          {
+            "@type": "City",
+            "name": "Boisseuil"
+          }
+        ],
+        "availableService": [
+          {
+            "@type": "MedicalProcedure",
+            "name": "Soins infirmiers à domicile"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Vaccination à domicile"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Soins du diabète à domicile"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Pansements et soins de plaies"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Retour à domicile après hospitalisation"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Soins palliatifs à domicile"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+33682410661",
+          "contactType": "customer service",
+          "areaServed": "FR",
+          "availableLanguage": "fr"
+        },
+        "inLanguage": "fr-FR"
       },
       {
-        "@type": "City",
-        "name": "Panazol"
+        "@type": "WebSite",
+        "@id": "https://www.infirmier-limoges.fr/#website",
+        "url": "https://www.infirmier-limoges.fr/",
+        "name": "Cabinet Infirmier Libéral Limoges",
+        "inLanguage": "fr-FR",
+        "publisher": {
+          "@id": "https://www.infirmier-limoges.fr/#cabinet"
+        }
       },
       {
-        "@type": "City",
-        "name": "Couzeix"
+        "@type": "WebPage",
+        "@id": "https://www.infirmier-limoges.fr/#webpage",
+        "url": "https://www.infirmier-limoges.fr/",
+        "name": "Infirmier libéral à Limoges (87) | Soins à domicile 7j/7",
+        "isPartOf": {
+          "@id": "https://www.infirmier-limoges.fr/#website"
+        },
+        "about": {
+          "@id": "https://www.infirmier-limoges.fr/#cabinet"
+        },
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Intervenez-vous les week-ends et jours fériés ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le cabinet assure des soins à domicile 7 jours sur 7 selon l'organisation des tournées et les besoins des patients."
+        }
       },
       {
-        "@type": "City",
-        "name": "Isle"
+        "@type": "Question",
+        "name": "Dans quelles communes intervenez-vous ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les interventions sont principalement réalisées à Limoges, Panazol, Couzeix, Isle, Condat-sur-Vienne, Feytiat et Boisseuil. Contactez le cabinet pour vérifier votre adresse."
+        }
       },
       {
-        "@type": "City",
-        "name": "Condat-sur-Vienne"
+        "@type": "Question",
+        "name": "Faut-il une ordonnance pour recevoir des soins ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La plupart des soins infirmiers pris en charge par l'Assurance Maladie nécessitent une prescription médicale. Les modalités dépendent de la nature du soin."
+        }
       },
       {
-        "@type": "City",
-        "name": "Feytiat"
+        "@type": "Question",
+        "name": "Comment organiser rapidement des soins après une hospitalisation ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le plus simple est de contacter directement le cabinet avec votre ordonnance et les informations communiquées par l'établissement de santé afin d'organiser la prise en charge."
+        }
       },
       {
-        "@type": "City",
-        "name": "Boisseuil"
+        "@type": "Question",
+        "name": "Quels types de soins réalisez-vous ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le cabinet réalise notamment des injections, pansements, soins liés au diabète, vaccinations prescrites, soins post-opératoires, soins courants et accompagnement des patients nécessitant des soins palliatifs à domicile."
+        }
       }
     ]
   }
@@ -365,8 +497,8 @@
       display: grid;
 
       grid-template-columns:
-        1.02fr
-        .98fr;
+        minmax(0, 1.02fr)
+        minmax(0, .98fr);
 
       align-items: center;
 
@@ -398,14 +530,14 @@
     .hero h1 {
       font-size:
         clamp(
-          2.5rem,
-          5vw,
-          4.5rem
+          2.2rem,
+          4.2vw,
+          3.6rem
         );
 
       line-height: 1.08;
 
-      letter-spacing: -2.5px;
+      letter-spacing: -1.5px;
 
       color: var(--primary-dark);
 
@@ -1863,6 +1995,7 @@
 
   </style>
 
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 
 
@@ -1904,13 +2037,14 @@
       class="burger"
       id="burger"
       aria-label="Ouvrir le menu"
+      aria-controls="navLinks"
       aria-expanded="false"
     >
       ☰
     </button>
 
 
-    <nav>
+    <nav aria-label="Navigation principale">
 
       <ul
         class="nav-links"
@@ -1942,6 +2076,12 @@
         </li>
 
         <li>
+          <a href="blog/actualites.html">
+            Conseils
+          </a>
+        </li>
+
+        <li>
           <a href="#contact">
             Contact
           </a>
@@ -1949,7 +2089,7 @@
 
         <li>
           <a
-            href="tel:0682410661"
+            href="tel:+33682410661"
             class="nav-phone"
           >
             ☎ 06 82 41 06 61
@@ -1986,10 +2126,10 @@
 
       <h1>
 
-        Vos soins,<br>
+        Infirmier libéral à Limoges,<br>
 
         <span>
-          chez vous.
+          vos soins chez vous.
         </span>
 
       </h1>
@@ -2007,7 +2147,7 @@
       <div class="hero-actions">
 
         <a
-          href="tel:0682410661"
+          href="tel:+33682410661"
           class="btn btn-primary"
         >
           ☎ Appeler le cabinet
@@ -2050,9 +2190,15 @@
     <div class="hero-image reveal">
 
       <img
-        src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1100&q=85"
-        alt="Professionnel de santé accompagnant une personne à domicile"
+        src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=75"
+        srcset="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=75 600w, https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=75 900w, https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=75 1200w"
+        sizes="(max-width: 850px) 100vw, 560px"
+        width="900"
+        height="535"
+        alt="Infirmier accompagnant une personne à domicile à Limoges"
         loading="eager"
+        fetchpriority="high"
+        decoding="async"
       >
 
     </div>
@@ -2246,7 +2392,7 @@
         </p>
 
         <a
-          href="infirmiere-domicile-limoges.html"
+          href="services/soins-infirmiers.html"
           class="service-link"
         >
           Découvrir →
@@ -2271,7 +2417,7 @@
         </p>
 
         <a
-          href="infirmier-limoges.html"
+          href="services/retour-hospitalisation.html"
           class="service-link"
         >
           Découvrir →
@@ -2437,9 +2583,12 @@
     <div class="about-image reveal">
 
       <img
-        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=85"
-        alt="Professionnel infirmier préparant des soins"
+        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=75"
+        width="800"
+        height="600"
+        alt="Infirmier libéral préparant des soins à domicile"
         loading="lazy"
+        decoding="async"
       >
 
 
@@ -2820,6 +2969,65 @@
 
 
 <!-- =========================
+     CONSEILS SANTÉ
+========================= -->
+
+<section class="section-soft">
+
+  <div class="container">
+
+    <div class="section-heading center reveal">
+
+      <div class="section-kicker">
+        Conseils santé
+      </div>
+
+      <h2>
+        Informations et conseils d'un infirmier
+      </h2>
+
+      <p>
+        Quelques articles pour mieux comprendre vos soins et
+        prendre soin de votre santé au quotidien.
+      </p>
+
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <div class="service-icon">🏠</div>
+        <h3>Les avantages des soins à domicile</h3>
+        <p>Confort, continuité des soins, lien avec le médecin traitant : pourquoi choisir les soins infirmiers à domicile.</p>
+        <a href="blog/avantages-soins-infirmiers-domicile.html" class="service-link">Lire l'article →</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">🩹</div>
+        <h3>Prévention des escarres</h3>
+        <p>Les gestes essentiels pour protéger la peau des personnes à mobilité réduite.</p>
+        <a href="blog/prevention-escarres.html" class="service-link">Lire l'article →</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">📍</div>
+        <h3>Infirmière libérale autour de moi</h3>
+        <p>Comment trouver un infirmier libéral près de chez vous à Limoges et dans l'agglomération.</p>
+        <a href="blog/infirmiere-liberale-autour-de-moi.html" class="service-link">Lire l'article →</a>
+      </article>
+
+    </div>
+
+    <p class="zone-note" style="text-align:center;margin-top:28px">
+      <a href="blog/actualites.html"><strong>Voir tous les articles du blog →</strong></a>
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
      FAQ
 ========================= -->
 
@@ -2856,6 +3064,7 @@
         <button
           class="faq-question"
           type="button"
+          aria-expanded="false"
         >
 
           <span>
@@ -2887,6 +3096,7 @@
         <button
           class="faq-question"
           type="button"
+          aria-expanded="false"
         >
 
           <span>
@@ -2918,6 +3128,7 @@
         <button
           class="faq-question"
           type="button"
+          aria-expanded="false"
         >
 
           <span>
@@ -2949,6 +3160,7 @@
         <button
           class="faq-question"
           type="button"
+          aria-expanded="false"
         >
 
           <span>
@@ -2980,6 +3192,7 @@
         <button
           class="faq-question"
           type="button"
+          aria-expanded="false"
         >
 
           <span>
@@ -3058,7 +3271,7 @@
             Téléphone
           </strong>
 
-          <a href="tel:0682410661">
+          <a href="tel:+33682410661">
             06 82 41 06 61
           </a>
 
@@ -3259,7 +3472,7 @@
     <iframe
       src="https://www.google.com/maps?q=Limoges%2C%20France&output=embed"
       loading="lazy"
-      title="Localisation de Limoges"
+      title="Carte : zone d'intervention du cabinet infirmier à Limoges"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
 
@@ -3339,6 +3552,18 @@
             </a>
           </li>
 
+          <li>
+            <a href="services/soins-infirmiers.html">
+              Soins infirmiers
+            </a>
+          </li>
+
+          <li>
+            <a href="services/retour-hospitalisation.html">
+              Retour à domicile
+            </a>
+          </li>
+
         </ul>
 
       </div>
@@ -3372,8 +3597,26 @@
           </li>
 
           <li>
+            <a href="blog/actualites.html">
+              Blog
+            </a>
+          </li>
+
+          <li>
             <a href="#contact">
               Contact
+            </a>
+          </li>
+
+          <li>
+            <a href="mentions-legales.html">
+              Mentions légales
+            </a>
+          </li>
+
+          <li>
+            <a href="#" data-cookie-settings>
+              Gérer les cookies
             </a>
           </li>
 
@@ -3415,7 +3658,7 @@
 
 <div class="mobile-cta">
 
-  <a href="tel:0682410661">
+  <a href="tel:+33682410661">
     ☎ Appeler le cabinet · 06 82 41 06 61
   </a>
 
@@ -3548,6 +3791,10 @@
 
                 other.classList.remove("active");
 
+                other
+                  .querySelector(".faq-question")
+                  .setAttribute("aria-expanded", "false");
+
                 const otherAnswer =
                   other.querySelector(
                     ".faq-answer"
@@ -3562,6 +3809,11 @@
 
 
           item.classList.toggle("active");
+
+          button.setAttribute(
+            "aria-expanded",
+            item.classList.contains("active")
+          );
 
 
           if (
