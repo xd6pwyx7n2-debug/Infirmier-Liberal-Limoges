@@ -36,18 +36,17 @@
   <!-- Favicon -->
   <link rel="apple-touch-icon" href="/logo.jpeg">
   <link
-    rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d5d7f'/%3E%3Cpath d='M43 20h14v23h23v14H57v23H43V57H20V43h23z' fill='white'/%3E%3C/svg%3E"
-  >
+ rel="icon"
+ href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d5d7f'/%3E%3Cpath d='M43 20h14v23h23v14H57v23H43V57H20V43h23z' fill='white'/%3E%3C/svg%3E"
+ >
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+ href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap"
+ rel="stylesheet"
+ >
 
   <!-- Mesure d'audience : chargée uniquement après consentement -->
   <script src="/assets/consent.js" defer></script>
@@ -1995,6 +1994,8 @@
 </script>
 
 
+<link rel="stylesheet" href="/assets/theme.css">
+<script src="/assets/theme.js"></script>
 </head>
 
 
@@ -2002,8 +2003,8 @@
 
 
 <a
-  class="skip-link"
-  href="#main"
+ class="skip-link"
+ href="#main"
 >
   Aller au contenu
 </a>
@@ -2018,10 +2019,10 @@
   <div class="container nav">
 
     <a
-      href="/"
-      class="logo"
-      aria-label="Accueil Cabinet Infirmier Limoges"
-    >
+ href="/"
+ class="logo"
+ aria-label="Accueil Cabinet Infirmier Limoges"
+ >
 
       <span class="logo-mark">+</span>
 
@@ -2033,12 +2034,12 @@
 
 
     <button
-      class="burger"
-      id="burger"
-      aria-label="Ouvrir le menu"
-      aria-controls="navLinks"
-      aria-expanded="false"
-    >
+ class="burger"
+ id="burger"
+ aria-label="Ouvrir le menu"
+ aria-controls="navLinks"
+ aria-expanded="false"
+ >
       ☰
     </button>
 
@@ -2046,9 +2047,9 @@
     <nav aria-label="Navigation principale">
 
       <ul
-        class="nav-links"
-        id="navLinks"
-      >
+ class="nav-links"
+ id="navLinks"
+ >
 
         <li>
           <a href="#services">
@@ -2088,10 +2089,10 @@
 
         <li>
           <a
-            href="tel:+33682410661"
-            class="nav-phone"
-          >
-            ☎ 06 82 41 06 61
+ href="tel:+33682410661"
+ class="nav-phone"
+ >
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 06 82 41 06 61
           </a>
         </li>
 
@@ -2119,7 +2120,7 @@
     <div class="hero-content">
 
       <div class="eyebrow">
-        ✦ Cabinet infirmier libéral à Limoges
+         Cabinet infirmier libéral à Limoges
       </div>
 
 
@@ -2147,17 +2148,17 @@
       <div class="hero-actions">
 
         <a
-          href="tel:+33682410661"
-          class="btn btn-primary"
-        >
-          ☎ Appeler le cabinet
+ href="tel:+33682410661"
+ class="btn btn-primary"
+ >
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler le cabinet
         </a>
 
 
         <a
-          href="#contact"
-          class="btn btn-secondary"
-        >
+ href="#contact"
+ class="btn btn-secondary"
+ >
           Prendre contact
         </a>
 
@@ -2189,17 +2190,7 @@
 
     <div class="hero-image reveal">
 
-      <img
-        src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=75"
-        srcset="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=75 600w, https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=75 900w, https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=75 1200w"
-        sizes="(max-width: 850px) 100vw, 560px"
-        width="900"
-        height="535"
-        alt="Infirmier accompagnant une personne à domicile à Limoges"
-        loading="eager"
-        fetchpriority="high"
-        decoding="async"
-      >
+      <img src="/assets/hero-scene.svg" width="900" height="535" alt="Illustration : une infirmière accompagne une personne à son domicile à Limoges" loading="eager" fetchpriority="high" decoding="async">
 
     </div>
 
@@ -2303,7 +2294,7 @@
       <article class="service-card reveal">
 
         <div class="service-icon">
-          💉
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5M9 11l4 4M5 19l-3 3M14 4l6 6"/></svg>
         </div>
 
         <h3>
@@ -2316,9 +2307,9 @@
         </p>
 
         <a
-          href="services/vaccination.html"
-          class="service-link"
-        >
+ href="services/vaccination.html"
+ class="service-link"
+ >
           Découvrir →
         </a>
 
@@ -2328,7 +2319,7 @@
       <article class="service-card reveal">
 
         <div class="service-icon">
-          🩸
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
         </div>
 
         <h3>
@@ -2342,9 +2333,9 @@
         </p>
 
         <a
-          href="services/diabete.html"
-          class="service-link"
-        >
+ href="services/diabete.html"
+ class="service-link"
+ >
           Découvrir →
         </a>
 
@@ -2354,7 +2345,7 @@
       <article class="service-card reveal">
 
         <div class="service-icon">
-          🩹
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g transform="rotate(-45 12 12)"><rect x="1" y="7.5" width="22" height="9" rx="4.5"/><path d="M9 7.5v9M15 7.5v9M11.5 10.5h.01M12.5 12h.01M11.5 13.5h.01"/></g></svg>
         </div>
 
         <h3>
@@ -2367,9 +2358,9 @@
         </p>
 
         <a
-          href="services/pansements.html"
-          class="service-link"
-        >
+ href="services/pansements.html"
+ class="service-link"
+ >
           Découvrir →
         </a>
 
@@ -2379,7 +2370,7 @@
       <article class="service-card reveal">
 
         <div class="service-icon">
-          💊
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"/><path d="m8.5 8.5 7 7"/></svg>
         </div>
 
         <h3>
@@ -2392,9 +2383,9 @@
         </p>
 
         <a
-          href="services/soins-infirmiers.html"
-          class="service-link"
-        >
+ href="services/soins-infirmiers.html"
+ class="service-link"
+ >
           Découvrir →
         </a>
 
@@ -2404,7 +2395,7 @@
       <article class="service-card reveal">
 
         <div class="service-icon">
-          🏠
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
         </div>
 
         <h3>
@@ -2417,9 +2408,9 @@
         </p>
 
         <a
-          href="services/retour-hospitalisation.html"
-          class="service-link"
-        >
+ href="services/retour-hospitalisation.html"
+ class="service-link"
+ >
           Découvrir →
         </a>
 
@@ -2429,7 +2420,7 @@
       <article class="service-card reveal">
 
         <div class="service-icon">
-          🤍
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></svg>
         </div>
 
         <h3>
@@ -2442,9 +2433,9 @@
         </p>
 
         <a
-          href="services/palliatifs.html"
-          class="service-link"
-        >
+ href="services/palliatifs.html"
+ class="service-link"
+ >
           Découvrir →
         </a>
 
@@ -2582,14 +2573,7 @@
 
     <div class="about-image reveal">
 
-      <img
-        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=75"
-        width="800"
-        height="600"
-        alt="Infirmier libéral préparant des soins à domicile"
-        loading="lazy"
-        decoding="async"
-      >
+      <img src="/assets/about-scene.svg" width="800" height="600" alt="Illustration : un infirmier libéral auprès d'un patient à son domicile" loading="lazy" decoding="async">
 
 
       <div class="about-badge">
@@ -2721,7 +2705,7 @@
       <div class="situation reveal">
 
         <div class="situation-icon">
-          🏥
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M12 7v6M9 10h6M10 21v-4h4v4"/></svg>
         </div>
 
         <strong>
@@ -2738,7 +2722,7 @@
       <div class="situation reveal">
 
         <div class="situation-icon">
-          🩹
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g transform="rotate(-45 12 12)"><rect x="1" y="7.5" width="22" height="9" rx="4.5"/><path d="M9 7.5v9M15 7.5v9M11.5 10.5h.01M12.5 12h.01M11.5 13.5h.01"/></g></svg>
         </div>
 
         <strong>
@@ -2755,7 +2739,7 @@
       <div class="situation reveal">
 
         <div class="situation-icon">
-          💉
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5M9 11l4 4M5 19l-3 3M14 4l6 6"/></svg>
         </div>
 
         <strong>
@@ -2772,7 +2756,7 @@
       <div class="situation reveal">
 
         <div class="situation-icon">
-          🩸
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
         </div>
 
         <strong>
@@ -2789,7 +2773,7 @@
       <div class="situation reveal">
 
         <div class="situation-icon">
-          🤍
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></svg>
         </div>
 
         <strong>
@@ -2915,8 +2899,8 @@
   </div>
 </section>
 <section
-  id="zone"
-  class="zone"
+ id="zone"
+ class="zone"
 >
 
   <div class="container">
@@ -2992,21 +2976,21 @@
     <div class="services-grid">
 
       <article class="service-card reveal">
-        <div class="service-icon">🏠</div>
+        <div class="service-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
         <h3>Les avantages des soins à domicile</h3>
         <p>Confort, continuité des soins, lien avec le médecin traitant : pourquoi choisir les soins infirmiers à domicile.</p>
         <a href="blog/avantages-soins-infirmiers-domicile.html" class="service-link">Lire l'article →</a>
       </article>
 
       <article class="service-card reveal">
-        <div class="service-icon">🩹</div>
+        <div class="service-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g transform="rotate(-45 12 12)"><rect x="1" y="7.5" width="22" height="9" rx="4.5"/><path d="M9 7.5v9M15 7.5v9M11.5 10.5h.01M12.5 12h.01M11.5 13.5h.01"/></g></svg></div>
         <h3>Prévention des escarres</h3>
         <p>Les gestes essentiels pour protéger la peau des personnes à mobilité réduite.</p>
         <a href="blog/prevention-escarres.html" class="service-link">Lire l'article →</a>
       </article>
 
       <article class="service-card reveal">
-        <div class="service-icon">📍</div>
+        <div class="service-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <h3>Infirmière libérale autour de moi</h3>
         <p>Comment trouver un infirmier libéral près de chez vous à Limoges.</p>
         <a href="blog/infirmiere-liberale-autour-de-moi.html" class="service-link">Lire l'article →</a>
@@ -3058,10 +3042,10 @@
       <div class="faq-item reveal">
 
         <button
-          class="faq-question"
-          type="button"
-          aria-expanded="false"
-        >
+ class="faq-question"
+ type="button"
+ aria-expanded="false"
+ >
 
           <span>
             Intervenez-vous les week-ends et jours fériés ?
@@ -3090,10 +3074,10 @@
       <div class="faq-item reveal">
 
         <button
-          class="faq-question"
-          type="button"
-          aria-expanded="false"
-        >
+ class="faq-question"
+ type="button"
+ aria-expanded="false"
+ >
 
           <span>
             Intervenez-vous en dehors de Limoges ?
@@ -3120,10 +3104,10 @@
       <div class="faq-item reveal">
 
         <button
-          class="faq-question"
-          type="button"
-          aria-expanded="false"
-        >
+ class="faq-question"
+ type="button"
+ aria-expanded="false"
+ >
 
           <span>
             Faut-il une ordonnance pour recevoir des soins ?
@@ -3152,10 +3136,10 @@
       <div class="faq-item reveal">
 
         <button
-          class="faq-question"
-          type="button"
-          aria-expanded="false"
-        >
+ class="faq-question"
+ type="button"
+ aria-expanded="false"
+ >
 
           <span>
             Comment organiser rapidement des soins après une hospitalisation ?
@@ -3184,10 +3168,10 @@
       <div class="faq-item reveal">
 
         <button
-          class="faq-question"
-          type="button"
-          aria-expanded="false"
-        >
+ class="faq-question"
+ type="button"
+ aria-expanded="false"
+ >
 
           <span>
             Quels types de soins réalisez-vous ?
@@ -3226,8 +3210,8 @@
 ========================= -->
 
 <section
-  id="contact"
-  class="contact"
+ id="contact"
+ class="contact"
 >
 
   <div class="container contact-grid">
@@ -3255,7 +3239,7 @@
       <div class="contact-card">
 
         <div class="contact-card-icon">
-          ☎
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </div>
 
 
@@ -3281,7 +3265,7 @@
       <div class="contact-card">
 
         <div class="contact-card-icon">
-          ✉
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
         </div>
 
 
@@ -3307,7 +3291,7 @@
       <div class="contact-card">
 
         <div class="contact-card-icon">
-          🏠
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
         </div>
 
 
@@ -3333,7 +3317,7 @@
       <div class="contact-card">
 
         <div class="contact-card-icon">
-          ⌖
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
 
 
@@ -3362,33 +3346,33 @@
 
 
       <form
-        action="https://formspree.io/f/mnjjnwno"
-        method="POST"
-        id="contactForm"
-      >
+ action="https://formspree.io/f/mnjjnwno"
+ method="POST"
+ id="contactForm"
+ >
 
 
         <input
-          type="hidden"
-          name="_subject"
-          value="🏥 Nouvelle demande RDV Infirmier Limoges"
-        >
+ type="hidden"
+ name="_subject"
+ value=" Nouvelle demande RDV Infirmier Limoges"
+ >
 
 
         <input
-          type="hidden"
-          name="_next"
-          value="https://www.infirmier-limoges.fr/merci.html"
-        >
+ type="hidden"
+ name="_next"
+ value="https://www.infirmier-limoges.fr/merci.html"
+ >
 
 
         <input
-          type="text"
-          name="_gotcha"
-          tabindex="-1"
-          autocomplete="off"
-          style="display:none"
-        >
+ type="text"
+ name="_gotcha"
+ tabindex="-1"
+ autocomplete="off"
+ style="display:none"
+ >
 
 
         <div class="form-group">
@@ -3398,12 +3382,12 @@
           </label>
 
           <input
-            type="text"
-            id="nom"
-            name="nom"
-            required
-            autocomplete="name"
-          >
+ type="text"
+ id="nom"
+ name="nom"
+ required
+ autocomplete="name"
+ >
 
         </div>
 
@@ -3415,13 +3399,13 @@
           </label>
 
           <input
-            type="tel"
-            id="telephone"
-            name="telephone"
-            required
-            autocomplete="tel"
-            placeholder="06 00 00 00 00"
-          >
+ type="tel"
+ id="telephone"
+ name="telephone"
+ required
+ autocomplete="tel"
+ placeholder="06 00 00 00 00"
+ >
 
         </div>
 
@@ -3433,11 +3417,11 @@
           </label>
 
           <input
-            type="email"
-            id="email"
-            name="email"
-            autocomplete="email"
-          >
+ type="email"
+ id="email"
+ name="email"
+ autocomplete="email"
+ >
 
         </div>
 
@@ -3449,19 +3433,19 @@
           </label>
 
           <textarea
-            id="message"
-            name="message"
-            required
-            placeholder="Indiquez votre besoin et votre quartier à Limoges. N'écrivez pas ici d'informations médicales détaillées."
-          ></textarea>
+ id="message"
+ name="message"
+ required
+ placeholder="Indiquez votre besoin et votre quartier à Limoges. N'écrivez pas ici d'informations médicales détaillées."
+ ></textarea>
 
         </div>
 
 
         <button
-          type="submit"
-          class="btn btn-primary form-submit"
-        >
+ type="submit"
+ class="btn btn-primary form-submit"
+ >
           Envoyer ma demande →
         </button>
 
@@ -3490,11 +3474,11 @@
   <div class="map-wrapper">
 
     <iframe
-      src="https://www.google.com/maps?q=8%20bis%20rue%20de%20Beaupuy%2C%2087000%20Limoges&output=embed"
-      loading="lazy"
-      title="Carte : Cabinet Beaupuy, 8 bis rue de Beaupuy à Limoges"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+ src="https://www.google.com/maps?q=8%20bis%20rue%20de%20Beaupuy%2C%2087000%20Limoges&output=embed"
+ loading="lazy"
+ title="Carte : Cabinet Beaupuy, 8 bis rue de Beaupuy à Limoges"
+ referrerpolicy="no-referrer-when-downgrade"
+ ></iframe>
 
   </div>
 
@@ -3690,7 +3674,7 @@
 <div class="mobile-cta">
 
   <a href="tel:+33682410661">
-    ☎ Appeler le cabinet · 06 82 41 06 61
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler le cabinet · 06 82 41 06 61
   </a>
 
 </div>

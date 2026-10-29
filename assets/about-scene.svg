@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+<rect width="800" height="600" fill="#fde8df"/>
+<circle cx="640" cy="120" r="150" fill="#f6c453" fill-opacity=".35"/>
+<rect x="70" y="80" width="170" height="210" rx="14" fill="#fff4e4" stroke="#16303a" stroke-width="5"/>
+<path d="M155 80v210M70 185h170" stroke="#16303a" stroke-width="5"/>
+<circle cx="115" cy="130" r="22" fill="#f6c453"/>
+<rect x="0" y="470" width="800" height="130" fill="#0e5a6e" fill-opacity=".18"/>
+<path d="M0 470h800" stroke="#16303a" stroke-width="5"/>
+<!-- armchair -->
+<rect x="440" y="270" width="270" height="215" rx="46" fill="#c9492b" stroke="#16303a" stroke-width="5"/>
+<rect x="420" y="360" width="60" height="125" rx="24" fill="#ef7b5b" stroke="#16303a" stroke-width="5"/>
+<rect x="670" y="360" width="60" height="125" rx="24" fill="#ef7b5b" stroke="#16303a" stroke-width="5"/>
+<!-- patient -->
+<rect x="500" y="290" width="150" height="190" rx="50" fill="#7fd0b8" stroke="#16303a" stroke-width="5"/>
+<path d="M500 400h150v62a18 18 0 0 1-18 18H518a18 18 0 0 1-18-18z" fill="#f6c453" stroke="#16303a" stroke-width="5"/>
+<circle cx="575" cy="245" r="44" fill="#f2c9a5" stroke="#16303a" stroke-width="5"/>
+<path d="M533 236c2-30 20-44 42-44s40 14 42 44c-10-14-26-20-42-20s-32 6-42 20z" fill="#e9eef0" stroke="#16303a" stroke-width="5"/>
+<path d="M562 262q13 10 26 0" stroke="#16303a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="561" cy="247" r="3.5" fill="#16303a"/><circle cx="589" cy="247" r="3.5" fill="#16303a"/>
+<!-- nurse -->
+<rect x="215" y="270" width="130" height="210" rx="52" fill="#0e5a6e" stroke="#16303a" stroke-width="5"/>
+<rect x="250" y="480" width="22" height="0" />
+<path d="M280 300v70M245 335h70" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+<circle cx="280" cy="215" r="48" fill="#e8b48a" stroke="#16303a" stroke-width="5"/>
+<path d="M232 210c0-36 22-56 50-56 30 0 48 20 46 56-8-18-24-26-46-26s-38 8-50 26z" fill="#3a2a22" stroke="#16303a" stroke-width="5"/>
+<path d="M265 232q15 12 30 0" stroke="#16303a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="264" cy="216" r="3.5" fill="#16303a"/><circle cx="296" cy="216" r="3.5" fill="#16303a"/>
+<path d="M335 330c50 4 90 10 135 28" stroke="#16303a" stroke-width="30" stroke-linecap="round"/>
+<path d="M335 330c50 4 90 10 135 28" stroke="#0e5a6e" stroke-width="20" stroke-linecap="round"/>
+<circle cx="478" cy="360" r="17" fill="#e8b48a" stroke="#16303a" stroke-width="5"/>
+<!-- bag -->
+<rect x="360" y="420" width="82" height="62" rx="12" fill="#ef7b5b" stroke="#16303a" stroke-width="5"/>
+<path d="M386 420v-12a15 15 0 0 1 30 0v12" stroke="#16303a" stroke-width="5"/>
+<path d="M401 438v26M388 451h26" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+<!-- heart & plant -->
+<path d="M395 120c14-26 44-22 44 4 0 22-26 36-44 54-18-18-44-32-44-54 0-26 30-30 44-4z" fill="#ef7b5b" stroke="#16303a" stroke-width="5" transform="translate(30 0)"/>
+<rect x="95" y="420" width="64" height="62" rx="10" fill="#f6c453" stroke="#16303a" stroke-width="5"/>
+<g fill="#1f9d8a" stroke="#16303a" stroke-width="4"><ellipse cx="108" cy="395" rx="11" ry="34" transform="rotate(-18 108 395)"/><ellipse cx="127" cy="388" rx="11" ry="40"/><ellipse cx="147" cy="397" rx="11" ry="32" transform="rotate(20 147 397)"/></g>
+</svg>

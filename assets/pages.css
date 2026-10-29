@@ -123,3 +123,9 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;backgr
 .site-footer a{text-underline-offset:3px}
 @media(max-width:700px){.wrap>.prose{padding:24px 18px;border-radius:18px}.page-hero{padding:48px 20px 42px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Icônes SVG (remplacent les emojis) */
+.ic{width:1.1em;height:1.1em;flex:none;vertical-align:-.18em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav-phone .ic,.btn .ic,.mobile-cta .ic{margin-right:.35em}
+.meta .ic,.article-meta .ic{margin-right:.2em;opacity:.8}
+.card>h3>.ic,.legacy h3>.ic{color:var(--accent-dark);margin-right:.25em}

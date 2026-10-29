@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -17,10 +16,19 @@
 <meta property="og:description" content="Vaccination à domicile à Limoges : grippe, COVID-19, zona, dTPolio et autres vaccins par un infirmier diplômé d&#x27;État. Tél. 06 82 41 06 61">
 <meta property="og:url" content="https://www.infirmier-limoges.fr/services/vaccination.html">
 <meta property="og:image" content="https://www.infirmier-limoges.fr/og-image.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Vaccination à domicile à Limoges | Infirmier, infirmière">
 <meta name="twitter:description" content="Vaccination à domicile à Limoges : grippe, COVID-19, zona, dTPolio et autres vaccins par un infirmier diplômé d&#x27;État. Tél. 06 82 41 06 61">
 <meta name="twitter:image" content="https://www.infirmier-limoges.fr/og-image.jpeg">
+<link rel="icon" href="/logo.jpeg" type="image/jpeg">
+<link rel="apple-touch-icon" href="/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/pages.css">
+<link rel="stylesheet" href="/assets/legacy.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -64,416 +72,42 @@
   ]
 }
 </script>
-<script src="/assets/consent.js" defer></script>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💉</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-    --primary: #2a5d7c;
-    --primary-dark: #1e445c;
-    --accent: #4fac7a;
-    --light: #f8fafc;
-    --gray: #64748b;
-    --gray-dark: #475569;
-    --shadow: rgba(0,0,0,0.12);
-    --border: #e2e8f0;
-}
-
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body { font-family:'Inter', sans-serif; line-height:1.6; color:#1e293b; background:#fff; }
-
-header {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-    background:linear-gradient(135deg, var(--primary), var(--primary-dark));
-    box-shadow:0 4px 25px rgba(0,0,0,0.2);
-    padding:0.75rem 2rem;
-}
-
-nav {
-    max-width:1280px;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo {
-    font-family:'Playfair Display', serif;
-    font-size:1.8rem;
-    font-weight:700;
-    color:white;
-    text-decoration:none;
-    display:flex;
-    align-items:center;
-    gap:0.5rem;
-}
-
-.nav-links {
-    display:flex;
-    gap:2rem;
-    list-style:none;
-}
-
-.nav-links a {
-    color:white;
-    text-decoration:none;
-    font-weight:500;
-    transition:all 0.3s;
-}
-
-.nav-links a:hover { color:var(--accent); }
-
-.page-header {
-    padding:10rem 2rem 4rem;
-    background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color:white;
-    text-align:center;
-    position:relative;
-    overflow:hidden;
-}
-
-.page-header::before {
-    content:'💉';
-    position:absolute;
-    font-size:15rem;
-    opacity:0.1;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-}
-
-.page-header h1 {
-    font-family:'Playfair Display', serif;
-    font-size:clamp(2rem, 5vw, 3.5rem);
-    margin-bottom:1rem;
-    position:relative;
-    z-index:1;
-}
-
-.page-header p {
-    font-size:1.3rem;
-    opacity:0.95;
-    max-width:800px;
-    margin:0 auto;
-    position:relative;
-    z-index:1;
-}
-
-.breadcrumb {
-    max-width:1280px;
-    margin:0 auto;
-    padding:1.5rem 2rem 0;
-    font-size:0.9rem;
-    color:var(--gray);
-}
-
-.breadcrumb a {
-    color:var(--primary);
-    text-decoration:none;
-}
-
-.breadcrumb a:hover { text-decoration:underline; }
-
-.content {
-    max-width:1280px;
-    margin:0 auto;
-    padding:4rem 2rem;
-}
-
-.intro-section {
-    background:linear-gradient(135deg, #f0f9ff, #e0f2fe);
-    padding:3rem;
-    border-radius:20px;
-    margin-bottom:4rem;
-    border-left:5px solid var(--accent);
-}
-
-.intro-section h2 {
-    color:var(--primary);
-    font-size:2rem;
-    margin-bottom:1rem;
-}
-
-.two-column {
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:3rem;
-    margin-bottom:4rem;
-}
-
-.main-content h2 {
-    font-family:'Playfair Display', serif;
-    color:var(--primary);
-    font-size:2.2rem;
-    margin:3rem 0 1.5rem;
-    padding-bottom:0.5rem;
-    border-bottom:3px solid var(--accent);
-}
-
-.main-content h3 {
-    color:var(--primary);
-    font-size:1.5rem;
-    margin:2rem 0 1rem;
-    display:flex;
-    align-items:center;
-    gap:0.5rem;
-}
-
-.main-content p {
-    margin-bottom:1.25rem;
-    line-height:1.8;
-    color:var(--gray-dark);
-}
-
-.main-content ul, .main-content ol {
-    margin:1.5rem 0 1.5rem 2rem;
-    line-height:1.8;
-    color:var(--gray-dark);
-}
-
-.main-content li {
-    margin-bottom:0.75rem;
-}
-
-.info-box {
-    background:white;
-    padding:2rem;
-    border-radius:15px;
-    box-shadow:0 10px 30px var(--shadow);
-    margin-bottom:2rem;
-    border:1px solid var(--border);
-}
-
-.info-box.alert {
-    background:linear-gradient(135deg, #fef3c7, #fde68a);
-    border-left:5px solid #f59e0b;
-}
-
-.info-box.success {
-    background:linear-gradient(135deg, #d1fae5, #a7f3d0);
-    border-left:5px solid var(--accent);
-}
-
-.info-box h3 {
-    margin-top:0;
-    font-size:1.3rem;
-}
-
-.vaccine-card {
-    background:white;
-    padding:2rem;
-    border-radius:15px;
-    box-shadow:0 5px 20px var(--shadow);
-    margin-bottom:1.5rem;
-    transition:all 0.3s;
-}
-
-.vaccine-card:hover {
-    transform:translateY(-5px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-}
-
-.vaccine-card h4 {
-    color:var(--primary);
-    font-size:1.3rem;
-    margin-bottom:0.75rem;
-    display:flex;
-    align-items:center;
-    gap:0.5rem;
-}
-
-.vaccine-card .emoji {
-    font-size:2rem;
-}
-
-.sidebar {
-    position:sticky;
-    top:6rem;
-}
-
-.cta-box {
-    background:linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color:white;
-    padding:2.5rem;
-    border-radius:20px;
-    text-align:center;
-    margin-bottom:2rem;
-    box-shadow:0 15px 40px rgba(0,0,0,0.2);
-}
-
-.cta-box h3 {
-    margin-bottom:1rem;
-    font-size:1.5rem;
-}
-
-.cta-box .btn {
-    display:inline-block;
-    padding:1rem 2rem;
-    background:var(--accent);
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:600;
-    transition:all 0.3s;
-    margin-top:1rem;
-}
-
-.cta-box .btn:hover {
-    background:#3f9360;
-    transform:scale(1.05);
-}
-
-.quick-links {
-    background:var(--light);
-    padding:2rem;
-    border-radius:15px;
-}
-
-.quick-links h3 {
-    color:var(--primary);
-    margin-bottom:1rem;
-    font-size:1.3rem;
-}
-
-.quick-links ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-.quick-links li {
-    margin-bottom:0.75rem;
-}
-
-.quick-links a {
-    color:var(--gray-dark);
-    text-decoration:none;
-    display:flex;
-    align-items:center;
-    gap:0.5rem;
-    padding:0.5rem;
-    border-radius:8px;
-    transition:all 0.3s;
-}
-
-.quick-links a:hover {
-    background:white;
-    color:var(--accent);
-    padding-left:1rem;
-}
-
-.external-link {
-    display:inline-flex;
-    align-items:center;
-    gap:0.5rem;
-    color:var(--accent);
-    text-decoration:none;
-    font-weight:600;
-    padding:0.5rem 1rem;
-    border:2px solid var(--accent);
-    border-radius:8px;
-    transition:all 0.3s;
-    margin:0.5rem 0;
-}
-
-.external-link:hover {
-    background:var(--accent);
-    color:white;
-}
-
-table {
-    width:100%;
-    border-collapse:collapse;
-    margin:2rem 0;
-    background:white;
-    box-shadow:0 5px 20px var(--shadow);
-    border-radius:10px;
-    overflow:hidden;
-}
-
-th {
-    background:var(--primary);
-    color:white;
-    padding:1rem;
-    text-align:left;
-    font-weight:600;
-}
-
-td {
-    padding:1rem;
-    border-bottom:1px solid var(--border);
-}
-
-tr:hover {
-    background:var(--light);
-}
-
-footer {
-    background:linear-gradient(135deg, var(--primary-dark), #0f2942);
-    color:#cbd5e1;
-    text-align:center;
-    padding:2rem;
-    margin-top:4rem;
-}
-
-@media (max-width:900px) {
-    .two-column { grid-template-columns:1fr; }
-    .sidebar { position:static; }
-}
-</style>
-
-<!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/pa-HhjyFAiY15VH6qHtI7GUZ.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>
+<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+<script src="/assets/consent.js" defer></script>
+<link rel="stylesheet" href="/assets/theme.css">
+<script src="/assets/theme.js"></script>
 </head>
-
 <body>
-<header>
-<nav>
-    <a href="../index.html" class="logo">
-        <span>🏥</span>
-        <span>Cabinet Infirmier Limoges</span>
-    </a>
-    <ul class="nav-links">
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../blog/actualites.html">Blog</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
-    </ul>
-</nav>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/" aria-label="Cabinet infirmier libéral Limoges, accueil"><span class="brand-mark" aria-hidden="true">+</span><span>Cabinet Infirmier Limoges</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="site-nav">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/#services">Soins</a></li>
+        <li><a href="/a-propos.html">À propos</a></li>
+        <li><a href="/blog/actualites.html">Blog</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a class="nav-phone" href="tel:+33682410661"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 06 82 41 06 61</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
-
-<div class="page-header">
-    <h1>💉 Vaccination à domicile à Limoges</h1>
-    <p>Tous vos vaccins réalisés chez vous en toute sécurité par un infirmier diplômé</p>
-</div>
-
-<div class="breadcrumb">
-    <a href="../index.html">Accueil</a> › <a href="../index.html#services">Services</a> › Vaccination à domicile
-</div>
-
-<div class="content">
+<div class="page-hero"><div class="inner"><h1>Vaccination à domicile à Limoges</h1><p>Tous vos vaccins réalisés chez vous en toute sécurité par un infirmier diplômé</p></div></div>
+<main id="main" class="wrap legacy"><nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> › <a href="/#services">Soins</a> › <span aria-current="page">Vaccination à domicile à Limoges</span></nav><div class="content">
     <div class="intro-section">
-        <h2>🏠 La vaccination à domicile, c'est simple et confortable</h2>
+        <h2>La vaccination à domicile, c'est simple et confortable</h2>
         <p>Plus besoin de vous déplacer ! Je me rends directement chez vous avec votre vaccin pour vous administrer votre injection dans les meilleures conditions. Service conventionné, pris en charge par l'Assurance Maladie.</p>
     </div>
 
 <div class="two-column">
     <div class="main-content">
-        <h2>📋 Les vaccins disponibles à domicile</h2>
+        <h2>Les vaccins disponibles à domicile</h2>
 
         <div class="vaccine-card">
-            <h4><span class="emoji">🦠</span> Vaccin contre la grippe saisonnière</h4>
+            <h3><span class="emoji"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span> Vaccin contre la grippe saisonnière</h3>
             <p><strong>Période :</strong> Octobre à janvier (campagne annuelle)</p>
             <p><strong>Pour qui :</strong> Personnes de 65 ans et plus, femmes enceintes, personnes atteintes de maladies chroniques</p>
             <p><strong>Prise en charge :</strong> 100% par l'Assurance Maladie pour les populations ciblées</p>
@@ -481,7 +115,7 @@ footer {
         </div>
 
         <div class="vaccine-card">
-            <h4><span class="emoji">😷</span> Vaccin COVID-19</h4>
+            <h3><span class="emoji"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span> Vaccin COVID-19</h3>
             <p><strong>Disponibilité :</strong> Toute l'année selon les recommandations de la Haute Autorité de Santé</p>
             <p><strong>Pour qui :</strong> Adultes et enfants selon les recommandations en vigueur</p>
             <p><strong>Prise en charge :</strong> 100% par l'Assurance Maladie</p>
@@ -489,21 +123,21 @@ footer {
         </div>
 
         <div class="vaccine-card">
-            <h4><span class="emoji">🔥</span> Vaccin contre le zona</h4>
+            <h3><span class="emoji"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span> Vaccin contre le zona</h3>
             <p><strong>Pour qui :</strong> Adultes de 65 à 74 ans (recommandé)</p>
             <p><strong>Schéma :</strong> 2 doses, selon le schéma indiqué par votre médecin ou pharmacien</p>
             <p><strong>Prise en charge :</strong> variable selon l'âge et les recommandations en vigueur, renseignez-vous auprès de votre médecin, de votre pharmacien ou sur ameli.fr</p>
         </div>
 
         <div class="vaccine-card">
-            <h4><span class="emoji">🩹</span> Vaccin dTPolio (Diphtérie-Tétanos-Polio)</h4>
+            <h3><span class="emoji"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g transform="rotate(-45 12 12)"><rect x="1" y="7.5" width="22" height="9" rx="4.5"/><path d="M9 7.5v9M15 7.5v9M11.5 10.5h.01M12.5 12h.01M11.5 13.5h.01"/></g></svg></span> Vaccin dTPolio (Diphtérie-Tétanos-Polio)</h3>
             <p><strong>Rappels adultes :</strong> À 25, 45, 65 ans puis tous les 10 ans après 65 ans</p>
             <p><strong>Prise en charge :</strong> selon les conditions de l'Assurance Maladie (le vaccin est à retirer en pharmacie sur prescription)</p>
             <p><strong>Vaccination de rattrapage :</strong> Possible à tout âge</p>
         </div>
 
         <div class="vaccine-card">
-            <h4><span class="emoji">🦠</span> Autres vaccins disponibles</h4>
+            <h3><span class="emoji"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span> Autres vaccins disponibles</h3>
             <ul>
                 <li><strong>Hépatite B :</strong> Schéma en 3 injections</li>
                 <li><strong>Pneumocoque :</strong> Pour personnes âgées et à risque</li>
@@ -512,28 +146,28 @@ footer {
             </ul>
         </div>
 
-        <h2>💰 Tarifs et remboursements</h2>
+        <h2>Tarifs et remboursements</h2>
 
         <p>Le cabinet est conventionné : les actes sont facturés au tarif de l'Assurance Maladie, sans dépassement d'honoraires. L'injection et, le cas échéant, le déplacement à domicile sont pris en charge par l'Assurance Maladie, le reste à charge éventuel pouvant être couvert par votre mutuelle. Le tiers payant peut être appliqué.</p>
 
         <div class="info-box success">
-            <h3>✅ Bon à savoir</h3>
+            <h3>Bon à savoir</h3>
             <p>Pour les vaccins recommandés dans le cadre de campagnes nationales (grippe, COVID-19), l'injection et le déplacement sont pris en charge à 100% par l'Assurance Maladie pour les populations ciblées.</p>
         </div>
 
-        <h2>🔍 Comment se déroule une séance de vaccination ?</h2>
+        <h2>Comment se déroule une séance de vaccination ?</h2>
         
-        <h3>📞 1. Prise de rendez-vous</h3>
+        <h3>1. Prise de rendez-vous</h3>
         <p>Contactez-moi par téléphone au <strong>06.82.41.06.61</strong> ou par email à <strong>infirmier.87@outlook.com</strong>. Nous convenons ensemble d'un créneau qui vous arrange.</p>
 
-        <h3>💊 2. Obtention du vaccin</h3>
+        <h3>2. Obtention du vaccin</h3>
         <p>Selon le vaccin :</p>
         <ul>
             <li><strong>Grippe/COVID :</strong> Bon de prise en charge envoyé par l'Assurance Maladie → Retrait gratuit en pharmacie</li>
             <li><strong>Autres vaccins :</strong> Prescription médicale nécessaire → Achat en pharmacie → Conservation au frigo</li>
         </ul>
 
-        <h3>🏠 3. Intervention à domicile</h3>
+        <h3>3. Intervention à domicile</h3>
         <p>Je me présente à votre domicile avec tout le matériel nécessaire :</p>
         <ul>
             <li>Vérification de votre identité et du vaccin</li>
@@ -543,11 +177,11 @@ footer {
             <li>Remise du certificat de vaccination</li>
         </ul>
 
-        <h3>📝 4. Traçabilité</h3>
+        <h3>4. Traçabilité</h3>
         <p>Mise à jour de votre carnet de vaccination et enregistrement dans votre dossier de soins partagé si vous le souhaitez.</p>
 
         <div class="info-box alert">
-            <h3>⚠️ Contre-indications</h3>
+            <h3>Contre-indications</h3>
             <p>Informez-moi si vous avez :</p>
             <ul>
                 <li>Des allergies connues (notamment aux œufs pour le vaccin grippe)</li>
@@ -559,15 +193,15 @@ footer {
             <p><strong>En cas de doute, je contacte votre médecin avant l'injection.</strong></p>
         </div>
 
-        <h2>❓ Questions fréquentes</h2>
+        <h2>Questions fréquentes</h2>
 
-        <h3>🤔 Puis-je me faire vacciner sans ordonnance ?</h3>
+        <h3>Puis-je me faire vacciner sans ordonnance ?</h3>
         <p><strong>Oui</strong> pour certains vaccins dans le cadre de campagnes nationales (grippe, COVID-19) si vous faites partie des populations ciblées. <strong>Non</strong> pour les autres vaccins qui nécessitent une prescription médicale.</p>
 
-        <h3>💉 L'injection est-elle douloureuse ?</h3>
+        <h3>L'injection est-elle douloureuse ?</h3>
         <p>L'injection est généralement peu douloureuse. J'utilise des techniques pour minimiser l'inconfort : massage léger de la zone, distraction, injection lente et douce.</p>
 
-        <h3>🤒 Quels effets secondaires sont possibles ?</h3>
+        <h3>Quels effets secondaires sont possibles ?</h3>
         <p>Les effets secondaires les plus courants sont :</p>
         <ul>
             <li>Douleur, rougeur ou gonflement au point d'injection (24-48h)</li>
@@ -577,7 +211,7 @@ footer {
         </ul>
         <p>Ces effets sont normaux et témoignent que votre système immunitaire réagit. Ils disparaissent en 2-3 jours.</p>
 
-        <h3>🚨 Quand consulter après la vaccination ?</h3>
+        <h3>Quand consulter après la vaccination ?</h3>
         <p>Consultez rapidement si vous présentez :</p>
         <ul>
             <li>Fièvre > 39°C persistante au-delà de 48h</li>
@@ -586,41 +220,41 @@ footer {
             <li>Symptômes inhabituels</li>
         </ul>
 
-        <h3>🗓️ Puis-je faire plusieurs vaccins le même jour ?</h3>
+        <h3>Puis-je faire plusieurs vaccins le même jour ?</h3>
         <p><strong>Oui</strong>, il est possible de réaliser plusieurs vaccins lors de la même séance (ex: grippe + COVID, ou dTPolio + pneumocoque). Les injections sont alors faites dans des bras différents ou à des sites éloignés.</p>
 
-        <h2>📚 Sources et informations officielles</h2>
+        <h2>Sources et informations officielles</h2>
         
         <p>Pour plus d'informations sur la vaccination, consultez ces sources fiables :</p>
 
         <a href="https://www.ameli.fr/assure/sante/themes/vaccination" target="_blank" rel="noopener noreferrer" class="external-link">
-            🔗 Ameli.fr - Tout sur la vaccination
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Ameli.fr - Tout sur la vaccination
         </a>
 
         <a href="https://vaccination-info-service.fr/" target="_blank" rel="noopener noreferrer" class="external-link">
-            🔗 Vaccination Info Service (Ministère de la Santé)
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Vaccination Info Service (Ministère de la Santé)
         </a>
 
         <a href="https://www.has-sante.fr/jcms/p_3283152/fr/calendrier-des-vaccinations" target="_blank" rel="noopener noreferrer" class="external-link">
-            🔗 Calendrier vaccinal - Haute Autorité de Santé
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Calendrier vaccinal - Haute Autorité de Santé
         </a>
 
         <a href="https://solidarites-sante.gouv.fr/prevention-en-sante/preserver-sa-sante/vaccination" target="_blank" rel="noopener noreferrer" class="external-link">
-            🔗 Ministère de la Santé - Vaccination
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Ministère de la Santé - Vaccination
         </a>
 
     </div>
 
     <aside class="sidebar">
         <div class="cta-box">
-            <h3>📅 Prendre rendez-vous</h3>
+            <h3>Prendre rendez-vous</h3>
             <p>Besoin d'une vaccination à domicile ?</p>
-            <a href="tel:+33682410661" class="btn">📞 06.82.41.06.61</a>
-            <a href="mailto:infirmier.87@outlook.com" class="btn">✉️ Email</a>
+            <a href="tel:+33682410661" class="btn"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 06.82.41.06.61</a>
+            <a href="mailto:infirmier.87@outlook.com" class="btn"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> Email</a>
         </div>
 
         <div class="quick-links">
-            <h3>🔗 Liens rapides</h3>
+            <h3>Liens rapides</h3>
             <ul>
                 <li><a href="../index.html#services">← Tous les services</a></li>
                 <li><a href="diabete.html">→ Soins diabète</a></li>
@@ -630,29 +264,34 @@ footer {
         </div>
 
         <div class="info-box">
-            <h3>⏰ Disponibilité</h3>
+            <h3><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Disponibilité</h3>
             <p><strong>7 jours sur 7</strong></p>
             <p>Intervention sur la ville de Limoges uniquement.</p>
         </div>
     </aside>
 </div>
 
-</div>
-
-<nav aria-label="Voir aussi" style="max-width:1100px;margin:0 auto 2rem;padding:0 1.5rem;font-size:.95rem;line-height:1.9">
-    <strong>Voir aussi :</strong>
-    <a href="../infirmiere-a-domicile-limoges.html">Infirmière à domicile à Limoges</a> ·
-    <a href="soins-infirmiers.html">Soins infirmiers à domicile</a> ·
-    <a href="retour-hospitalisation.html">Retour à domicile après hospitalisation</a> ·
-    <a href="../blog/actualites.html">Conseils santé (blog)</a>
-</nav>
-
-<footer>
-    <p><strong>Cabinet Beaupuy</strong> · 8 bis rue de Beaupuy, 87000 Limoges</p>
-    <p><a href="/mentions-legales.html" style="color:inherit">Mentions légales</a> · <a href="/mentions-legales.html#cookies" style="color:inherit">Cookies</a> · <a href="/blog/actualites.html" style="color:inherit">Blog</a></p>
-    <p>&copy; 2026 Cabinet Infirmier Libéral Limoges</p>
-    <p>N° ADELI : 876194705 | RPPS : 10104297923</p>
+</div><aside class="related"><h2>À lire aussi</h2><ul><li><a href="../infirmiere-a-domicile-limoges.html">Infirmière à domicile à Limoges</a></li><li><a href="soins-infirmiers.html">Soins infirmiers à domicile</a></li><li><a href="retour-hospitalisation.html">Retour à domicile après hospitalisation</a></li><li><a href="../blog/actualites.html">Conseils santé (blog)</a></li></ul></aside></main>
+<footer class="site-footer">
+  <div class="inner">
+    <strong>Cabinet Beaupuy · Cabinet Infirmier Libéral Limoges</strong>
+    <span>8 bis rue de Beaupuy, 87000 Limoges</span>
+    <span>Soins infirmiers à domicile à Limoges (Haute-Vienne, 87), sur prescription médicale.</span>
+    <span>ADELI 876194705 · RPPS 10104297923 · Conventionné secteur 1</span>
+    <div class="links">
+      <a href="/">Accueil</a>
+      <a href="/#services">Soins</a>
+      <a href="/infirmiere-a-domicile-limoges.html">Infirmière à domicile Limoges</a>
+      <a href="/a-propos.html">À propos</a>
+      <a href="/tarifs-remboursement-soins-infirmiers.html">Tarifs et remboursement</a>
+      <a href="/blog/actualites.html">Blog</a>
+      <a href="/mentions-legales.html">Mentions légales</a>
+      <a href="#" data-cookie-settings>Gérer les cookies</a>
+      <a href="tel:+33682410661">06 82 41 06 61</a>
+    </div>
+    <span>© 2026 Cabinet Infirmier Libéral Limoges</span>
+  </div>
 </footer>
-
+<div class="mobile-cta"><a href="tel:+33682410661"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler le cabinet · 06 82 41 06 61</a></div>
 </body>
 </html>
