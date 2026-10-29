@@ -75,3 +75,51 @@ img{max-width:100%;height:auto;display:block}
   body{padding-bottom:54px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ===== Modernisation (v3) ===== */
+:root{--radius:20px;--shadow-sm:0 1px 2px rgba(8,69,97,.05),0 8px 24px rgba(13,93,127,.07);--shadow-md:0 2px 4px rgba(8,69,97,.06),0 18px 44px rgba(13,93,127,.13);--ring:0 0 0 3px rgba(0,168,150,.35)}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;background:var(--cream)}
+:focus-visible{outline:none;box-shadow:var(--ring);border-radius:8px}
+.site-header{background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px)}
+.site-nav a{position:relative}
+.site-nav a:not(.nav-phone)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.site-nav a:not(.nav-phone):hover::after{transform:scaleX(1)}
+.site-nav .nav-phone{box-shadow:0 6px 16px rgba(13,93,127,.28);transition:transform .2s,box-shadow .2s}
+.site-nav .nav-phone:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(13,93,127,.34)}
+.page-hero{position:relative;overflow:hidden;background:radial-gradient(900px 400px at 85% -10%,rgba(0,168,150,.45),transparent 60%),linear-gradient(135deg,var(--primary),var(--primary-dark));padding:68px 20px 60px}
+.page-hero::after{content:"";position:absolute;right:-80px;bottom:-120px;width:340px;height:340px;border-radius:50%;border:48px solid rgba(255,255,255,.06)}
+.page-hero h1{font-weight:800;text-wrap:balance}
+.page-hero p{text-wrap:pretty}
+.wrap{padding-top:28px}
+.wrap>.prose{background:#fff;border:1px solid var(--border);border-radius:24px;padding:34px 36px;box-shadow:var(--shadow-sm)}
+.prose h2{position:relative;padding-left:16px}
+.prose h2:first-child{margin-top:0}
+.prose h2::before{content:"";position:absolute;left:0;top:.2em;bottom:.2em;width:5px;border-radius:4px;background:linear-gradient(var(--accent),var(--primary-light))}
+.prose a{text-underline-offset:3px;text-decoration-thickness:1px}
+.prose ul li::marker,.prose ol li::marker{color:var(--accent-dark);font-weight:700}
+.prose table{width:100%;border-collapse:separate;border-spacing:0;margin:20px 0;border:1px solid var(--border);border-radius:14px;overflow:hidden;font-size:.97rem}
+.prose th{background:var(--accent-light);color:var(--primary-dark);text-align:left;padding:12px 14px}
+.prose td{padding:12px 14px;border-top:1px solid var(--border);vertical-align:top}
+.card{background:#fff;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(0,168,150,.45)}
+.card h3 a{text-decoration:none}
+.card h3 a::after{content:" →";color:var(--accent-dark)}
+.callout{border-radius:16px;border-left-width:6px;box-shadow:var(--shadow-sm)}
+.cta{position:relative;overflow:hidden;background:radial-gradient(600px 260px at 90% 0,rgba(0,168,150,.5),transparent 60%),linear-gradient(135deg,var(--primary),var(--primary-dark));box-shadow:var(--shadow-md)}
+.btn{transition:transform .2s,background .2s,box-shadow .2s;box-shadow:0 6px 16px rgba(0,0,0,.14)}
+.btn:hover{transform:translateY(-2px)}
+.related ul{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.related li a{display:block;padding:12px 16px;border:1px solid var(--border);border-radius:12px;background:#fff;text-decoration:none;font-weight:600;transition:border-color .2s,transform .2s}
+.related li a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.faq{margin-top:34px}
+.faq>h2{font-size:1.4rem;color:var(--primary-dark);margin-bottom:14px}
+.faq details{border-radius:14px;box-shadow:var(--shadow-sm);transition:border-color .2s}
+.faq details[open]{border-color:var(--accent)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-light);color:var(--accent-dark);font-weight:700;transition:transform .25s}
+.faq details[open] summary::after{content:"–";transform:rotate(180deg)}
+.site-footer{background:linear-gradient(180deg,#0b2f3d,#08242f)}
+.site-footer a{text-underline-offset:3px}
+@media(max-width:700px){.wrap>.prose{padding:24px 18px;border-radius:18px}.page-hero{padding:48px 20px 42px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}

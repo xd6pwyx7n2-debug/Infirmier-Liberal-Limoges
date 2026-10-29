@@ -1972,7 +1972,19 @@
 
     }
 
-  </style>
+  
+    /* Modernisation v3 */
+    html{scroll-padding-top:80px}
+    body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    :focus-visible{outline:none;box-shadow:0 0 0 3px rgba(0,168,150,.4);border-radius:8px}
+    h1,h2{text-wrap:balance}
+    a.zone-pill,.zone-pill{transition:transform .2s,box-shadow .2s,border-color .2s}
+    a.zone-pill:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+    .zone-note a{text-underline-offset:3px}
+    #tous-les-soins .zone-pill{background:#fff;border:1px solid var(--border);color:var(--primary-dark);box-shadow:var(--shadow-sm);text-decoration:none;padding:12px 20px}
+    #tous-les-soins a.zone-pill:hover{background:var(--accent-light);border-color:var(--accent);color:var(--primary-dark)}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
 
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 <!-- Privacy-friendly analytics by Plausible -->
@@ -2104,7 +2116,7 @@
   <div class="container hero-grid">
 
 
-    <div class="hero-content reveal">
+    <div class="hero-content">
 
       <div class="eyebrow">
         ✦ Cabinet infirmier libéral à Limoges
@@ -2883,6 +2895,25 @@
      ZONE
 ========================= -->
 
+
+<section class="section" id="tous-les-soins" aria-labelledby="tous-soins-title" style="padding:56px 0">
+  <div class="container" style="max-width:1100px;margin:0 auto;padding:0 20px">
+    <h2 id="tous-soins-title" style="text-align:center;margin-bottom:10px">Tous les soins à domicile à Limoges</h2>
+    <p style="text-align:center;color:var(--muted);max-width:640px;margin:0 auto 28px">Un soin précis ? Accédez directement à la page détaillée : déroulement, préparation, prise en charge.</p>
+    <div class="zone-grid" style="justify-content:center">
+      <a class="zone-pill" href="services/prise-de-sang-domicile-limoges.html">Prise de sang</a>
+      <a class="zone-pill" href="services/injections-domicile-limoges.html">Injections</a>
+      <a class="zone-pill" href="services/pansements.html">Pansements</a>
+      <a class="zone-pill" href="services/diabete.html">Diabète</a>
+      <a class="zone-pill" href="services/vaccination.html">Vaccination</a>
+      <a class="zone-pill" href="services/soins-post-operatoires-domicile-limoges.html">Soins post-opératoires</a>
+      <a class="zone-pill" href="services/retour-hospitalisation.html">Retour d'hospitalisation</a>
+      <a class="zone-pill" href="services/aide-toilette-soins-hygiene-limoges.html">Aide à la toilette</a>
+      <a class="zone-pill" href="services/palliatifs.html">Soins palliatifs</a>
+      <a class="zone-pill" href="tarifs-remboursement-soins-infirmiers.html">Tarifs et remboursement</a>
+    </div>
+  </div>
+</section>
 <section
   id="zone"
   class="zone"
