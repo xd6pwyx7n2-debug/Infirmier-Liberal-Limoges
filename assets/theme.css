@@ -168,3 +168,4 @@ footer a{color:#cfe9f0}
 .nav-phone .ic{width:1em;height:1em;margin-right:.3em}
 .hero-image img,.about-image img{background:var(--mint);object-fit:cover}
 @media(max-width:900px){.nav-links{background:var(--surface)!important;border:1px solid var(--border)}.nav-links a{color:var(--text)!important}.nav-links a.nav-phone{color:#fff!important}.burger{color:var(--heading)!important}}
+.callout.sources ul{margin:8px 0 0 1.2rem}
