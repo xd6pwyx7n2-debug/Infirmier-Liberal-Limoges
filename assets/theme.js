@@ -8,7 +8,7 @@
   document.addEventListener('DOMContentLoaded',function(){
     var b=document.createElement('button');b.type='button';b.className='theme-toggle';
     function paint(){var x=dark();b.innerHTML=x?sun:moon;b.setAttribute('aria-label',x?'Passer en mode clair':'Passer en mode sombre');b.title=b.getAttribute('aria-label');
-      var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',x?'#0c1a1f':'#0e5a6e')}
+      var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',x?'#0c1a1f':'#0d5d7f')}
     b.addEventListener('click',function(){var n=dark()?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem(k,n)}catch(e){}paint()});
     paint();document.body.appendChild(b);
   });
