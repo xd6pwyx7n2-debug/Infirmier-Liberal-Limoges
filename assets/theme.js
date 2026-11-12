@@ -1,4 +1,12 @@
 (function(){
+  var h=location.hostname;
+  if(h==='infirmier-limoges.fr'||h==='www.infirmier-limoges.fr'){
+    if(h==='infirmier-limoges.fr'||location.protocol==='http:'){
+      location.replace('https://www.infirmier-limoges.fr'+location.pathname+location.search+location.hash);
+    }
+  }
+})();
+(function(){
   var d=document.documentElement,k='theme',t=null;
   try{t=localStorage.getItem(k)}catch(e){}
   if(t==='dark'||t==='light')d.setAttribute('data-theme',t);
