@@ -1460,6 +1460,7 @@
 
 
     .form-group input,
+    .form-group select,
     .form-group textarea {
       width: 100%;
 
@@ -1480,6 +1481,7 @@
 
 
     .form-group input:focus,
+    .form-group select:focus,
     .form-group textarea:focus {
       border-color: var(--accent);
 
@@ -3475,14 +3477,34 @@
 
         <div class="form-group">
 
+          <label for="soin">
+            Soin souhaité
+          </label>
+
+          <select id="soin" name="soin">
+            <option value="">À préciser lors du rappel</option>
+            <option>Pansement, plaie</option>
+            <option>Injection</option>
+            <option>Prise de sang</option>
+            <option>Vaccination</option>
+            <option>Retour d'hospitalisation</option>
+            <option>Diabète</option>
+            <option>Soins palliatifs</option>
+            <option>Autre soin infirmier</option>
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
           <label for="message">
-            Votre demande
+            Votre demande (facultatif)
           </label>
 
           <textarea
  id="message"
  name="message"
- required
  placeholder="Indiquez votre besoin et votre quartier à Limoges. N'écrivez pas ici d'informations médicales détaillées."
  ></textarea>
 
@@ -3679,6 +3701,10 @@
 
           <li>
             <a href="https://simudroit.fr/" rel="noopener">Simulateurs de droits</a>
+          </li>
+
+          <li>
+            <a href="/professionnels-de-sante.html">Professionnels de santé</a>
           </li>
 
           <li>

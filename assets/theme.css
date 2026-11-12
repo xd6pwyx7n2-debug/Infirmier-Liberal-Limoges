@@ -145,7 +145,7 @@ h1,h2,h3{font-family:var(--font-display);letter-spacing:-.015em}
 .faq-question{color:var(--heading);padding:18px 22px!important;width:100%}
 .faq-answer p{color:var(--muted);padding:0 22px 18px}
 .contact,.map-section{background:var(--cream)!important}
-.form-group input,.form-group textarea{background:var(--white)!important;color:var(--text)!important;border:1px solid var(--line)!important;border-radius:14px}
+.form-group input,.form-group select,.form-group textarea{background:var(--white)!important;color:var(--text)!important;border:1px solid var(--line)!important;border-radius:14px}
 .form-group label{color:var(--heading)}
 footer:not(.site-footer){background:#063b50!important}
 .mobile-cta{background:var(--primary)!important}

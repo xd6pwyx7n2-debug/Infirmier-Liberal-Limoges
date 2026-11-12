@@ -21,3 +21,13 @@
     paint();document.body.appendChild(b);
   });
 })();
+
+(function(){
+  function ev(n,p){try{window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)};plausible(n,{props:{page:location.pathname,lien:p||''}})}catch(e){}}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="tel:"],a[href^="mailto:"],a[href*="google.com/maps"]');
+    if(!a)return;var h=a.getAttribute('href');
+    ev(h.indexOf('tel:')===0?'Appel':h.indexOf('mailto:')===0?'Email':'Itineraire',a.textContent.trim().slice(0,40));
+  },true);
+  document.addEventListener('submit',function(e){if(e.target&&e.target.id==='contactForm')ev('Formulaire');},true);
+})();
